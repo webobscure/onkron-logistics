@@ -1,12 +1,13 @@
 import React from 'react'
 import './ServicesHero.css'
+import { trust } from '../assets'
 
 const ServicesHero = () => {
   return (
     <div className="services-container">
       <div className="services-image">
         <img
-          src="https://sun9-53.userapi.com/impg/XPASlQVMNUBFhfrBrhEkybktwysUb3F2_-PVRA/12ghhkDdkMk.jpg?size=515x772&quality=95&sign=70d9738b383b267da1e1dfd7a1aceef2&type=album"
+          src={trust}
           alt="Warehouse"
         />
       </div>

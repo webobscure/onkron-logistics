@@ -1,6 +1,6 @@
 import React from 'react'
 import './DeliveryLogistics.css'
-
+import { worker } from '../assets'
 const DeliveryLogistics = () => {
   return (
     <section className="delivery-wrapper">
@@ -40,7 +40,7 @@ const DeliveryLogistics = () => {
 
         <div className="delivery-image">
           <img
-            src="https://psv4.userapi.com/s/v1/d/ttCJN5DeyYjP9pNotosAollWcPOCw-zjrEg7JPEewloQPZVQF3q5WCMAYqZU6i6aglPcjr4J912EvpZBCGLNV1hMrgLgT5uxauT3tyCuqTIgtSwpBUfmIg/5e2c36b2-b7fd-4369-84bf-b6fc4b54a4ba.jpg"
+            src={worker}
             alt="Logistik"
           />
         </div>

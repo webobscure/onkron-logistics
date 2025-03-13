@@ -1,5 +1,6 @@
 import React from 'react'
 import './MarketplaceSupport.css'
+import { worker } from '../assets'
 
 const MarketplaceSupport = () => {
   return (
@@ -9,7 +10,7 @@ const MarketplaceSupport = () => {
       <div className="marketplace-section">
         <div className="marketplace-image">
           <img
-            src="https://psv4.userapi.com/s/v1/d/ttCJN5DeyYjP9pNotosAollWcPOCw-zjrEg7JPEewloQPZVQF3q5WCMAYqZU6i6aglPcjr4J912EvpZBCGLNV1hMrgLgT5uxauT3tyCuqTIgtSwpBUfmIg/5e2c36b2-b7fd-4369-84bf-b6fc4b54a4ba.jpg"
+            src={worker}
             alt="Marketplace Support"
           />
         </div>

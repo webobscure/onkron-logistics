@@ -1,6 +1,7 @@
 // MainInfo.jsx
 import React from 'react'
 import './MainInfo.css'
+import { warehouse } from '../assets'
 
 const MainInfo = () => {
   return (
@@ -19,7 +20,7 @@ const MainInfo = () => {
 
         <div className="main-info-warehouse">
           <img
-            src="https://psv4.userapi.com/s/v1/d/oFkWlpn4LvSsmZlkkocwzqdKZVavuUALfmmNsaWyjrrCkpnN8PpPIq3X-vyrWFaQ8Tz-xXN-OB_IFeHP_u5XzUt85B_R1lemHaJhXyTBbZ4xB202Dz9bAg/warehouse.jpg"
+            src={warehouse}
             alt="Lagerhaus"
             className="warehouse-image"
           />

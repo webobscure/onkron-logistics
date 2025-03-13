@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Preloader.css'
+import { logo } from '../assets'
 
 const Preloader = ({ onLoaded }) => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -17,7 +18,7 @@ const Preloader = ({ onLoaded }) => {
   return (
     <div className={`preloader ${isLoaded ? 'preloader-hidden' : ''}`}>
       <img
-        src="https://onkron.de/cdn/shop/t/19/assets/onkron_rgb.svg?v=93925287087293842091741168169"
+        src={logo}
         alt="ONKRON Logo"
         className="preloader-logo"
       />

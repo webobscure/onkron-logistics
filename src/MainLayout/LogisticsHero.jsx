@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './LogisticsHero.css'
+import { workerTwo } from '../assets'
 
 const LogisticsHero = ({ isAppLoaded }) => {
   const contentRef = useRef(null)
@@ -45,7 +46,7 @@ const LogisticsHero = ({ isAppLoaded }) => {
       </div>
       <div className="hero-image">
         <img
-          src="https://psv4.userapi.com/s/v1/d/yBuUHUWJnlCANmtUX6tZnY9ZlsE3tdjIvM0vdGcgcVqu4RnzBMMDEdxI6mK1sPBuK0i64gZ8D-DnosuEVrIJpYU7-IadQQp9k4NNDu-HZbaHukpgM0xQdw/09870e48-7e0a-4e5b-9f38-a54dff54d82a.jpg"
+          src={workerTwo}
           alt="Hamburg Logistics"
         />
       </div>
