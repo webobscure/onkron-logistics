@@ -1,15 +1,23 @@
-// Services.jsx
-import React from 'react'
-import './Services.css'
-import { conveyor, stock, truck, workersvg } from '../assets'
+import React from 'react';
+import PropTypes from 'prop-types'; // Импортируем PropTypes
+import './Services.css';
+import { conveyor, stock, truck, workersvg } from '../assets';
 
+// Компонент ProcessStep с валидацией пропсов
 const ProcessStep = ({ icon, title, description }) => (
   <div className="process-step">
     <img className="process-step-icon" src={icon} alt={title} />
     <h4>{title}</h4>
     <p>{description}</p>
   </div>
-)
+);
+
+// Валидация пропсов для ProcessStep
+ProcessStep.propTypes = {
+  icon: PropTypes.string.isRequired, // icon должен быть строкой и обязательным
+  title: PropTypes.string.isRequired, // title должен быть строкой и обязательным
+  description: PropTypes.string.isRequired, // description должен быть строкой и обязательным
+};
 
 const Services = () => {
   return (
@@ -68,7 +76,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

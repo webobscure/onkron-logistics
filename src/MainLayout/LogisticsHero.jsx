@@ -1,35 +1,42 @@
-import React, { useEffect, useRef, useState } from 'react'
-import './LogisticsHero.css'
-import { worker } from '../assets'
+import React, { useEffect, useRef, useState } from 'react';
+import PropTypes from 'prop-types';
+import './LogisticsHero.css';
+import { worker } from '../assets';
 
 const LogisticsHero = ({ isAppLoaded }) => {
-  const contentRef = useRef(null)
-  const [isVisible, setIsVisible] = useState(false)
+  console.log('isAppLoaded in LogisticsHero:', isAppLoaded); // Логируем isAppLoaded
+  const contentRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (!isAppLoaded) return // Ждём, пока прелоадер исчезнет
+    console.log('useEffect triggered, isAppLoaded:', isAppLoaded); // Логируем
+    if (!isAppLoaded) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect() // Отключаем наблюдение после активации
+          console.log('Element is intersecting, setting isVisible to true'); // Логируем
+          setIsVisible(true);
+          observer.disconnect();
         }
       },
-      { threshold: 0.2 } // 20% элемента должно быть видно
-    )
+      { threshold: 0.2 }
+    );
 
     if (contentRef.current) {
-      observer.observe(contentRef.current)
+      console.log('Observing element:', contentRef.current); // Логируем
+      observer.observe(contentRef.current);
     }
 
-    return () => observer.disconnect()
-  }, [isAppLoaded]) // Теперь useEffect зависит от isAppLoaded
+    return () => observer.disconnect();
+  }, [isAppLoaded]);
+
+  console.log('isVisible:', isVisible); // Логируем состояние isVisible
 
   return (
     <div className="hero-container">
       <div
-        className={`hero-content ${isVisible ? 'fade-in-left' : ''}`}
+        className='hero-content fade-in-left'
         ref={contentRef}
       >
         <h1>Willkommen bei Hamburg Logistics Solutions</h1>
@@ -40,18 +47,18 @@ const LogisticsHero = ({ isAppLoaded }) => {
           können.
         </p>
         <div className="hero-buttons">
-          <button className="btn">Angebot anfordern</button>
-          <button className="btn secondary">Mehr Informationen</button>
+          <button className="btn ">Angebot anfordern</button>
         </div>
       </div>
       <div className="hero-image">
-        <img
-          src={worker}
-          alt="Hamburg Logistics"
-        />
+        <img src={worker} alt="Hamburg Logistics" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LogisticsHero
+LogisticsHero.propTypes = {
+  isAppLoaded: PropTypes.bool.isRequired,
+};
+
+export default LogisticsHero;
