@@ -104,7 +104,7 @@ export default function BitrixForm({ onClose }) {
                         <div className="b24-form-control-container b24-form-control-icon-after">
                           <textarea className="b24-form-control"></textarea>
                           <div className="b24-form-control-label">
-                            SKU des Produkts und Menge
+                          Der Gepäckraum, für den Sie sich interessieren
                             <span className="b24-form-control-required">*</span>
                           </div>
                           <div
@@ -146,7 +146,7 @@ export default function BitrixForm({ onClose }) {
                 </div>
                 <div className="b24-form-btn-container">
                   <div className="b24-form-btn-block">
-                    <button type="submit" className="b24-form-btn" disabled>
+                    <button  className="b24-form-btn" disabled>
                       Schicken
                     </button>
                   </div>

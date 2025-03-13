@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import './LogisticsHero.css';
-import { worker } from '../assets';
+import { workerTwo } from '../assets';
 
 const LogisticsHero = ({ isAppLoaded }) => {
   console.log('isAppLoaded in LogisticsHero:', isAppLoaded); // Логируем isAppLoaded
@@ -51,7 +51,7 @@ const LogisticsHero = ({ isAppLoaded }) => {
         </div>
       </div>
       <div className="hero-image">
-        <img src={worker} alt="Hamburg Logistics" />
+        <img src={workerTwo} alt="Hamburg Logistics" />
       </div>
     </div>
   );
