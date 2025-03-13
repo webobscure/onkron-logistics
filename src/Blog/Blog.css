@@ -1,5 +1,5 @@
 body {
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     line-height: 1.5em;
     letter-spacing: 0em;
@@ -54,7 +54,7 @@ h1 {
     margin-bottom: 15px;
 }
 .rimage-wrapper img {
-    max-width: 1280px;
+    max-width: 100%;
 }
 .article-block {
     margin: 3rem 0;
@@ -180,6 +180,7 @@ button.standard-link, .standard-link {
 .rimage-outer-wrapper {
     max-width: 1280px;
     max-height: 500.0px;
+    text-align: center;
 }
 article, aside, footer, header, nav, section {
     display: block;
@@ -227,16 +228,34 @@ h2 {
     .news-container {
         max-width: 1024px;
     }
+    .article__title a {
+        word-break: break-all;
+    }
 }
 
 @media (max-width: 768px) {
     .news-container {
         max-width: 768px;
     }
+    h2 {
+        font-size: 1.7em;
+        font-weight: bold;
+    }
 }
 @media (max-width: 640px) {
     .news-container {
         max-width: 640px;
+    }
+}
+@media (max-width: 480px) {
+    .article-content, .blog-articles-list {
+        padding: 0;
+    }
+    .article__title a {
+        word-break: break-word;
+    }
+    .news-container {
+        padding: 0 7px;
     }
 }
 
