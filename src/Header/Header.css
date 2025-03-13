@@ -21,17 +21,34 @@
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
 }
-@media only screen and (min-width: 768px) {
-  .btn.btn--small {
-      padding: 8px 22px;
-      min-width: 118px;
-  }
-}
+
 .b24-window-panel .b24-window-scrollable {
   background-color: #fff !important;
 }
 .b24-window-panel {
   position: absolute !important;
+}
+.btn-bitrix {
+  background-color: #1fcfca !important;
+  -webkit-user-select: "none";
+  user-select: "none";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: auto;
+  border-radius: 25px;
+  border: 0;
+  text-transform: none;
+  letter-spacing: inherit;
+  white-space: normal;
+  box-shadow: 0 0 0 1px #ffffff40;
+  color: #fff;
+  transition: all .1s ease-in-out;
+  padding: 6px 17px !important;
+  margin-left: 1rem;
 }
 .b24-form-btn {
   position: relative;
@@ -42,7 +59,6 @@
   width: 100%;
   border: 0;
   border-radius: 4px;
-  background-color: #0f58d0;
   background-color: var(--b24-primary-color);
   font: 600 15px / 22px var(--b24-font-family);
   -webkit-box-sizing: border-box;
@@ -57,28 +73,7 @@
   -o-transition: all .2s ease;
   transition: all .2s ease;
 }
-button, input[type=submit], .btn, .btn--primary {
-  -moz-user-select: "none";
-  -ms-user-select: "none";
-  -webkit-user-select: "none";
-  user-select: "none";
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
- 
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  width: auto;
-  border-radius: 25px;
-  border: 0;
-  text-transform: none;
-  letter-spacing: inherit;
-  white-space: normal;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, .25);
-  color: #fff;
-  transition: all .1s ease-in-out;
-}
+
 .button-bitrix {
   background: #1fcfca !important;
   font-weight: 600;

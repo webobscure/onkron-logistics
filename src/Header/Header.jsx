@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
 import { Link } from "react-router";
 import BitrixForm from "./BitrixForm";
+import { logo } from "../assets";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ const Header = () => {
         Hier wird Ihr Text stehen
         <button
           onClick={handleClick}
-          className="button-bitrix featured-product-link-desktop-only btn btn--small btn--primary js_btb_form_action"
+          className="btn btn-bitrix"
         >
           Angebot anfordern
         </button>
@@ -54,7 +55,7 @@ const Header = () => {
         <div className="container">
           <Link to="/" className="logo">
             <img
-              src="https://onkron.de/cdn/shop/t/19/assets/onkron_rgb.svg?v=93925287087293842091741168169/"
+              src={logo}
               alt="Логотип"
             />
           </Link>
