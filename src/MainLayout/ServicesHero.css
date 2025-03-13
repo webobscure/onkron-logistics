@@ -1,0 +1,102 @@
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: auto;
+  gap: 40px;
+}
+
+.services-image {
+  max-width: 40%;
+}
+
+.services-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.services-content {
+  max-width: 55%;
+}
+
+.services-content h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* Исправлено: 3 колонки в один ряд */
+.services-grid {
+  display: flex;
+  flex-direction: row; /* Устанавливаем горизонтальное расположение */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-item {
+  flex: 1; /* Равномерное распределение */
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+.service-item div {
+  width: 100%;
+}
+
+.service-item h3 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.service-item p {
+  font-size: 1.7rem;
+  color: #555;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .services-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-item {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-image {
+    max-width: 100%;
+  }
+
+  .services-content {
+    max-width: 100%;
+  }
+
+  .services-grid {
+    flex-direction: column;
+  }
+
+  .service-item {
+    max-width: 100%;
+  }
+}

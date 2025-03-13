@@ -1,0 +1,115 @@
+/* MainInfo.css */
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Убираем центрирование, делаем по левому краю */
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.main-info-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main-info-header {
+  text-align: left; /* Убираем центрирование */
+  margin-bottom: 50px;
+}
+
+.main-info-header h2 {
+  font-size: 4.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-info-header p {
+  font-size: 1.7rem;
+  color: #555;
+  max-width: 1100px;
+}
+
+.warehouse-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-info-advantages {
+  text-align: left; /* Убираем центрирование */
+  margin-bottom: 30px;
+}
+
+.main-info-advantages h3 {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.advantages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Выравниваем элементы по левому краю */
+  gap: 20px;
+}
+
+.advantage-card {
+  border: 2px solid #1fcfca;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.advantage-card h4 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.advantage-card p {
+  font-size: 1.7rem;
+  color: #333;
+}
+
+.advantage-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-info-footer {
+  text-align: left; /* Убираем центрирование */
+  margin-top: 50px;
+}
+
+.main-info-footer p {
+  font-size: 1.7rem;
+  color: #555;
+  max-width: 1100px;
+}
+
+/* Анимация появления */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

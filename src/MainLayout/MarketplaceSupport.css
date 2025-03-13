@@ -1,0 +1,75 @@
+.marketplace-wrapper {
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.marketplace-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.marketplace-image {
+  max-width: 40%;
+}
+
+.marketplace-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.marketplace-content {
+  max-width: 55%;
+}
+
+.marketplace-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.marketplace-content p {
+  font-size: 1.7rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #007bff;
+  text-align: left;
+  margin-top: 30px;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .marketplace-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .marketplace-content {
+    max-width: 100%;
+  }
+
+  .marketplace-image {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .marketplace-image {
+    max-width: 100%;
+  }
+}
