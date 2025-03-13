@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './LogisticsHero.css'
-import { workerTwo } from '../assets'
+import { worker } from '../assets'
 
 const LogisticsHero = ({ isAppLoaded }) => {
   const contentRef = useRef(null)
@@ -29,7 +29,7 @@ const LogisticsHero = ({ isAppLoaded }) => {
   return (
     <div className="hero-container">
       <div
-        className={`hero-content fade-in-left`}
+        className={`hero-content ${isVisible ? 'fade-in-left' : ''}`}
         ref={contentRef}
       >
         <h1>Willkommen bei Hamburg Logistics Solutions</h1>
@@ -46,7 +46,7 @@ const LogisticsHero = ({ isAppLoaded }) => {
       </div>
       <div className="hero-image">
         <img
-          src={workerTwo}
+          src={worker}
           alt="Hamburg Logistics"
         />
       </div>

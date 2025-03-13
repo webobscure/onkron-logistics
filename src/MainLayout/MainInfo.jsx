@@ -1,7 +1,7 @@
 // MainInfo.jsx
 import React from 'react'
 import './MainInfo.css'
-import { warehouse } from '../assets'
+import { industrialrobot, loader, pushcart, warehouse, warehousesvg, workersvg } from '../assets'
 
 const MainInfo = () => {
   return (
@@ -31,7 +31,7 @@ const MainInfo = () => {
           <div className="advantages-container">
             <div className="advantage-card">
               <img
-                src="https://www.svgrepo.com/show/42890/warehouse.svg"
+                src={warehousesvg}
                 alt="Größe"
                 className="advantage-icon"
               />
@@ -42,7 +42,7 @@ const MainInfo = () => {
             </div>
             <div className="advantage-card">
               <img
-                src="https://www.svgrepo.com/show/730/pushcart.svg"
+                src={pushcart}
                 alt="Lagerung"
                 className="advantage-icon"
               />
@@ -51,7 +51,7 @@ const MainInfo = () => {
             </div>
             <div className="advantage-card">
               <img
-                src="https://www.svgrepo.com/show/21567/loader.svg"
+                src={loader}
                 alt="Laden"
                 className="advantage-icon"
               />
@@ -62,7 +62,7 @@ const MainInfo = () => {
             </div>
             <div className="advantage-card">
               <img
-                src="https://www.svgrepo.com/show/7239/industrial-robot.svg"
+                src={industrialrobot}
                 alt="Sicherheit"
                 className="advantage-icon"
               />
@@ -71,7 +71,7 @@ const MainInfo = () => {
             </div>
             <div className="advantage-card">
               <img
-                src="https://www.svgrepo.com/show/166375/worker.svg"
+                src={workersvg}
                 alt="Automatisierung"
                 className="advantage-icon"
               />

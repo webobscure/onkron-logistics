@@ -1,6 +1,6 @@
 import React from 'react'
 import './ServicesHero.css'
-import { trust } from '../assets'
+import { trust, warehousesvg, truck, workersvg } from '../assets'
 
 const ServicesHero = () => {
   return (
@@ -17,7 +17,7 @@ const ServicesHero = () => {
         <div className="services-grid">
           <div className="service-item">
             <img
-              src="https://www.svgrepo.com/show/42890/warehouse.svg"
+              src={warehousesvg}
               alt="Storage Icon"
             />
             <div>
@@ -31,7 +31,7 @@ const ServicesHero = () => {
           </div>
           <div className="service-item">
             <img
-              src="https://www.svgrepo.com/show/152690/truck.svg"
+              src={truck}
               alt="Fulfillment Icon"
             />
             <div>
@@ -44,7 +44,7 @@ const ServicesHero = () => {
           </div>
           <div className="service-item">
             <img
-              src="https://www.svgrepo.com/show/166375/worker.svg"
+              src={workersvg}
               alt="Digital Icon"
             />
             <div>
