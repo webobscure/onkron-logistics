@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   max-width: 1600px;
   margin: auto;
 }
@@ -61,3 +62,17 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+
+/* grok section */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+

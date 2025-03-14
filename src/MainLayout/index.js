@@ -5,3 +5,5 @@ export {default as MarketplaceSupport} from './MarketplaceSupport';
 export {default as Preloader} from './Preloader';
 export {default as Services} from './Services';
 export {default as ServicesHero} from './ServicesHero';
+export {default as Sklad} from './Sklad';
+
