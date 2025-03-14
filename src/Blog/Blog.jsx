@@ -171,15 +171,15 @@ export default function Blog() {
           </section>
         </article>
       ))}
-              <div className="pagination large-row">
+              <div className="pagination large-row pag-test">
                 <span className="page current">1</span>{" "}
                 <span className="page">
-                  <Link href="/blogs/news?page=2" title="">
+                  <Link href="https://onkron.de/blogs/news?page=2" title="">
                     2
                   </Link>
                 </span>{" "}
                 <span className="next">
-                  <Link href="/blogs/news?page=2" title="">
+                  <Link href="https://onkron.de/blogs/news?page=2" title="">
                     Nächste »
                   </Link>
                 </span>
