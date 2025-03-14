@@ -3,6 +3,7 @@ import "./Header.css";
 import { Link } from "react-router";
 import BitrixForm from "./BitrixForm";
 import { logo } from "../assets";
+import Button from "../components/Button";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,12 +44,7 @@ const Header = () => {
     <>
       <div className="announcement-bar">
         Hier wird Ihr Text stehen
-        <button
-          onClick={handleClick}
-          className="btn btn-bitrix"
-        >
-          Angebot anfordern
-        </button>
+       <Button />
       </div>
 
       <header className="header">
@@ -76,17 +72,7 @@ const Header = () => {
         </div>
       </header>
 
-      {isFormOpen && (
-        <div className="modal-overlay">
-          <div
-            className="modal-content"
-            ref={formRef}
-            onClick={(e) => e.stopPropagation()} // Останавливаем всплытие внутри формы
-          >
-            <BitrixForm onClose={closeForm} />
-          </div>
-        </div>
-      )}
+   
     </>
   );
 };
