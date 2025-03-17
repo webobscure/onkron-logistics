@@ -224,7 +224,9 @@
 .steps-title {
     text-align: justify;
 }
-
+.steps-title h1 {
+  text-align: left;
+}
 .step h2 {
     color: #000;
     font-size: 1.6rem;
@@ -563,6 +565,24 @@
     background-position: right bottom;
     background-image: url("../assets/transpalette.png");
 }
+
+.service-large h2 {
+  text-align: left;
+}
+.service-large .price {
+  font-size: 1.2rem;
+  color: #50B848;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.service h2, .service-large h2 {
+  margin: 0px;
+  font-family: Geometria, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
 h1 {
     text-align: center;
     color: #000;
@@ -606,6 +626,10 @@ h1 {
 .dop-block .container {
   display: flex;
   flex-direction: column;
+}
+.dop-block .container h1 {
+  text-align: left;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
     .service {
@@ -670,6 +694,7 @@ h2 {
 .help-block__inner {
   display: flex;
   flex-direction: row;
+  gap: 9rem;
 }
 .help-block__left p {
   margin: 0;

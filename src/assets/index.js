@@ -18,6 +18,10 @@ export {default as s3} from './s3.svg'
 export {default as s4} from './s4.svg'
 export {default as s5} from './s5.svg'
 export {default as s6} from './s6.svg'
+export {default as ad} from './24.svg'
+export {default as doc} from './doc.svg'
+
+
 
 
 export {default as trust} from './trust.jpg'

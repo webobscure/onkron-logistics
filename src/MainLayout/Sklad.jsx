@@ -231,18 +231,18 @@ export default function Sklad() {
                 <div className="price">от 770р</div>
               </div>
               <div className="service">
-                <h2>Продажа коробок и упаковочного материала</h2>
+                <h2>Продажа коробок и<br/> упаковочного материала</h2>
                 <div className="price">от 50 Р</div>
               </div>
 
               <div className="service">
                 <h2>Грузчики</h2>
-                <div className="price">от 470 р</div>
+                <div className="price">470 р</div>
               </div>
             </div>
             <div className="service-large">
               <h2>Использование тележек на территории склада</h2>
-              <div className="price">Бесплатно</div>
+              <div className="price">бесплатно</div>
             </div>
           </div>
         </div>

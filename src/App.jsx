@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import Header from './Header/Header'
+import Footer from './components/Footer/Footer'
 import {Sklad} from './MainLayout/index'
 
 function App() {
@@ -7,6 +6,7 @@ function App() {
   return (
     <>
           <Sklad />
+          <Footer />
     </>
   )
 }

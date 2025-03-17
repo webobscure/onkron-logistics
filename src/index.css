@@ -28,7 +28,9 @@ header,
 aside {
   display: block;
 }
-
+section {
+  margin-top: 2rem !important;
+}
 html,
 body {
   height: max-content;
