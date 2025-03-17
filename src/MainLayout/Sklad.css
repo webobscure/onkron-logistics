@@ -12,6 +12,8 @@
     background-color: #fff;
     color: white;
     padding: 10px 0;
+    max-width: 1600px;
+    margin: 0 auto;
   }
   .header-right {
     display: flex;
@@ -53,9 +55,12 @@
   }
   
   /* Навигационное меню */
+
   .nav {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
+    max-width: 1600px;
+    margin: 0 auto;
   }
   
   .nav .container {
@@ -103,10 +108,11 @@
   .main-content {
     max-width: 50%;
   }
-  
+  .main-conten {
+    font-weight: 500;
+  }
   .main-content h1 {
     font-size: 36px;
-    color: #333;
     margin-bottom: 20px;
   }
   
@@ -229,7 +235,7 @@
 }
 .step h2 {
     color: #000;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .step p {
     font-size: 1rem;
@@ -262,12 +268,19 @@
 .main-content h1 {
     margin: 0;
     font-family: Geometria, Arial, Helvetica, sans-serif;
-    font-weight: 300;
     font-size: 6rem;
     line-height: 1.167;
     font-weight: 500;
     font-size: 1.875rem;
     text-align: justify;
+}
+.main-price {
+  margin: 0px;
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    color: rgb(80, 184, 72) !important;
 }
 .button {
     display: -webkit-inline-box;
@@ -579,9 +592,10 @@
 .service h2, .service-large h2 {
   margin: 0px;
   font-family: Geometria, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
+  color: #000;
 }
 h1 {
     text-align: center;
@@ -777,8 +791,9 @@ section {
 .storage-info__title {
   font-size: 2.5rem;
   color: #333;
-  text-align: center;
+  text-align: left;
   margin-bottom: 40px;
+  font-weight: 500 !important;
 }
 
 .storage-features {
@@ -842,7 +857,6 @@ time {
 /* Feature info */
 .advantages-section {
   padding: 60px 0;
-  background: #f8fafc;
   
 }
 .advantages-section .container {
@@ -949,11 +963,13 @@ time {
 
 .main-title {
   text-align: center;
-  font-size: 2.5rem;
-  color: #2d3748;
-  margin-bottom: 50px;
-  font-weight: 400;
-  max-width: 600px;
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 50px;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
 }
 .storage-wrapper-left, .storage-wrapper-right {
   display: flex;
@@ -1023,6 +1039,8 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: absolute;
   bottom: 0rem;
+  right: 1rem;
+  width: 100%;
 }
 
 .size-text {

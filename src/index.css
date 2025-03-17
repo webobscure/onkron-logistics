@@ -1,10 +1,10 @@
 /* Подключение шрифта для хорошего отображения немецкого текста */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /*Обнуление*/
 * {
   padding: 0;
   margin: 0;
   border: 0;
+  font-family: Geometria, Arial, Helvetica, sans-serif !important;
 }
 *,
 *:before,

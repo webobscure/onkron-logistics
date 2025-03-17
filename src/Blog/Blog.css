@@ -29,7 +29,6 @@ h2 {
 ;
 }
 h1, h2, h3, h4, h5, h6, .title, .large-title, .giant-title, .massive-title, .biggest-title, .standard-title, .small-title, .cc-popup .cc-popup-title, #shopify-product-reviews .spr-form-title, #shopify-product-reviews .spr-header-title {
-    font-family: Gilroy !important;
     font-weight: 800;
     font-style: normal;
     line-height: 1.2em;
@@ -89,7 +88,6 @@ h1 {
     max-width: 1356px;
 }
 .article__title a{
-    font-family: Gilroy !important;
     font-weight: 800;
     font-style: normal;
     line-height: 1.2em;

@@ -130,8 +130,8 @@ export default function Sklad() {
           <div className="main-content">
             <h1>Аренда склада для хранения в Санкт-Петербурге</h1>
             <p>
-              Склад индивидуального хранения для физических и юридических лиц от
-              120 ₽/м²
+              Склад индивидуального хранения для физических и юридических лиц<br />
+              <span className="main-price">от 1250 ₽/1 м²</span> 
             </p>
             <div className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-undefined MuiGrid-grid-xs-12 css-1wkbcmy-MuiGrid-root">
               <button className="btn btn-large main-content-button">
@@ -227,7 +227,7 @@ export default function Sklad() {
                 <div className="price">от 540 р</div>
               </div>
               <div className="service">
-                <h2>Сборка/разборка, упаковка</h2>
+                <h2>Сборка/разборка,<br/> упаковка</h2>
                 <div className="price">от 770р</div>
               </div>
               <div className="service">
