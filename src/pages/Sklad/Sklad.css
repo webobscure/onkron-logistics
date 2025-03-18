@@ -1,99 +1,5 @@
 
-/* Шапка */
-.container {
-    width: 90%;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  .logo img {
-    height: 40px;
-  }
-.header {
-    background-color: #fff;
-    color: white;
-    padding: 10px 0;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  .header-right {
-    display: flex;
-    gap: 1rem;
-  }
-  .header-right p {
-    color: #000;
-  }
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .header-right {
-    text-align: right;
-  }
-  
-  .header-right p {
-    margin: 5px 0;
-  }
-  
-  .btn {
-    background-color: #28A745;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .btn:hover {
-    background-color: #218838;
-  }
-  
-  /* Навигационное меню */
 
-  .nav {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  
-  .nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-menu {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-menu li {
-    margin-right: 20px;
-  }
-  
-  .nav-menu a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .nav-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-right a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: #333;
-  }
-  
   /* Основной контент */
   .main-section {
     padding: 50px 0;
@@ -133,7 +39,7 @@
   }
   
   .main-image p {
-    background-color: #28A745;
+    background-color: #e31e24;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -182,7 +88,7 @@
     position: fixed;
     right: 0;
     top: 20%;
-    background-color: #28A745;
+    background-color: #e31e24;
     color: white;
     padding: 20px;
     border-radius: 5px 0 0 5px;
@@ -280,7 +186,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 1.5;
-    color: rgb(80, 184, 72) !important;
+    color: #e31e24;
 }
 .button {
     display: -webkit-inline-box;
@@ -326,8 +232,8 @@
     border-radius: 4px;
     -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    border: 1px solid rgba(80, 184, 72, 0.5);
-    color: #50B848;
+    border: 1px solid #e31e24;
+    color: #e31e24;
     width: 100%;
     border-radius: 18px;
     min-height: 56px;
@@ -339,11 +245,11 @@
     -webkit-text-decoration: none;
     text-decoration: none;
     background-color: rgba(80, 184, 72, 0.04);
-    border: 1px solid #50B848;
+    border: 1px solid #e31e24;
 }
 .help-block .button {
   color: #fff;
-  background: #50B848;
+  background: #e31e24;
 }
 .steps-container {
     display: flex;
@@ -437,7 +343,7 @@
     -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     color: #ffffff;
-    background-color: #50B848;
+    background-color: #e31e24;
     box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
     width: 100%;
     border-radius: 18px;
@@ -512,7 +418,7 @@
     background-repeat: no-repeat;
     -webkit-background-position: right bottom;
     background-position: right bottom;
-    background-image: url("../assets/delivery.png");
+    background-image: url("../../assets/delivery.jpg");
 }
 .service:nth-child(2) {
     background-color: #fff;
@@ -528,7 +434,10 @@
     background-repeat: no-repeat;
     -webkit-background-position: right bottom;
     background-position: right bottom;
-    background-image: url("../assets/installing.png");
+    background-image: url("../../assets/installing.png");
+}
+.flex {
+  display: flex;
 }
 .service:nth-child(3) {
     background-color: #fff;
@@ -544,7 +453,7 @@
     background-repeat: no-repeat;
     -webkit-background-position: right bottom;
     background-position: right bottom;
-    background-image: url("../assets/material.png");
+    background-image: url("../../assets/material.png");
 }
 .service:nth-child(4) {
     background-color: #fff;
@@ -560,7 +469,7 @@
     background-repeat: no-repeat;
     -webkit-background-position: right bottom;
     background-position: right bottom;
-    background-image: url("../assets/workers.png");
+    background-image: url("../../assets/workers.png");
 }
 .service-large {
     background-color: #fff;
@@ -576,7 +485,7 @@
     background-repeat: no-repeat;
     -webkit-background-position: right bottom;
     background-position: right bottom;
-    background-image: url("../assets/transpalette.png");
+    background-image: url("../../assets/transpalette.png");
 }
 
 .service-large h2 {
@@ -584,7 +493,7 @@
 }
 .service-large .price {
   font-size: 1.2rem;
-  color: #50B848;
+  color: #e31e24;
   font-weight: bold;
   text-align: justify;
 }
@@ -633,7 +542,7 @@ h1 {
 }
 .service .price {
     font-size: 1.2rem;
-    color: #50B848;
+    color: #e31e24;
     font-weight: bold;
     text-align: justify;
 }
@@ -821,7 +730,7 @@ section {
 }
 
 .highlight {
-  color: #50B848;
+  color: #e31e24;
   font-weight: 500;
 }
 
@@ -952,7 +861,7 @@ time {
 .storage-types .container {
   display: flex;
   flex-direction: column;
-  background: url("../assets/personal-cell.png") ;
+  background: url("../../assets/personal-cell.png") ;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
@@ -1027,7 +936,7 @@ time {
 }
 
 section {
-  max-width: 1600px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 

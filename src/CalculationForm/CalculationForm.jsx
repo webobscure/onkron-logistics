@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './CalculationForm.css';
-
+import { Container } from '@mui/material';
 const CalculationForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -41,7 +41,7 @@ const CalculationForm = () => {
 
   return (
     <section className="calculation-section">
-      <div className="container">
+      <Container>
         <div className="calc-block">
         <h2 className="section-title">Рассчитать <br/> стоимость хранения</h2>
         
@@ -52,7 +52,7 @@ const CalculationForm = () => {
               <input
                 type="text"
                 name="name"
-                value={formData.name}
+                value={formData.name} 
                 onChange={handleChange}
                 className={errors.name ? 'error' : ''}
                 htmlFor="Представьтесь *"
@@ -113,7 +113,7 @@ const CalculationForm = () => {
           </div>
         </form>
         </div>
-        
+        </Container>
 
         {isModalOpen && (
           <div className="modal-overlay">
@@ -129,7 +129,6 @@ const CalculationForm = () => {
             </div>
           </div>
         )}
-      </div>
     </section>
   );
 };

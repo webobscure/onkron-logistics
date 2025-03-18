@@ -5957,10 +5957,10 @@ label[data-shrink="false"]
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 1px solid #50b848;
+    border: 1px solid #1fcfca;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    background: #50b848;
+    background: #1fcfca;
 }
 
 @media (max-width: 599.95px) {

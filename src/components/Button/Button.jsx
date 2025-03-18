@@ -43,7 +43,7 @@ export default function Button() {
           onClick={handleClick}
           className="btn btn-bitrix"
         >
-          Angebot anfordern
+          Lorem impisum
         </button>
 
         {isFormOpen && (

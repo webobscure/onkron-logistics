@@ -1,17 +1,19 @@
+import { Container } from "@mui/material";
 import { ad, doc } from "../../assets";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="container">
-      <header className="header">
+    
+    <Container>
+      <header className="header-footer">
         <nav className="nav">
           <ul className="nav-list">
             <li>
               <a href="#">Услуги</a>
             </li>
             <li>
-              <a href="#">Цены</a>
+              <a href="#">Цены</a> 
             </li>
             <li>
               <a href="#">Акции</a>
@@ -26,10 +28,7 @@ const Footer = () => {
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <div className="contact">
-            <img src={ad} />
-            <a href="tel:+78123130110">+49 4029 996807</a>
-          </div>
+          
         </nav>
       </header>
 
@@ -61,18 +60,17 @@ const Footer = () => {
             </a>
           </section>
 
-          <section className="social">
-            <a href="#" className="social-link vk"></a>
-            <a href="#" className="social-link ok"></a>
-            <a href="#" className="social-link tg"></a>
-          </section>
+          <div className="contact">
+            <img src={ad} />
+            <a href="tel:+78123130110">+49 4029 996807</a>
+          </div>
         </div>
       </main>
       <footer className="footer">
-        <p>© Складовичкоф 2025</p>
+        <p>© Bmgg Europe GMBH 2025</p>
         <p>Информация на сайте не является публичной офертой</p>
       </footer>
-    </div>
+    </Container>
   );
 };
 
