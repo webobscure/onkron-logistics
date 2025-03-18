@@ -23,16 +23,16 @@ import StorageInfo from "../../components/StorageInfo/StorageInfo";
 
 export default function Sklad() {
   return (
-    <>
+    <Container sx={{paddingLeft: 3, paddingRight: 3, maxWidth: "1440px"}}>
       <section className="main-section">
         <div className="container">
           <div className="main-content">
-            <h1>Аренда склада для хранения в Гамбурге</h1>
-            <p>
+            <Typography variant="h1">Аренда склада для хранения в Гамбурге</Typography>
+            <Typography variant="body1">
               Склад индивидуального хранения для физических и юридических лиц
-              <br />
-              <span className="main-price">от 12.5 €/1 м²</span>
-            </p>
+              <Typography variant="body1" sx={{color: "#e31e24"}}>от 12.5 €/1 м²</Typography>
+              <span className="main-price"></span>
+            </Typography>
             <div className="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-spacing-xs-undefined MuiGrid-grid-xs-12 css-1wkbcmy-MuiGrid-root">
               <button className="btn btn-large main-content-button">
                 Арендовать бокс
@@ -536,6 +536,6 @@ export default function Sklad() {
       </section>
       <FaqSection />
       <CalculationForm />
-    </>
+    </Container>
   );
 }
