@@ -11,6 +11,11 @@
   --Paper-shadow: none !important;
 
 }
+.css-kfewtv {
+  fill: #e31e24;
+  margin-right: 8px;
+    margin-left: -2px;
+}
 .no-scroll {
   overflow: hidden;
   height: 100%;
@@ -198,4 +203,7 @@
   margin-left: 15px;
   text-decoration: none;
   color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
