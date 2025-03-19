@@ -1,42 +1,32 @@
 import {
   Button,
   Container,
-  Divider,
   Grid2,
   Typography,
   Box,
-  Grid,
 } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import PhoneIcon from "@mui/icons-material/Phone";
 import { st1, st2, st3 } from "../../assets";
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 export default function StorageInfo() {
-  const containerStyle = {
-    width: '100%',
-    height: '400px',
-    borderRadius: '8px',
-    overflow: 'hidden'
-  };
-  const center = {
-    lat: 59.770302, // Широта склада из Горелово 
-    lng: 30.118403  // Долгота склада
-  };
+
   return (
-    <Container style={{maxWidth: "1440px"}}>
+    <Container style={{maxWidth: "1440px"}} id="adSklad">
       <Grid2 container spacing={4}>
         <Grid2
           container
           size={{ xs: 12, md: 6 }}
-          sx={{ paddingLeft: 4, paddingTop: 4 }}
+          sx={{ marginTop: 2 }}
         >
-          <Grid2
+          <Grid2  
             container
             sx={{
               gap: 0,
               padding: 4,
               border: "2px solid #e31e24",
-              boxShadow: "#e31e24 0px 20px 50px",
+              "&:hover": {
+                boxShadow: "#e31e24 0px 20px 50px",
+                transition: "ease-in 0.5s"
+              },
               borderRadius: 3,
               cursor: "pointer",
             }}
@@ -212,17 +202,17 @@ export default function StorageInfo() {
             <Grid2
               container
               item
-              sx={{ marginTop: -4, width: "calc(100% + 16px)", gap: 0 }}
+              sx={{ marginTop: -4, minWidth: "466px", gap: "11px", marginLeft: "-1rem" }}
             >
               <Grid2
                 item
                 size={{ xs: 12, sm: 6 }}
-                sx={{ paddingTop: 4, paddingLeft: 2 }}
+                sx={{ paddingTop: 4,  maxWidth: "50%", flexBasis: "50% !important"  }}
               >
                 <Button
                   variant="outlined"
                   component="a"
-                  href="https://api.whatsapp.com/send?phone=79626973383"
+                  href="https://api.whatsapp.com/send?phone=494029996807"
                   target="_blank"
                   endIcon={<WhatsAppIcon sx={{ color: "#e31e24" }} />}
                   sx={{
@@ -231,10 +221,11 @@ export default function StorageInfo() {
                     fontSize: "1.125rem",
                     borderColor: "#e31e24",
                     "&:hover": {
-                      borderColor: "#25a329",
+                      borderColor: "#e31e24",
                     },
-                    minWidth: 64,
+                    maxWidth: "238px",
                     minHeight: 56,
+                    maxHeight: 56,
                     borderRadius: "18px",
                   }}
                   fullWidth
@@ -245,7 +236,7 @@ export default function StorageInfo() {
               <Grid2
                 item
                 size={{ xs: 12, sm: 6 }}
-                sx={{ paddingTop: 4, paddingLeft: 2, maxWidth: "50%", width: "50%" }}
+                sx={{ paddingTop: 4,  maxWidth: "50%", width: "50%" }}
               >
                 <Button
                   variant="outlined"
@@ -276,7 +267,7 @@ export default function StorageInfo() {
             sx={{
               flexWrap: "nowrap",
               flexFlow: "row",
-              margin: "-16px 0px 0px -16px",
+              margin: "-16px 0px 0px -32px",
               width: "calc(100% + 16px)",
               gap: "10.2rem"
             }}
@@ -360,7 +351,7 @@ export default function StorageInfo() {
         <Grid2
           container
           size={{ xs: 12, md: 8 }}
-          sx={{ paddingLeft: 4, paddingTop: 4, width: "48% !important" }}
+          sx={{ width: "48% !important" }}
         >
           <Box
         component="iframe"

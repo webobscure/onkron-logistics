@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
-import BitrixForm from "./BitrixForm";
+import { Link } from "@mui/material";
 import { logo } from "../../assets/index";
 import Button from "../Button/Button";
 
@@ -74,14 +73,37 @@ const Header = () => {
                   <a href="#">Еще</a>
                 </li>
                 <li>
-                  <a href="#">Франшиза</a>
+                  <Link href="#" sx={{borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: "#e31e24",
+    borderImage: "initial",
+    borderRadius: "14px",
+    padding: "10px 24px",}}>Франшиза
+                  </Link>
+                </li>
+                <li>
+                <Link href="#adSklad" sx={{borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: "#e31e24",
+    borderImage: "initial",
+    borderRadius: "14px",
+    padding: "10px 24px",}}>Адреса складов</Link>
                 </li>
               </ul>
               <div className="nav-right">
-                <a href="#">Адреса складов</a>
                 <a href="#">Гамбург</a>
-                <a href="#">Оптата сайта</a>
-                <a href="#">
+                <Link href="#" sx={{borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: "#e31e24",
+    borderImage: "initial",
+    borderRadius: "14px",
+    padding: "10px 24px",}}>Оплата сайта
+                  </Link>
+                <Link href="tel: +494029996807" style={{    width: "40px",
+    height: "40px",
+    borderRadius: "14px",
+    border: "1px solid #e31e24",
+    display: "flex", justifyContent: "center", alignItems: "center"}}>
                   <svg
                     fill="none"
                     height="16"
@@ -95,8 +117,12 @@ const Header = () => {
                       fill="#e31e24"
                     ></path>
                   </svg>
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="https://api.whatsapp.com/send?phone=494029996807" style={{    width: "40px",
+    height: "40px",
+    borderRadius: "14px",
+    border: "1px solid #e31e24",
+    display: "flex", justifyContent: "center", alignItems: "center"}}>
                   <svg
                     className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1u9viqm-MuiSvgIcon-root"
                     focusable="false"
@@ -110,7 +136,7 @@ const Header = () => {
                       fill="#e31e24"
                     ></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </nav>

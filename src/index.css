@@ -6,6 +6,9 @@
   border: 0;
   font-family: Geometria, Arial, Helvetica, sans-serif !important;
 }
+html {
+  scroll-behavior: smooth;
+}
 *,
 *:before,
 *:after {
