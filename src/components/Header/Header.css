@@ -8,6 +8,8 @@
     --b24-field-focus-background-color: rgba(255, 255, 255, 1);
     --b24-popup-background-color: rgba(255, 255, 255, 1);
     --b24-primary-hover-color: rgba(88, 208, 202, 0.7);
+  --Paper-shadow: none !important;
+
 }
 .no-scroll {
   overflow: hidden;
@@ -86,7 +88,6 @@
 .header {
   background: #fff;
   padding: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 10;
 }
@@ -100,7 +101,7 @@
 }
 /* Шапка */
 .container {
-  width: 90%;
+  width:100%;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -156,9 +157,9 @@
 /* Навигационное меню */
 
 .nav {
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid #ddd;*/
   padding: 10px 0;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -176,12 +177,18 @@
 .nav-menu li {
   margin-right: 20px;
 }
-
+.nav-menu li:nth-child(5) {
+  margin-right: 5px;
+}
+.nav-menu li:nth-child(6) {
+  margin-right: 5px;
+}
 .nav-menu a {
   text-decoration: none;
-  color: #333;
+  color: rgb(36, 45, 57);
+  font-weight: 400;
+  margin: 0px 9px;
 }
-
 .nav-right {
   display: flex;
   align-items: center;
