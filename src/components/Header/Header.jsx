@@ -113,7 +113,8 @@ const Header = () => {
                         underline="none"
                         sx={{
                           color: "rgb(36, 45, 57)",
-                          fontSize: "0.875rem",
+                          fontSize: "1.2rem",
+                          fontWeight: 300
                         }}
                       >
                         order@onkron.de
@@ -121,15 +122,21 @@ const Header = () => {
                     </Grid>
                     <Grid item sx={{ paddingLeft: 1 }}>
                       <Link
-                        href="tel:494029996807"
-                        underline="none"
+                        href="tel:+494029996807"
+                        className="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-9s961k-MuiTypography-root-MuiLink-root"
                         sx={{
-                          color: "#000",
-                          fontWeight: 550,
-                          marginRight: "16px",
+                            color: "#000",
+                            fontWeight: 500,
+                            marginRight: 2,
+                            textDecoration: "none",
+                          "&:hover": {
+                            color: "primary.dark",
+                            textDecoration: "none",
+                          },
+                          margin: " 0 16px 0 0"
                         }}
                       >
-                        +494029996807
+                        (+49) 402-999-6807
                       </Link>
                     </Grid>
                     <Grid item sx={{ paddingLeft: 1, minWidth: "144px" }}>

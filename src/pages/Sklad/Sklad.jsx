@@ -1,19 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  botStash,
-  box,
-  car,
-  gruzT,
-  indexInfoBanner,
-  pc,
-  phone,
-  s1,
-  s2,
-  s3,
-  s4,
-  s5,
-  s6,
-  topStash,
+import { botStash, box, car, gruzT, indexInfoBanner, pc, phone, s1, s2, s3, s4, s5, s6, topStash,
 } from "../../assets";
 import "./Sklad.css";
 import FaqSection from "../../FaqSection/FaqSection";
@@ -72,7 +58,7 @@ export default function Sklad() {
               textAlign: "left",
             }}
           >
-            Аренда склада для хранения в Гамбурге
+            Welcome to Hamburg Logistics Solutions
           </Typography>
           <Typography
             variant="body1"
@@ -83,13 +69,7 @@ export default function Sklad() {
               fontWeight: 300,
             }}
           >
-            Склад индивидуального хранения для физических и юридических лиц
-            <Typography
-              variant="body1"
-              sx={{ color: "#e31e24", fontSize: "22px", fontWeight: 400 }}
-            >
-              от 12.5 €/1 м²
-            </Typography>
+            Your trusted partner for seamless fulfillment, storage, and logistics in the heart of Hamburg. We streamline your operations so you can focus on growing your business.
           </Typography>
           <Grid container item size={{ xs: 12 }} sx={{ marginTop: 4 }}>
             <Button
@@ -105,7 +85,7 @@ export default function Sklad() {
                 textTransform: "none",
               }}
             >
-              Арендовать бокс
+              Request a Qoute
             </Button>
           </Grid>
         </Grid>
