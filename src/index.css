@@ -109,6 +109,67 @@ body {
 }
 
 
-.container {
-  max-width: 1440px !important;
+/* Geometria - основные начертания */
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/geometria_light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/geometria_medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/geometria_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic версии */
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/geometria_lightitalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/geometria_mediumitalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/geometria_extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Применение шрифта */
+body {
+  font-family: 'Geometria', 'Helvetica', 'Arial', sans-serif;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('./assets/fonts/geometria_light.woff2') format('woff2'),
+       url('./assets/fonts/geometria_light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
