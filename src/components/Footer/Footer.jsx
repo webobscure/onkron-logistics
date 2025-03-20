@@ -3,9 +3,9 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    
-    <div className="container footer-container">
-       <div className="header-bottom">
+    <>
+    <div className="border">
+      <div className="header-bottom footer-container">
           <div className="nav-section">
             <nav className="nav-links">
               <button>Services</button>
@@ -19,8 +19,11 @@ const Footer = () => {
 
          
         </div>
+    </div>
 
-        <hr className="css-1kt0gku" />
+      <div className="container footer-container">
+       
+
 
       <main className="content">
         <div className="footer-left">
@@ -62,6 +65,7 @@ const Footer = () => {
         <p>The information on the website does not constitute a public offer.</p>
       </footer>
     </div>
+    </>
   );
 };
 
