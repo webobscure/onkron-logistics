@@ -18,7 +18,6 @@ function App() {
       <WarehouseInfo />
       <Fulfillment />
       <StorageInfo />
-      <PersonalWare />
       <FaqSection />
       <Footer />
     </>
