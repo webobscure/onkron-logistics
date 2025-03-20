@@ -46,7 +46,7 @@ body {
 }
 body {
   min-width: 375px;
-  background: #FFF;
+  background: #FFF !important;
 }
 .contaienr {
   max-width: 1200px;

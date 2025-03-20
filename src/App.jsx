@@ -15,9 +15,9 @@ function App() {
       <div className='container' >
       <HeroSection />
       <Services />
-      <WarehouseInfo />
-      <Fulfillment />
       <StorageInfo />
+      <Fulfillment />
+      <WarehouseInfo />
       <FaqSection />
       </div>
       <Footer />
