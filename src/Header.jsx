@@ -43,7 +43,7 @@ const Header = () => {
               <button>Services</button>
               <button>Prices</button>
               <button>Offers</button>
-              <button>Mehr</button>
+              <button>More</button>
             </nav>
 
             <div className="extra-buttons">

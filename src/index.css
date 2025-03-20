@@ -46,6 +46,7 @@ body {
 }
 body {
   min-width: 375px;
+  background: #FFF;
 }
 input,
 button,

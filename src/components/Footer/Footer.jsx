@@ -9,16 +9,16 @@ const Footer = () => {
         <nav className="nav">
           <ul className="nav-list">
             <li>
-              <a href="#">Dienstleistungen</a>
+              <a href="#">Services</a>
             </li>
             <li>
-              <a href="#">Preise</a> 
+              <a href="#">Prices</a> 
             </li>
             <li>
-              <a href="#">Angebote</a>
+              <a href="#">Offers</a>
             </li>
             <li>
-              <a href="#">Mehr</a>
+              <a href="#">More</a>
             </li>
           </ul>
           
@@ -28,15 +28,15 @@ const Footer = () => {
       <main className="content">
         <div className="footer-left">
           <section className="contract">
-            <h2>Online-Vertrag</h2>
+            <h2>Online contract</h2>
             <p>
-            Die Website onkron-logistics.com sammelt Metadaten über jeden Nutzer
-              (Cookies, IP-Adresse und Standortdaten) für das vollständige Funktionieren der Website.
-              Funktionieren der Website. Wenn Sie gegen die Verarbeitung dieser Daten sind,
-              verlassen Sie bitte die Seite.
+            The onkron-logistics.com website collects metadata about each user
+              (cookies, IP address and location data) for the full functioning of the website.
+              Functioning of the website. If you object to the processing of this data
+              please leave the site.
             </p>
             <a href="#" className="policy">
-              <p>Politik der Verarbeitung personenbezogener Daten</p>
+              <p>Policy on the processing of personal data</p>
             </a>
           </section>
         </div>
@@ -44,11 +44,11 @@ const Footer = () => {
         <div className="footer-right">
           <section className="files">
             <a href="#" className="file-link">
-            Requisiten<span className="bold-type">.docx</span>
+            Requisites<span className="bold-type">.docx</span>
               <img src={doc} alt="Скачать" className="files-icon" />
             </a>
             <a href="#" className="file-link">
-            Vertrag<span className="bold-type">.pdf</span>
+            Contract<span className="bold-type">.pdf</span>
               <img src={doc} alt="Скачать" className="files-icon" />
             </a>
           </section>
@@ -62,7 +62,7 @@ const Footer = () => {
       </main>
       <footer className="footer">
         <p>© Bmgg Europe GMBH 2025</p>
-        <p>Die Informationen auf der Website stellen kein öffentliches Angebot dar.</p>
+        <p>The information on the website does not constitute a public offer.</p>
       </footer>
     </div>
   );

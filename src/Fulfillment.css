@@ -6,7 +6,7 @@
 
 .services h2 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: bold;
   margin-bottom: 100px;
   color: #242d39;
 }
@@ -29,7 +29,6 @@
   min-height: 250px; /* Делаем одинаковую высоту */
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Верхняя часть сервиса - иконка + заголовок */
