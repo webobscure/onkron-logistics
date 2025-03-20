@@ -43,6 +43,8 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
+  background: #FFF !important;
+
 }
 body {
   min-width: 375px;
