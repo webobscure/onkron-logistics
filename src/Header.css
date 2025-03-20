@@ -62,7 +62,7 @@ header {
 .contact-info {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 28px;
 }
 .contact-info .email {
   font-weight: 300;
