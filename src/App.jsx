@@ -16,8 +16,8 @@ function App() {
       <HeroSection />
       <Services />
       <WarehouseInfo />
-      <StorageInfo />
       <Fulfillment />
+      <StorageInfo />
       <PersonalWare />
       <FaqSection />
       <Footer />
