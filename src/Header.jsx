@@ -11,8 +11,8 @@ const Header = () => {
       <div className="announcement-bar">
         <h6>Lorem impisum</h6>
       </div>
-
-      <div className="header-container">
+      <div className="border-block">
+        <div className="container">
         <div className="header-top">
           <img src={logo} alt="Logo" className="logo" />
 
@@ -36,6 +36,10 @@ const Header = () => {
             </div>
           </button>
         </div>
+        </div>
+      </div>
+      <div className="header-container">
+        
 
         <div className={`header-bottom ${menuOpen ? 'hide-right' : ''}`}>
           <div className="nav-section">
@@ -56,7 +60,7 @@ const Header = () => {
 
           <div className="contact-section">
             <div className="location">
-              <svg height="16" viewBox="0 0 12 16" width="12" class="css-svg">
+              <svg height="16" viewBox="0 0 12 16" width="12" className="css-svg">
                 <path d="M5.7946 0C2.59944 0 0 2.59944 0 5.79457C0 9.75982 5.1856 15.581 5.40638 15.8269C5.61376 16.0579 5.97582 16.0575 6.18282 15.8269C6.4036 15.581 11.5892 9.75982 11.5892 5.79457C11.5891 2.59944 8.98973 0 5.7946 0ZM5.7946 8.70998C4.18704 8.70998 2.87922 7.40213 2.87922 5.79457C2.87922 4.187 4.18707 2.87919 5.7946 2.87919C7.40213 2.87919 8.70995 4.18704 8.70995 5.7946C8.70995 7.40217 7.40213 8.70998 5.7946 8.70998Z"></path>
               </svg>{' '}
               Hamburg

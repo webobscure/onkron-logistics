@@ -21,7 +21,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.css-1kt0gku {
+  height: 1px;
+    background: #ECEBED;
+    margin: 5px 0 20px;
+    border: none;
+}
 .nav-list {
   list-style: none;
   display: flex;

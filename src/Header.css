@@ -12,6 +12,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Announcement Bar */
@@ -154,6 +155,9 @@ header {
   align-items: center;
   gap: 16px;
 }
+.border-block {
+  border-bottom: 1px solid rgba(220, 228, 241, 0.5);
+}
 .contact-section .outline-btn {
   border-color: rgb(220, 228, 241);
 }
@@ -166,7 +170,7 @@ header {
   display: flex;
   align-items: center;
   font-size: 0.8125rem;
-  font-weight: 400;
+  font-weight: 350;
   color: black;
   gap: 8px;
 }

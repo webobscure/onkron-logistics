@@ -42,7 +42,7 @@ const WarehouseInfo = () => {
             <span className="grid-item-first-span">Telefon:</span>
           </div>
           <div className="grid-item-second">
-            <p className="grid-item-second-p">8 (812) 313-01-10</p>
+            <p className="grid-item-second-p">(+49) 402-999-6807</p>
           </div>
         </div>
 

@@ -5,25 +5,22 @@ const Footer = () => {
   return (
     
     <div className="container footer-container">
-      <div className="header-footer">
-        <nav className="nav">
-          <ul className="nav-list">
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Prices</a> 
-            </li>
-            <li>
-              <a href="#">Offers</a>
-            </li>
-            <li>
-              <a href="#">More</a>
-            </li>
-          </ul>
-          
-        </nav>
-      </div>
+       <div className="header-bottom">
+          <div className="nav-section">
+            <nav className="nav-links">
+              <button>Services</button>
+              <button>Prices</button>
+              <button>Offers</button>
+              <button>More</button>
+            </nav>
+
+            
+          </div>
+
+         
+        </div>
+
+        <hr className="css-1kt0gku" />
 
       <main className="content">
         <div className="footer-left">
