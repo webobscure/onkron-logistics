@@ -15,6 +15,10 @@
     justify-content: center;
     align-items: center;
   }
+  .storage-left img {
+    min-width: 520px;
+    min-height: 324px;
+  }
   .storage-info__content {
     display: flex;
     flex-direction: row;

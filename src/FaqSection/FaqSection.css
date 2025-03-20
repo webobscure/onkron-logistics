@@ -139,7 +139,6 @@
   }
   
   .answer-content {
-    padding: 0 20px 20px;
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
   }
