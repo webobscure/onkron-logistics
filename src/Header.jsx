@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div className="announcement-bar">
-        <h6>Starten Sie ein profitables Franchise-Geschäft</h6>
+        <h6>Lorem impisum</h6>
       </div>
 
       <div className="header-container">
@@ -25,7 +25,7 @@ const Header = () => {
                 (+49) 402-999-6807
               </a>
             </div>
-            <button className="calculator-btn">Rechner</button>
+            <button className="calculator-btn">Calculator</button>
           </div>
 
           <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -40,16 +40,16 @@ const Header = () => {
         <div className={`header-bottom ${menuOpen ? 'hide-right' : ''}`}>
           <div className="nav-section">
             <nav className="nav-links">
-              <button>Dienstleistungen</button>
-              <button>Preise</button>
-              <button>Angebote</button>
+              <button>Services</button>
+              <button>Prices</button>
+              <button>Offers</button>
               <button>Mehr</button>
             </nav>
 
             <div className="extra-buttons">
               <button className="outline-btn">Franchise</button>
               <button className="outline-btn">
-                <a href="#services">Lageradressen</a>
+                <a href="#services">Warehouse addresses</a>
                 </button>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Header = () => {
               </svg>{' '}
               Hamburg
             </div>
-            <button className="outline-btn">Website-Zahlung</button>
+            <button className="outline-btn">Website paymentg</button>
             <a href="tel:+494029996807" className="icon-btn">
               <svg
                 fill="none"
@@ -99,12 +99,12 @@ const Header = () => {
         </div>
 
         <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-          <button>Dienstleistungen</button>
-          <button>Preise</button>
-          <button>Angebote</button>
+          <button>Services</button>
+          <button>Prices</button>
+          <button>Offers</button>
           <button>Mehr</button>
           <button>Franchise</button>
-          <button>Lageradressen</button>
+          <button>Warehouse addresses</button>
         </div>
       </div>
     </header>
