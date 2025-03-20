@@ -6,7 +6,7 @@ import warehouse3 from './assets/warehouse_3.webp'
 
 const WarehouseInfo = () => {
   return (
-    <div className="warehouse-container" id="warehouse">
+    <div className="warehouse-container" id="warehouse">   
       <div className="warehouse-info">
         <div className="grid-item">
           <div className="grid-item-first">
