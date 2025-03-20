@@ -1,13 +1,13 @@
 import React from 'react'
 import './StorageInfo.css';
-import { indexInfoBanner } from './assets';
+import { amazon, ebay, indexInfoBanner, shopify } from './assets';
 
 export default function StorageInfo () {
   return (
     <section className="storage-info">
     <div className="container">
       <h1 className="storage-info__title">
-      What is an individual storage warehouse?
+      Marketplace Expertise
       </h1>
 
       <div className="storage-info__content">
@@ -25,7 +25,7 @@ export default function StorageInfo () {
                 viewBox="0 0 12 10"
                 aria-hidden="true"
                 width="12"
-                height="10"
+                height="10" 
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -40,12 +40,8 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
-                Lorem impisum</h1>
-              A personal storage warehouse is a profitable solution for
-              temporary storage of personal belongings or goods. Renting
-              self-storage warehouse will not only save space in the
-              apartment, but also build a workspace in your office,
-              without paying attention to unnecessary things.
+              Amazon FBA Preparation</h1>
+              We prepare your products according to <img src={amazon} className='third-company__img'/> strict requirements, ensuring <br/> compliance and avoiding costly penalties or delays.
             </li>
 
             <li className="storage-features__item">
@@ -71,18 +67,8 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
-                Lorem impisum</h1>
-              To rent a temporary storage warehouse in St. Petersburg
-              - you can fill in the form on the website or book a box by
-              by phone{" "}
-              <a href="tel:+494029996807" className="">
-                +494029996807
-              </a>
-              . We will give you a personalized tour online
-              or by visiting the warehouse in person.{" "}
-              <span className="brand">BMGG Europe</span> offers in the
-              rent heated and unheated boxes of different area
-              from 2 sq.m. to 20 sq.m.
+              Multi-Channel Integration</h1>
+              Seamlessly connect your shop across <img src={amazon} className='third-company__img'/>, <img src={ebay} className='third-company__img'/>, <img src={shopify} className='third-company__img'/>, and other platforms with our integrated inventory and order management systems.
             </li>
 
             <li className="storage-features__item">
@@ -108,9 +94,8 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
-                Lorem impisum</h1>
-                Our warehouse is open  <span className="">7 days a week</span> с{" "}
-              <time>09:00</time> - <time>21:00</time>.
+              Account Management</h1>
+              Our experts optimize your marketplace presence with strategic account management, performance analysis, and growth recommendations.
             </li>
 
             <li className="storage-features__item">
@@ -136,12 +121,8 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
-                Lorem impisum</h1>
-              As far as security goes, we can guarantee that no one
-              no one will have access to your property.
-              <span className="">Multi-level security</span>,
-              including: Video surveillance system Fire safety
-              Out-of-department security
+              Listing Optimization</h1>
+              Enhance product visibility with professional content creation, keyword optimization, and competitive pricing strategies that drive conversions.
             </li>
           </ul>
         </div>

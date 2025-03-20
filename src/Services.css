@@ -1,13 +1,13 @@
 .services {
   max-width: 1200px;
-  padding: 0 20px 0 20px;
 }
 
 .services h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  color: #333;
+  text-align: left;
+  font-weight: 500 !important;
   margin-bottom: 100px;
-  color: #242d39;
 }
 
 .services-container {

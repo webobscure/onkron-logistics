@@ -7,7 +7,7 @@ import digitalIcon from './assets/digital_solutions.webp'
 const Services = () => {
   return (
     <section className="services">
-      <h2>Unsere umfassenden Dienstleistungen</h2>
+      <h1>Unsere umfassenden Dienstleistungen</h1>
       <div className="services-container">
         <div className="service-item">
           <img src={storageIcon} alt="Lagerlösungen" className="service-icon" />

@@ -30,6 +30,11 @@ export { default as truck } from "./truck.svg";
 export { default as conveyor } from "./conveyor.svg";
 export { default as stock } from "./stock.svg";
 
+export { default as amazon } from "./amazon.webp";
+export { default as ebay } from "./ebay.png";
+export { default as shopify } from "./shopify.png";
+
+
 export { default as topStash } from "./top-stash.webp";
 export { default as botStash } from "./bot-stash.webp";
 
