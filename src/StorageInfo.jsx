@@ -17,6 +17,8 @@ export default function StorageInfo () {
         <div className="storage-right">
           <ul className="storage-features">
             <li className="storage-features__item">
+             
+              <h1>
               <svg
                 className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                 focusable="false"
@@ -38,6 +40,7 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
+                Lorem impisum</h1>
               A personal storage warehouse is a profitable solution for
               temporary storage of personal belongings or goods. Renting
               self-storage warehouse will not only save space in the
@@ -46,6 +49,7 @@ export default function StorageInfo () {
             </li>
 
             <li className="storage-features__item">
+            <h1>
               <svg
                 className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                 focusable="false"
@@ -67,6 +71,7 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
+                Lorem impisum</h1>
               To rent a temporary storage warehouse in St. Petersburg
               - you can fill in the form on the website or book a box by
               by phone{" "}
@@ -81,6 +86,7 @@ export default function StorageInfo () {
             </li>
 
             <li className="storage-features__item">
+            <h1>
               <svg
                 className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                 focusable="false"
@@ -102,11 +108,13 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
-              Наш склад работает <span className="">7 дней в неделю</span> с{" "}
-              <time>09:00</time> до <time>21:00</time>.
+                Lorem impisum</h1>
+                Our warehouse is open  <span className="">7 days a week</span> с{" "}
+              <time>09:00</time> - <time>21:00</time>.
             </li>
 
             <li className="storage-features__item">
+            <h1>
               <svg
                 className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
                 focusable="false"
@@ -128,6 +136,7 @@ export default function StorageInfo () {
                   fill="#e31e24"
                 ></path>
               </svg>
+                Lorem impisum</h1>
               As far as security goes, we can guarantee that no one
               no one will have access to your property.
               <span className="">Multi-level security</span>,

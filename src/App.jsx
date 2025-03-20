@@ -7,18 +7,19 @@ import Fulfillment from './Fulfillment.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import FaqSection from './FaqSection/FaqSection.jsx'
 import StorageInfo from './StorageInfo.jsx'
-import PersonalWare from './PersonalWare.jsx'
-import CalculationForm from './CalculationForm/CalculationForm.jsx'
+import './App.css'
 function App() {
   return (
     <>
       <Header />
+      <div className='container' >
       <HeroSection />
       <Services />
       <WarehouseInfo />
       <Fulfillment />
       <StorageInfo />
       <FaqSection />
+      </div>
       <Footer />
     </>
   )
