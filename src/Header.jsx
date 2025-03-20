@@ -49,7 +49,7 @@ const Header = () => {
             <div className="extra-buttons">
               <button className="outline-btn">Franchise</button>
               <button className="outline-btn">
-                <a href="#services">Warehouse addresses</a>
+                <a href="#services">Warehouse address</a>
                 </button>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Header = () => {
               </svg>{' '}
               Hamburg
             </div>
-            <button className="outline-btn">Website paymentg</button>
+            <button className="outline-btn">Website payment</button>
             <a href="tel:+494029996807" className="icon-btn">
               <svg
                 fill="none"
@@ -104,7 +104,7 @@ const Header = () => {
           <button>Offers</button>
           <button>Mehr</button>
           <button>Franchise</button>
-          <button>Warehouse addresses</button>
+          <button>Warehouse address</button>
         </div>
       </div>
     </header>
