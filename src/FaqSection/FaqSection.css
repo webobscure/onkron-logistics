@@ -6,7 +6,10 @@
     display: flex;
     flex-direction: column;
 }
-  
+  .faq-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   .faq-title {
     text-align: center;
     font-size: 2rem;
@@ -15,14 +18,16 @@
   }
   
   .faq-list {
-    border: 1px solid #e2e8f0;
     border-radius: 8px;
     overflow: hidden;
   }
   
   .faq-item {
-    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 16px;
+    box-shadow: none;
+    border: 1px solid #DCE4F1;
     background: white;
+    border-radius: 32px;
   }
   
   .faq-question {

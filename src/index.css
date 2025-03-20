@@ -1,12 +1,12 @@
 /* Подключение шрифта для хорошего отображения немецкого текста */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /*Обнуление*/
 * {
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: Geometria, Arial, Helvetica, sans-serif !important;
 }
-html {
+body {
   scroll-behavior: smooth;
 }
 *,
@@ -31,12 +31,10 @@ header,
 aside {
   display: block;
 }
-section {
-  margin-top: 2rem !important;
-}
+
 html,
 body {
-  height: max-content;
+  height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -89,25 +87,6 @@ h6 {
   font-weight: 400;
 }
 /*--------------------*/
-
-body {
-  letter-spacing: 0.8px;
-  font-family: 'Roboto', sans-serif;
-}
-.custom-section-left-fade-in {
-  transform: translate(-100%, 0px);
-  opacity: 0;
-}
-.custom-section-right-fade-in {
-  transform: translate(100%, 0px);
-  opacity: 0;
-}
-._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-  transition: all 1s ease 0s;
-}
-
 
 /* Geometria - основные начертания */
 @font-face {
@@ -168,7 +147,7 @@ body {
 @font-face {
   font-family: 'Geometria';
   src: url('./assets/fonts/geometria_light.woff2') format('woff2'),
-       url('./assets/fonts/geometria_light.otf') format('opentype');
+    url('./assets/fonts/geometria_light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;

@@ -3,46 +3,45 @@ import "./FaqSection.css"; // Подключаем стили
 
 const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [showAll, setShowAll] = useState(false);
 
   const initialQuestions = [
     {
-      question: "Как снять склад в Гамбурге?",
+      question: "How to rent a warehouse in Hamburg?",
       answer:
-        "Снять склад в аренду можно по цене от 12.5 евро за 1 м² - на выбор теплые и холодные боксы разной площади. Забронировать бокс по телефону 8 (964) 377-55-19 или оставить заявку на сайте. По желанию проведем онлайн-экскурсию.",
+        "You can rent a warehouse from 12.5 euros per 1 m² - you can choose from warm and cold boxes of different sizes. Book a box by phone (+49) 402-999-6807 or leave a request on the website. On request, we will give you an online tour.",
     },
     {
-      question: "Что я могу хранить на складе?",
-      answer: `На нашем складе можно хранить всё, что не запрещено законодательством РФ и не включено в список из вопроса «Что хранить на складе нельзя?».`,
+      question: "What can I store in the warehouse?",
+      answer: `In our warehouse you can store anything that is not prohibited by the legislation of the Russian Federation and is not included in the list from the question “What can't be stored in the warehouse?”.`,
     },
     {
-      question: "Что хранить на складе нельзя?",
+      question: "What can't be stored in the warehouse?",
       answer:
-        `Животных
-Растения
-Деньги
-Дорогие ювелирные украшения
-Скоропортящиеся продукты питания
-Сильно пахнущие
-Взрывоопасные и огнеопасные вещества/предметы
-Радиоактивные или токсичные вещества или газы
-Горюче-смазочные вещества
-Легковоспламеняющиеся вещества
-Летучие жидкости
-Промышленные и бытовые краски в негерметичной упаковке или ранее вскрытой упаковке
-Оружие, боеприпасы, взрывоопасные предметы
-Любые предметы и имущество, краденные или запрещенные к обороту на территории Российской Федерации`},
+        `Animals
+Plants
+Money
+Expensive jewelry
+Perishable food
+Strong smelling
+Explosive and flammable substances/items
+Radioactive or toxic substances or gases
+Lubricants
+Flammable substances
+Volatile liquids
+Industrial and household paints in leaky packaging or previously opened packaging
+Weapons, ammunition, explosive objects
+Any items and property stolen or prohibited for circulation on the territory of the Russian Federation`},
     {
-      question: "Мне нужно перевезти мебель на склад – вы этим занимаетесь?",
-      answer: "Да, мы предоставим доставку, а также грузчиков, при необходимости. Сами все разберем, упакуем, бережно погрузим, доставим до склада, разместим и предоставим фотоотчет. Вам даже необязательно присутствовать",
+      question: "I need to move furniture into storage - do you do that?",
+      answer: "Yes, we will provide delivery, as well as movers, if necessary. We will disassemble, pack, carefully load, deliver to the warehouse, place and provide a photo report. You don't even have to be present",
     },
     {
-      question: "Есть ли тележка?",
-      answer: "Есть, предоставляется бесплатно.",
+      question: "Is there a cart?",
+      answer: "There is, provided free of charge.",
     },
   ];
 
-  const [questions, setQuestions] = useState(initialQuestions);
+  const [questions] = useState(initialQuestions);
 
   const handleToggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -51,7 +50,7 @@ const FaqSection = () => {
   return (
     <section className="faq-section">
       <div className="container">
-        <h2 className="faq-title">Часто задаваемые вопросы (FAQ)</h2>
+        <h2 className="faq-title">Frequently asked questions (FAQ)</h2>
         
         <div className="faq-list">
           {questions.map((item, index) => (
@@ -65,7 +64,7 @@ const FaqSection = () => {
                 <span>{item.question}</span>
                 <button 
                   className={`faq-toggle ${activeIndex === index ? 'active' : ''}`}
-                  aria-label={activeIndex === index ? 'Скрыть ответ' : 'Показать ответ'}
+                  aria-label={activeIndex === index ? 'Antwort ausblenden' : 'Antwort anzeigen'}
                 >
                   {activeIndex === index ? '−' : '+'}
                 </button>

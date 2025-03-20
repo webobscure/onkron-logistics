@@ -1,176 +1,136 @@
-import { useState } from "react";
-import "./CalculationForm.css";
-import { Link, FormControl, Grid, OutlinedInput, InputLabel, Typography, Select, MenuItem, FormControlLabel, Checkbox, Button } from "@mui/material";
+import { useState } from 'react';
+import './CalculationForm.css';
 
-import { styled } from '@mui/material/styles';
-
-const StyledSelect = styled(Select)({
-  '& .MuiSelect-select': {
-    padding: '14px',
-  },
-});
-
-const sizes = [
-  { value: '2.5', label: '2.5 м³' },
-  { value: '5', label: '5 м³' },
-  { value: '10', label: '10 м³' },
-  { value: '25', label: '25 м³' },
-  { value: '75', label: '75 м³' },
-];
 const CalculationForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     size: '',
-    comment: '',
-    agreed: false,
+    wishes: ''
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = 'Обязательное поле';
+    if (!formData.phone.trim()) newErrors.phone = 'Обязательное поле';
+    return newErrors;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formErrors = validateForm();
+    
+    if (Object.keys(formErrors).length === 0) {
+      // Здесь обычно отправка данных на сервер
+      setIsModalOpen(true);
+      setFormData({ name: '', phone: '', size: '', wishes: '' });
+      setErrors({});
+    } else {
+      setErrors(formErrors);
+    }
+  };
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     });
   };
 
-
   return (
-    <Grid
-      container
-      sx={{ marginTop: 13, justifyContent: "space-between", gap: 0 }}
-    >
-      <Grid item size={{ xs: 12, lg: 4 }} sx={{ maxWidth: "33.3333%" }}>
-        <Typography variant="body1" sx={{ fontSize: 36, fontWeight: 500 }}>
-          Рассчитать стоимость хранения
-        </Typography>
-      </Grid>
-      <Grid container item xs={12} lg={8} sx={{
-            maxWidth: "728px",
-            boxShadow: "rgba(199, 208, 240, 0.3) 0px 15px 60px",
-            borderRadius: "32px",
-            padding: "32px",
-            justifyContent: "flex-end"
-      }}>
-      <form action="#" style={{ width: '100%' }}>
-        <Grid container spacing={2}>
-          {/* Имя */}
-          <Grid item xs={24} md={5} >
-            <FormControl fullWidth variant="outlined" required sx={{maxWidth: "100%", borderRadius: "16px"}}>
-              <InputLabel  sx={{fontWeight: 400}}>Представьтесь</InputLabel>
-              <OutlinedInput
+    <section className="calculation-section">
+      <div className="container">
+        <div className="calc-block">
+        <h2 className="section-title">Рассчитать <br/> стоимость хранения</h2>
+        
+        <form onSubmit={handleSubmit} className="calculation-form">
+          <div className="form-group">
+            <label>
+              Представьтесь *
+              <input
+                type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                label="Представьтесь *"
+                className={errors.name ? 'error' : ''}
+                htmlFor="Представьтесь *"
               />
-            </FormControl>
-          </Grid>
+              {errors.name && <span className="error-message">{errors.name}</span>}
+            </label>
+          </div>
 
-          {/* Телефон */}
-          <Grid item xs={24} md={4} >
-            <FormControl fullWidth variant="outlined" required sx={{maxWidth: "100%", borderRadius: "16px"}}>
-              <InputLabel sx={{fontWeight: 400}}>Мобильный телефон</InputLabel>
-              <OutlinedInput
-                name="phone"
+          <div className="form-group">
+            <label>
+              Мобильный телефон *
+              <input
                 type="tel"
+                name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                label="Мобильный телефон *"
+                className={errors.phone ? 'error' : ''}
               />
-            </FormControl>
-          </Grid>
+              {errors.phone && <span className="error-message">{errors.phone}</span>}
+            </label>
+          </div>
 
-          {/* Размер бокса */}
-          <Grid item xs={24} md={3}  >
-            <FormControl fullWidth variant="outlined" sx={{maxWidth: "100%", borderRadius: "16px"}}>
-              <InputLabel sx={{fontWeight: 400}}>Размер бокса</InputLabel>
-              <StyledSelect
+          <div className="form-group">
+            <label>
+              Размер бокса
+              <select
                 name="size"
                 value={formData.size}
                 onChange={handleChange}
-                label="Размер бокса"
-                input={<OutlinedInput label="Размер бокса" />}
               >
-                {sizes.map((size) => (
-                  <MenuItem key={size.value} value={size.value}>
-                    {size.label}
-                  </MenuItem>
-                ))}
-              </StyledSelect>
-            </FormControl>
-          </Grid>
+                <option value="">Выберите размер</option>
+                <option value="1">1 м²</option>
+                <option value="2">2 м²</option>
+                <option value="5">5 м²</option>
+                <option value="10">10 м²</option>
+              </select>
+            </label>
+          </div>
 
-          {/* Дополнительные пожелания */}
-          <Grid item xs={24} md={9} >
-            <FormControl fullWidth variant="outlined" sx={{maxWidth: "100%", borderRadius: "16px"}}>
-              <InputLabel sx={{fontWeight: 400}}>Дополнительные пожелания</InputLabel>
-              <OutlinedInput
-                name="comment"
-                value={formData.comment}
+          <div className="form-group">
+            <label>
+              Дополнительные пожелания
+              <textarea
+                name="wishes"
+                value={formData.wishes}
                 onChange={handleChange}
-                label="Дополнительные пожелания"
               />
-            </FormControl>
-          </Grid>
+            </label>
+            <button type="submit" className="submit-btn">Отправить</button>
+          </div>
 
-          {/* Кнопка отправки */}
-          <Grid item xs={24} md={3} >
-            <Button
-              fullWidth
-              variant="contained"
-              color="primary"
-              type="submit"
-              size="large"
-              sx={{
-                color: "rgb(255, 255, 255)",
-                backgroundColor: "#e31e24",
-                width: "100%",
-                minHeight: "56px",
-                borderRadius: "18px",
-                textTransform: "none",
-                fontWeight: 500,
-                padding: "6px 16px",
-                fontSize: "1.125rem"
-              }}
-            >
-              Отправить
-            </Button>
-          </Grid>
+          <div className="form-footer">
+            <p className="privacy-text">
+              Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, 
+              в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», 
+              на условиях и для целей, определенных в политике обработке персональных данных.
+            </p>
+          </div>
+        </form>
+        </div>
+        
 
-          {/* Соглашение */}
-          <Grid item xs={24}>
-            <FormControlLabel
-              control={
-                <Checkbox
-                  name="agreed"
-                  checked={formData.agreed}
-                  onChange={(e) => setFormData({...formData, agreed: e.target.checked})}
-                  color="primary"
-                />
-              }
-              label={
-                <Typography variant="body2">
-                  Нажимая кнопку «Отправить», я даю свое согласие на обработку 
-                  моих персональных данных, в соответствии с Федеральным законом 
-                  от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях 
-                  и для целей, определенных в{' '}
-                  <Link 
-                    href="/politika-konfidencialnosti" 
-                    target="_blank"
-                    underline="none"
-                    sx={{color: "#e31e24"}}
-                  >
-                    политике обработке персональных данных
-                  </Link>
-                </Typography>
-              }
-            />
-          </Grid>
-        </Grid>
-      </form>
-    </Grid>
-      
-    </Grid>
+        {isModalOpen && (
+          <div className="modal-overlay">
+            <div className="modal">
+              <h3>Ваша заявка успешно принята</h3>
+              <p>Менеджер свяжется с вами позже</p>
+              <button 
+                className="modal-close"
+                onClick={() => setIsModalOpen(false)}
+              >
+                Закрыть
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
   );
 };
 

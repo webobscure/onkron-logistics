@@ -4,11 +4,15 @@
 .calculation-section .container {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .calc-block {
-    display: flex;
+    display: flex
+;
     flex-direction: row;
-    gap: 10rem;
+    gap: 6rem;
+    align-items: baseline;
 }
 .calc-block .section-title {
     display: flex;
@@ -88,7 +92,9 @@
     animation-name: mui-auto-fill-cancel;
     -webkit-animation-duration: 10ms;
     animation-duration: 10ms;
-    padding: 16.5px 14px;
+    padding: 13.5px 7px;
+    border-radius: 18px;
+    border: 1px solid #C7D0F0;
 }
 .form-group {
     font-family: Geometria, Arial, Helvetica, sans-serif;
@@ -102,8 +108,11 @@
 ;
     -webkit-box-align: center;
     align-items: center;
-    width: 100%;
+    width: 33%;
     position: relative;
+}
+.form-group:nth-child(4) {
+    
 }
 .error-message {
     color: #e53e3e;

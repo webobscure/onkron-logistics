@@ -1,0 +1,149 @@
+/* Personal block */
+
+.storage-types {
+    padding: 60px 0;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .storage-types .container {
+    display: flex;
+    flex-direction: column;
+    background: url("./assets/personal-cell.png") ;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    -webkit-background-position: bottom;
+    background-position: bottom;
+  }
+  
+  .main-title {
+    text-align: center;
+      font-size: 2.5rem;
+      color: #2d3748;
+      margin-bottom: 50px;
+      font-weight: 300;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+  }
+  .storage-wrapper-left, .storage-wrapper-right {
+    display: flex;
+    justify-content: space-between;
+  }
+  .storage-wrapper-left img {
+    max-width: 58%;
+    max-height: 392px;
+}
+  .storage-wrapper-right img {
+    max-width: 58%;
+    max-height: 392px;
+}
+  .columns-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .storage-column {
+      -webkit-flex-basis: 41.666667%;
+      -ms-flex-preferred-size: 41.666667%;
+      flex-basis: 41.666667%;
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      max-width: 41.666667%;
+  }
+  
+  .column-title {
+    margin: 0;
+    font-family: Geometria, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: left;
+  }
+  
+  .storage-list {
+    columns: 2;
+    column-gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex
+  ;
+      flex-direction: column;
+  }
+  
+  .storage-item {
+    break-inside: avoid;
+    padding: 8px 0 0;
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.5;
+    position: relative;
+    text-align: left;
+    font-weight: 300;
+  
+  }
+  
+  section {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .size-info {
+    text-align: center;
+    margin-top: 40px;
+    background: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 5rem;
+    right: 0rem;
+    width: 100%;
+  }
+  
+  .size-text {
+    font-size: 1.4rem;
+    color: #2d3748;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+  }
+  
+  .height-text {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin: 0;
+    font-weight: 300;
+  }
+  
+  @media (max-width: 768px) {
+    .columns-wrapper {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .storage-list {
+      columns: 1;
+    }
+    
+    .main-title {
+      font-size: 2rem;
+    }
+    
+    .column-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .storage-item {
+      font-size: 1rem;
+      padding-left: 20px;
+    }
+  }

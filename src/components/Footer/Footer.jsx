@@ -1,49 +1,42 @@
-import { Container } from "@mui/material";
 import { ad, doc } from "../../assets";
 import "./Footer.css";
 
 const Footer = () => {
   return (
     
-    <Container>
-      <header className="header-footer">
+    <div className="container footer-container">
+      <div className="header-footer">
         <nav className="nav">
           <ul className="nav-list">
             <li>
-              <a href="#">Услуги</a>
+              <a href="#">Dienstleistungen</a>
             </li>
             <li>
-              <a href="#">Цены</a> 
+              <a href="#">Preise</a> 
             </li>
             <li>
-              <a href="#">Акции</a>
+              <a href="#">Angebote</a>
             </li>
             <li>
-              <a href="#">Отзывы</a>
-            </li>
-            <li>
-              <a href="#">Склады</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
+              <a href="#">Mehr</a>
             </li>
           </ul>
           
         </nav>
-      </header>
+      </div>
 
       <main className="content">
         <div className="footer-left">
           <section className="contract">
-            <h2>Онлайн договор</h2>
+            <h2>Online-Vertrag</h2>
             <p>
-              Сайт skladovichkof.ru собирает метаданные каждого пользователя
-              (cookie, данные об IP-адресе и местоположении) для полноценного
-              функционирования сайта. Если Вы против обработки этих данных,
-              просьба покинуть сайт.
+            Die Website onkron-logistics.com sammelt Metadaten über jeden Nutzer
+              (Cookies, IP-Adresse und Standortdaten) für das vollständige Funktionieren der Website.
+              Funktionieren der Website. Wenn Sie gegen die Verarbeitung dieser Daten sind,
+              verlassen Sie bitte die Seite.
             </p>
             <a href="#" className="policy">
-              <p>Политика обработки персональных данных</p>
+              <p>Politik der Verarbeitung personenbezogener Daten</p>
             </a>
           </section>
         </div>
@@ -51,26 +44,27 @@ const Footer = () => {
         <div className="footer-right">
           <section className="files">
             <a href="#" className="file-link">
-              Реквизиты<span className="bold-type">.docx</span>
+            Requisiten<span className="bold-type">.docx</span>
               <img src={doc} alt="Скачать" className="files-icon" />
             </a>
             <a href="#" className="file-link">
-              Договор<span className="bold-type">.pdf</span>
+            Vertrag<span className="bold-type">.pdf</span>
               <img src={doc} alt="Скачать" className="files-icon" />
             </a>
           </section>
 
           <div className="contact">
-            <img src={ad} />
-            <a href="tel:+78123130110">+49 4029 996807</a>
+            <a href="tel:+494029996807" className="phone">
+                (+49) 402-999-6807
+              </a>
           </div>
         </div>
       </main>
       <footer className="footer">
         <p>© Bmgg Europe GMBH 2025</p>
-        <p>Информация на сайте не является публичной офертой</p>
+        <p>Die Informationen auf der Website stellen kein öffentliches Angebot dar.</p>
       </footer>
-    </Container>
+    </div>
   );
 };
 

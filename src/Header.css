@@ -1,0 +1,292 @@
+/* ОБЩИЕ СТИЛИ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Geometria, Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background-color: rgb(227, 30, 36);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-bar h6 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Контейнер хедера */
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Верхняя секция */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+}
+
+/* Логотип */
+.logo {
+  height: 50px;
+}
+
+/* Контейнер для почты, телефона и кнопки */
+.contact-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Почта и телефон */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact-info .email {
+  font-weight: 300;
+}
+.contact-info a {
+  text-decoration: none;
+  color: rgb(36, 45, 57);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.css-svg {
+  fill: rgb(227, 30, 36);
+}
+.separator {
+  color: #ccc;
+}
+
+/* Кнопка калькулятора */
+.calculator-btn {
+  background-color: rgb(227, 30, 36);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 1.15rem;
+  border-radius: 14px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.calculator-btn:hover {
+  background-color: #c51b20;
+}
+
+/* НИЖНЯЯ СЕКЦИЯ (Навигация и контакты) */
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+/* ЛЕВАЯ ЧАСТЬ (Навигация + Франшиза + Адреса складов) */
+.nav-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 300;
+  color: rgb(36, 45, 57);
+  cursor: pointer;
+  min-width: 66px;
+  text-align: left;
+}
+
+.extra-buttons {
+  display: flex;
+  gap: 16px;
+}
+.outline-btn a {
+  color: rgb(36, 45, 57);
+}
+.outline-btn {
+  background: none;
+  border: 1px solid rgba(227, 30, 36, 0.5);
+  padding: 8px 16px;
+  border-radius: 14px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  min-width: 125px;
+  transition-duration: 0.3s;
+  color: rgb(36, 45, 57);
+}
+.outline-btn:hover {
+  border: 1px solid rgba(227, 30, 36, 1);
+  color: rgba(227, 30, 36, 1);
+}
+/* ПРАВАЯ ЧАСТЬ (Город + Оплата + Иконки) */
+.contact-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact-section .outline-btn {
+  border-color: rgb(220, 228, 241);
+}
+
+.contact-section .outline-btn:hover {
+  border-color: rgb(227, 30, 36);
+  color: rgb(36, 45, 57);
+}
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: black;
+  gap: 8px;
+}
+
+/* Иконки */
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  border: 1px solid rgb(227, 30, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon-btn:hover {
+  opacity: 0.6;
+}
+/* БУРГЕР-МЕНЮ */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: black;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Открытый бургер */
+.burger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Выпадающее меню */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu button {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* АДАПТИВНОСТЬ */
+@media (max-width: 1130px) {
+  .contact-info .email {
+    display: none;
+  }
+  .extra-buttons {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .header-bottom {
+    display: none;
+  }
+
+  .header-bottom.open {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    height: 40px;
+  }
+  .contact-info a {
+    font-size: 0.9rem;
+  }
+  .calculator-btn {
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
+  .contact-block {
+    gap: 9px;
+  }
+}
+
+@media (max-width: 420px) {
+  .calculator-btn {
+    display: none;
+  }
+  .announcement-bar h6 {
+    padding: 20px;
+    text-align: center;
+  }
+}
