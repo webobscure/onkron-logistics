@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 80px auto 0 auto;
+  padding: 0 20px;
 }
 
 .warehouse-title {
@@ -248,7 +249,7 @@
 }
 @media (max-width: 500px) {
   .warehouse-container {
-    margin-top: 50px;
+    margin-top: 40px;
   }
   .grid-item {
     gap: 20px;
@@ -260,5 +261,15 @@
   }
   .warehouse-map iframe {
     min-height: 450px;
+  }
+  .warehouse-wrapper {
+    margin: 40px auto 0 auto;
+  }
+  .warehouse-title {
+    margin-bottom: 40px;
+  }
+  .warehouse-info {
+    padding: 20px;
+    min-height: 500px;
   }
 }

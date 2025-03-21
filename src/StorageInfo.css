@@ -1,6 +1,7 @@
 /* storage info */
 .storage-info {
   margin-top: 80px;
+  padding: 0 20px;
 }
 .third-company__img {
   max-height: 24px;
@@ -87,6 +88,21 @@ time {
   font-weight: 500;
 }
 
+@media (max-width: 1020px) {
+  .storage-info__content {
+    flex-direction: column;
+  }
+  .storage-features {
+    margin: 0;
+  }
+  .storage-features__item {
+    padding: 0;
+  }
+  .storage-features {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .storage-info__title {
     font-size: 2rem;
@@ -95,5 +111,26 @@ time {
   .storage-features__item {
     padding: 20px;
     font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .storage-info {
+    margin-top: 40px;
+  }
+  .storage-info__title {
+    margin-bottom: 40px;
+  }
+  .storage-left img {
+    min-width: auto;
+    min-height: auto;
+  }
+  .storage-features {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .storage-features__item {
+    padding: 0;
   }
 }

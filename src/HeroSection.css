@@ -21,7 +21,7 @@
   color: #242d39;
 }
 .indicator {
-  background:#e31e24;
+  background: #e31e24;
   width: 60px;
   height: 6px;
   border-radius: 6px;
@@ -95,5 +95,8 @@
   }
   .hero-content p {
     font-size: 1.5rem;
+  }
+  .indicator {
+    display: none;
   }
 }

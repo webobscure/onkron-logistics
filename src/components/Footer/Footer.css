@@ -23,9 +23,9 @@ body {
 }
 .css-1kt0gku {
   height: 1px;
-    background: #ECEBED;
-    margin: 5px 0 20px;
-    border: none;
+  background: #ecebed;
+  margin: 5px 0 20px;
+  border: none;
 }
 .nav-list {
   list-style: none;
@@ -37,7 +37,7 @@ body {
 }
 .nav-list a {
   text-decoration: none;
-  color: #242D39;
+  color: #242d39;
   font-size: 16px;
   font-weight: 300;
 }
@@ -63,8 +63,9 @@ body {
   margin: 20px 0 20px 0;
 }
 .footer-container {
- margin: 0 auto;
- max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 .contract h2 {
   color: #e31e24;
@@ -77,39 +78,41 @@ body {
 }
 
 .policy {
-  display: inline-flex
-  ;
-      -webkit-box-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      justify-content: center;
-      position: relative;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-      background-color: transparent;
-      cursor: pointer;
-      user-select: none;
-      vertical-align: middle;
-      appearance: none;
-      font-family: Geometria, Arial, Helvetica, sans-serif;
-      font-weight: 500;
-      line-height: 1.75;
-      min-width: 64px;
-      color: rgb(80, 184, 72);
-      min-height: 56px;
-      font-size: 1.125rem;
-      box-shadow: none;
-      text-transform: none;
-      outline: 0px;
-      border-width: 0px;
-      border-style: initial;
-      border-color: initial;
-      border-image: initial;
-      margin: 0px;
-      text-decoration: none;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      padding: 0px;
-      border-radius: 18px;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  font-family: Geometria, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  min-width: 64px;
+  color: rgb(80, 184, 72);
+  min-height: 56px;
+  font-size: 1.125rem;
+  box-shadow: none;
+  text-transform: none;
+  outline: 0px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  margin: 0px;
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0px;
+  border-radius: 18px;
 }
 .policy p {
   margin: 0px;
@@ -137,7 +140,7 @@ body {
   color: #333;
   transition: background-color 0.2s;
   height: 64px;
-    min-width: 176px;
+  min-width: 176px;
 }
 .contract h2 {
   text-align: left;
@@ -216,7 +219,8 @@ body {
   line-height: 1.43;
   font-weight: 600;
 }
-.footer-left, .footer-right {
+.footer-left,
+.footer-right {
   width: 50%;
 }
 .content {
@@ -232,4 +236,22 @@ body {
 }
 .footer p {
   margin: 5px;
+}
+@media (max-width: 900px) {
+  .footer-container .content {
+    flex-direction: column;
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .footer-right {
+    width: 100%;
+  }
+  .footer {
+    padding: 0;
+  }
+  .file-link {
+    min-width: auto;
+    padding: 10px 10px;
+  }
 }

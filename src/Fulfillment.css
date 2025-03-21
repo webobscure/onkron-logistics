@@ -67,5 +67,6 @@
 
   .service {
     max-width: 100%;
+    min-height: auto !important;
   }
 }
