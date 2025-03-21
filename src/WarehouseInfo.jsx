@@ -6,11 +6,11 @@ import warehouse3 from './assets/warehouse_3.webp'
 
 const WarehouseInfo = () => {
   return (
-    <div className="warehouse-container" id="warehouse">   
+    <div className="warehouse-container" id="warehouse">
       <div className="warehouse-info">
         <div className="grid-item">
           <div className="grid-item-first">
-            <span className="grid-item-first-span">Lageradresse:</span>
+            <span className="grid-item-first-span">ADDRESS:</span>
           </div>
           <div className="grid-item-second">
             <p className="grid-item-second-p">
@@ -21,25 +21,25 @@ const WarehouseInfo = () => {
 
         <div className="grid-item">
           <div className="grid-item-first">
-            <span className="grid-item-first-span">Lagertypen:</span>
+            <span className="grid-item-first-span">TYPES:</span>
           </div>
           <div className="grid-item-second">
-            <p className="grid-item-second-p">Warm, Kalt</p>
+            <p className="grid-item-second-p">Warm, Cold</p>
           </div>
         </div>
 
         <div className="grid-item">
           <div className="grid-item-first">
-            <span className="grid-item-first-span">Boxvolumen:</span>
+            <span className="grid-item-first-span">BOX VOLUME:</span>
           </div>
           <div className="grid-item-second">
-            <p className="grid-item-second-p">Von 2,5 m³ bis 75 m³</p>
+            <p className="grid-item-second-p">From 2.5 m³ to 75 m³</p>
           </div>
         </div>
 
         <div className="grid-item">
           <div className="grid-item-first">
-            <span className="grid-item-first-span">Telefon:</span>
+            <span className="grid-item-first-span">PHONE:</span>
           </div>
           <div className="grid-item-second">
             <p className="grid-item-second-p">(+49) 402-999-6807</p>
@@ -48,21 +48,19 @@ const WarehouseInfo = () => {
 
         <div className="grid-item">
           <div className="grid-item-first">
-            <span className="grid-item-first-span">Öffnungszeiten:</span>
+            <span className="grid-item-first-span">OPENING HOURS:</span>
           </div>
           <div className="grid-item-second">
-            <p className="grid-item-second-p">Mo-So: 9:00 - 21:00</p>
+            <p className="grid-item-second-p">Mon-Sun: 9:00 - 21:00</p>
           </div>
         </div>
 
         <div className="grid-item">
           <div className="grid-item-first">
-            <span className="grid-item-first-span">Zahlungsmethoden:</span>
+            <span className="grid-item-first-span">PAYMENT METHODS:</span>
           </div>
           <div className="grid-item-second">
-            <p className="grid-item-second-p">
-              Barzahlung / Bargeldlose Zahlung
-            </p>
+            <p className="grid-item-second-p">Cash / Cashless Payment</p>
           </div>
         </div>
 
@@ -72,7 +70,7 @@ const WarehouseInfo = () => {
               className="grid-link-button"
               href="https://api.whatsapp.com/send?phone=494029996807"
             >
-              WhatsApp-Kontakt
+              WhatsApp Contact
               <span class="wa-icon">
                 <svg
                   class="svg-icon"
@@ -87,7 +85,7 @@ const WarehouseInfo = () => {
             </a>
           </div>
           <div className="whats-app-button">
-            <button className="request-call-button">Anruf bestellen</button>
+            <button className="request-call-button">Order a Call</button>
           </div>
         </div>
 

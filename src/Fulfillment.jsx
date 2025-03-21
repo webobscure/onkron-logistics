@@ -8,7 +8,7 @@ import returns from './assets/Returns.webp'
 const Services = () => {
   return (
     <section className="services">
-      <h2>Fulfillment-Exzellenz</h2>
+      <h2>Fulfillment Excellence</h2>
       <div className="services-container">
         <div className="service">
           <div className="service-header">
@@ -17,13 +17,12 @@ const Services = () => {
               alt="Wareneingang & Lagerung"
               className="service-icon"
             />
-            <h3>Wareneingang & Lagerung</h3>
+            <h3>Receiving & Storage</h3>
           </div>
           <div className="service-content">
             <p>
-              Wir nehmen Ihre Bestände sorgfältig entgegen, prüfen und
-              organisieren sie mit unserem hochentwickelten
-              Lagerverwaltungssystem für optimale Effizienz.
+              We carefully receive, inspect, and organize your inventory using
+              our advanced warehouse management system for optimal efficiency.
             </p>
           </div>
         </div>
@@ -35,13 +34,13 @@ const Services = () => {
               alt="Bestellbearbeitung"
               className="service-icon"
             />
-            <h3>Bestellbearbeitung</h3>
+            <h3>Order Processing</h3>
           </div>
           <div className="service-content">
             <p>
-              Sobald Bestellungen eingehen, stellt unser Team diese schnell
-              zusammen, verpackt sie sorgfältig und bereitet den Versand mit
-              höchster Präzision vor, um Fehler und Verzögerungen zu minimieren.
+              As soon as orders arrive, our team quickly assembles them,
+              carefully packs them, and prepares them for shipment with the
+              highest precision to minimize errors and delays.
             </p>
           </div>
         </div>
@@ -53,14 +52,13 @@ const Services = () => {
               alt="Versand & Lieferung"
               className="service-icon"
             />
-            <h3>Versand & Lieferung</h3>
+            <h3>Shipping & Delivery</h3>
           </div>
           <div className="service-content">
             <p>
-              Wir arbeiten mit Premium-Transportdienstleistern zusammen, um
-              schnelle und zuverlässige Lieferungen innerhalb Deutschlands und
-              darüber hinaus zu gewährleisten – mit vollständiger
-              Sendungsverfolgung.
+              We work with premium transport service providers to ensure fast
+              and reliable deliveries within Germany and beyond – with complete
+              shipment tracking.
             </p>
           </div>
         </div>
@@ -72,13 +70,13 @@ const Services = () => {
               alt="Retourenmanagement"
               className="service-icon"
             />
-            <h3>Retourenmanagement</h3>
+            <h3>Returns Management</h3>
           </div>
           <div className="service-content">
             <p>
-              Unser optimierter Retourenprozess ermöglicht eine effiziente
-              Bearbeitung von Kundenrücksendungen – inklusive Prüfung,
-              Wiedereinlagerung und schneller Erstattung.
+              Our optimized returns process enables efficient handling of
+              customer returns – including inspection, restocking, and fast
+              refunds.
             </p>
           </div>
         </div>

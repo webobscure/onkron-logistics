@@ -7,16 +7,16 @@ import digitalIcon from './assets/digital_solutions.webp'
 const Services = () => {
   return (
     <section className="services">
-      <h1>Unsere umfassenden Dienstleistungen</h1>
+      <h1>Our Comprehensive Services</h1>
       <div className="services-container">
         <div className="service-item">
           <img src={storageIcon} alt="Lagerlösungen" className="service-icon" />
           <div className="service-content">
-            <h3>Lagerlösungen</h3>
+            <h3>Storage Solutions</h3>
             <p>
-              Hochmoderne Einrichtungen mit flexiblen Lagermöglichkeiten für
-              Unternehmen jeder Größe, ausgestattet mit fortschrittlichen
-              Bestandsverwaltungssystemen.
+              State-of-the-art facilities with flexible storage options for
+              businesses of all sizes, equipped with advanced inventory
+              management systems.
             </p>
           </div>
         </div>
@@ -28,10 +28,10 @@ const Services = () => {
             className="service-icon"
           />
           <div className="service-content">
-            <h3>Fulfillment-Dienste</h3>
+            <h3>Fulfillment Services</h3>
             <p>
-              Komplettes Auftragsmanagement von der Warenannahme bis zum Versand
-              mit Echtzeitverfolgung und optimierten Lieferwegen in ganz Europa.
+              Complete order management from goods receipt to shipping, with
+              real-time tracking and optimized delivery routes across Europe.
             </p>
           </div>
         </div>
@@ -43,11 +43,10 @@ const Services = () => {
             className="service-icon"
           />
           <div className="service-content">
-            <h3>Digitale Lösungen</h3>
+            <h3>Digital Solutions</h3>
             <p>
-              Entwicklung von Websites, Content-Erstellung und Integration in
-              Marktplätze, um Ihre Online-Präsenz zu verbessern und den Umsatz
-              zu steigern.
+              Development of websites, content creation, and integration into
+              marketplaces to enhance your online presence and increase sales.
             </p>
           </div>
         </div>
