@@ -8,30 +8,26 @@
   color: #333;
   text-align: left;
   font-weight: 500 !important;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
-/* Контейнер для всех сервисных блоков */
 .services-container {
   display: flex;
-  justify-content: space-between; /* Равномерное распределение */
+  justify-content: space-between;
   gap: 30px;
 }
 
-/* Сервисный блок */
 .service {
   display: flex;
-  flex-direction: column; /* Делаем колоночную структуру */
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  max-width: 280px; /* Фиксируем ширину всех блоков */
-  min-height: 250px; /* Делаем одинаковую высоту */
+  max-width: 280px;
   background: white;
   border-radius: 10px;
 }
 
-/* Верхняя часть сервиса - иконка + заголовок */
 .service-header {
   display: flex;
   align-items: center;
@@ -39,26 +35,22 @@
   width: 100%;
 }
 
-/* Иконка */
 .service-icon {
   width: 50px;
   height: 50px;
 }
 
-/* Контент */
 .service-content {
   text-align: left;
   width: 100%;
 }
 
-/* Заголовок */
 .service-header h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: #242d39;
 }
 
-/* Описание */
 .service-content p {
   font-size: 1rem;
   color: #242d39;
@@ -67,7 +59,6 @@
   max-width: 100%;
 }
 
-/* Адаптив */
 @media (max-width: 900px) {
   .services-container {
     flex-direction: column;

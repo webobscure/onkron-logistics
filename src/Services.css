@@ -7,7 +7,7 @@
   color: #333;
   text-align: left;
   font-weight: 500 !important;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .services-container {
@@ -67,8 +67,4 @@
   .service-item {
     min-height: 200px !important;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3a4d2481fc5ed0b2e923e661b532a92af4ac91de
