@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <div className="announcement-bar">
-        <h6>Lorem impisum</h6>
+        <h6>Get Started Today! Schedule a Consulation.</h6>
       </div>
       <div className="border-block">
         <div className="container">
@@ -51,7 +51,7 @@ const Header = () => {
             </nav>
 
             <div className="extra-buttons">
-              <button className="outline-btn">Franchise</button>
+              <button className="outline-btn">Why choose us</button>
               <button className="outline-btn">
                 <a href="#services">Warehouse address</a>
                 </button>
