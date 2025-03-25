@@ -7,7 +7,7 @@ import returns from './assets/Returns.webp'
 
 const Services = () => {
   return (
-    <section className="services">
+    <section className="services" >
       <h2>Fulfillment Excellence</h2>
       <div className="services-container">
         <div className="service">

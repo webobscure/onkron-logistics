@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {forwardRef } from 'react'
 import './WarehouseInfo.css'
 import warehouse1 from './assets/warehouse_1.webp'
 import warehouse2 from './assets/warehouse_2.webp'
 import warehouse3 from './assets/warehouse_3.webp'
 
-const WarehouseInfo = () => {
+const WarehouseInfo = forwardRef((props, ref) => {
   return (
-    <div className="warehouse-wrapper">
-      <h2 className="warehouse-title">Warehouse address in Hamburg</h2>
+    <div className="warehouse-wrapper" ref={ref}> {/* Используем ref здесь */}
+       <h2 className="warehouse-title">Warehouse address in Hamburg</h2>
       <div className="warehouse-container" id="warehouse">
         <div className="warehouse-info">
           <div className="grid-item">
@@ -113,6 +113,9 @@ const WarehouseInfo = () => {
       </div>
     </div>
   )
-}
+});
+
+WarehouseInfo.displayName = 'WarehouseInfo';
 
 export default WarehouseInfo
+
