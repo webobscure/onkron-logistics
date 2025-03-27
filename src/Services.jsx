@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './Services.css'
 import storageIcon from './assets/storage_solutions.webp'
 import fulfillmentIcon from './assets/fulfillment_services.webp'
 import digitalIcon from './assets/digital_solutions.webp'
 
-const Services = () => {
+const Services = forwardRef((props, ref) => {
   return (
-    <section className="services">
+    <section className="services" ref={ref}>
       <h1>Our Comprehensive Services</h1>
       <div className="services-container">
         <div className="service-item">
@@ -53,6 +53,8 @@ const Services = () => {
       </div>
     </section>
   )
-}
+})
+
+Services.displayName = 'Services';
 
 export default Services

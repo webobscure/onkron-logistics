@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import './Fulfillment.css'
 import receiving from './assets/Receiving.webp'
 import order from './assets/Order.webp'
 import shipping from './assets/Shipping.webp'
 import returns from './assets/Returns.webp'
 
-const Services = () => {
+const Services = forwardRef((props, ref) => {
   return (
-    <section className="services" >
+    <section className="services" ref={ref}>
       <h2>Fulfillment Excellence</h2>
       <div className="services-container">
         <div className="service">
@@ -83,6 +83,8 @@ const Services = () => {
       </div>
     </section>
   )
-}
+})
+
+Services.displayName = 'Fullfilment';
 
 export default Services

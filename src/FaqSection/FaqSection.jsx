@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import "./FaqSection.css"; // Подключаем стили
 
-const FaqSection = () => {
+const FaqSection =  forwardRef((props, ref) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const initialQuestions = [
@@ -89,7 +89,7 @@ If you have any further questions, please contact us—we will be happy to assis
   };
 
   return (
-    <section className="faq-section">
+    <section className="faq-section" ref={ref}>
       <div className="container">
         <h2 className="faq-title">Frequently asked questions (FAQ)</h2>
 
@@ -130,6 +130,7 @@ If you have any further questions, please contact us—we will be happy to assis
       </div>
     </section>
   );
-};
+});
+FaqSection.displayName = 'FaqSection';
 
 export default FaqSection;

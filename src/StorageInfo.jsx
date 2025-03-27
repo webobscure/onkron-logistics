@@ -1,10 +1,10 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import './StorageInfo.css';
 import { amazon, ebay, indexInfoBanner, shopify } from './assets';
 
-export default function StorageInfo () {
+const StorageInfo = forwardRef((props, ref) => {
   return (
-    <section className="storage-info">
+    <section className="storage-info" ref={ref}>
     <div className="container">
       <h1 className="storage-info__title">
       Marketplace Expertise
@@ -130,4 +130,7 @@ export default function StorageInfo () {
     </div>
   </section>
   )
-}
+})
+StorageInfo.displayName = 'StorageInfo';
+
+export default StorageInfo;

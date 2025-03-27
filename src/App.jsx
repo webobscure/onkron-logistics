@@ -11,18 +11,35 @@ import './App.css'
 function App() {
 
   const warehouseRef = useRef()
+  const serviceRef = useRef()
+  const MarketplaceRef = useRef()
+  const FullfilmentRef = useRef()
+  const FaqRef = useRef()
+
+
   return (
     <>
       <Header  scrollToWarehouse={() => {
         warehouseRef.current.scrollIntoView({ behavior: 'smooth' });
+      }} scrollToServices={() => {
+        serviceRef.current.scrollIntoView({ behavior: 'smooth' });
+      }}
+      scrollToMarketplace={() => {
+        MarketplaceRef.current.scrollIntoView({ behavior: 'smooth' });
+      }}
+      scrollToFullfilment={() => {
+        FullfilmentRef.current.scrollIntoView({ behavior: 'smooth' });
+      }}
+      scrollToFaq={() => {
+        FaqRef.current.scrollIntoView({ behavior: 'smooth' });
       }} />
       <div className='container' >
       <HeroSection />
-      <Services />
-      <StorageInfo />
-      <Fulfillment />
+      <Services ref={serviceRef}/>
+      <StorageInfo ref={MarketplaceRef} />
+      <Fulfillment ref={FullfilmentRef} />
       <WarehouseInfo ref={warehouseRef} />
-      <FaqSection />
+      <FaqSection ref={FaqRef} />
       </div>
       <Footer />
     </>

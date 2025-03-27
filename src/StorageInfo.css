@@ -6,6 +6,9 @@
 .third-company__img {
   max-height: 24px;
 }
+.storage-info {
+  scroll-margin-top: 250px;
+}
 .third-company__img:nth-child(1) {
   position: relative;
   bottom: 0.5rem;

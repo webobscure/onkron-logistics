@@ -10,7 +10,9 @@
   font-weight: 500 !important;
   margin-bottom: 80px;
 }
-
+.services {
+  scroll-margin-top: 250px;
+}
 .services-container {
   display: flex;
   flex-direction: row;

@@ -4,7 +4,13 @@ import logo from "./assets/logo.png";
 import { Link } from "react-router";
 import PropTypes from "prop-types";
 
-const Header = ({ scrollToWarehouse }) => {
+const Header = ({
+  scrollToWarehouse,
+  scrollToServices,
+  scrollToMarketplace,
+  scrollToFullfilment,
+  scrollToFaq,
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -43,14 +49,14 @@ const Header = ({ scrollToWarehouse }) => {
         <div className={`header-bottom ${menuOpen ? "hide-right" : ""}`}>
           <div className="nav-section">
             <nav className="nav-links">
-              <button>Services</button>
-              <button>Prices</button>
-              <button>Offers</button>
-              <button>More</button>
+              <button onClick={scrollToServices}>Services</button>
+              <button onClick={scrollToMarketplace}>Marketplace</button>
+              <button onClick={scrollToFullfilment}>Fullfilment</button>
+              <button onClick={scrollToFaq}>FAQ</button>
             </nav>
 
             <div className="extra-buttons">
-              <button className="outline-btn">Why choose us</button>
+              {/* <button className="outline-btn">Why choose us</button> */}
               <button className="outline-btn" onClick={scrollToWarehouse}>
                 Warehouse address
               </button>
@@ -121,6 +127,11 @@ const Header = ({ scrollToWarehouse }) => {
 
 Header.propTypes = {
   scrollToWarehouse: PropTypes.func.isRequired,
+  scrollToFaq: PropTypes.func.isRequired,
+  scrollToServices: PropTypes.func.isRequired,
+  scrollToMarketplace: PropTypes.func.isRequired,
+  scrollToFullfilment: PropTypes.func.isRequired,
+
 };
 
 export default Header;
