@@ -48,7 +48,7 @@ body {
 }
 
 .b24-form-state-container .b24-form-success {
-  background-color: rgb(227, 30, 36) !important;
+  background-color: #fff !important;
 }
 body {
   min-width: 375px;
