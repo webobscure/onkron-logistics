@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
 import logo from "./assets/logo.png";
 import { Link } from "react-router";
@@ -12,6 +12,34 @@ const Header = ({
   scrollToFaq,
 }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const buttonRef = useRef(null);
+  useEffect(() => {
+    // Создаем скрипт Bitrix
+    const script = document.createElement('script');
+    script.dataset.b24Form = 'click/48/clb435';
+    script.dataset.skipMoving = 'true';
+    script.innerHTML = `
+      (function(w,d,u){
+        var s=d.createElement('script');
+        s.async=true;
+        s.src=u+'?'+(Date.now()/180000|0);
+        var h=d.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+      })(window,document,'https://cdn-ru.bitrix24.ru/b6258443/crm/form/loader_48.js');
+    `;
+
+    // Вставляем скрипт перед кнопкой
+    if (buttonRef.current && buttonRef.current.parentNode) {
+      buttonRef.current.parentNode.insertBefore(script, buttonRef.current);
+    }
+
+    return () => {
+      // Удаляем скрипт при размонтировании компонента
+      if (script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
+    };
+  }, []);
 
   return (
     <header>
@@ -32,7 +60,7 @@ const Header = ({
                   (+49) 402-999-6807
                 </a>
               </div>
-              <button className="calculator-btn">Calculator</button>
+              {/* <button className="calculator-btn">Calculator</button> */}
             </div>
 
             <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -75,7 +103,8 @@ const Header = ({
               </svg>{" "}
               Hamburg
             </div>
-            <button className="outline-btn">Request a Quote</button>
+          
+            <button ref={buttonRef} className="outline-btn">Request a Quote</button>
             <a href="tel:+494029996807" className="icon-btn">
               <svg
                 fill="none"

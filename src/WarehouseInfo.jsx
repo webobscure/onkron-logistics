@@ -1,10 +1,40 @@
-import React, {forwardRef } from 'react'
+import React, {forwardRef, useEffect, useRef } from 'react'
 import './WarehouseInfo.css'
 import warehouse1 from './assets/warehouse_1.webp'
 import warehouse2 from './assets/warehouse_2.webp'
 import warehouse3 from './assets/warehouse_3.webp'
 
 const WarehouseInfo = forwardRef((props, ref) => {
+
+  const buttonRef = useRef(null);
+      useEffect(() => {
+        // Создаем скрипт Bitrix
+        const script = document.createElement('script');
+        script.dataset.b24Form = 'click/48/clb435';
+        script.dataset.skipMoving = 'true';
+        script.innerHTML = `
+          (function(w,d,u){
+            var s=d.createElement('script');
+            s.async=true;
+            s.src=u+'?'+(Date.now()/180000|0);
+            var h=d.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(s,h);
+          })(window,document,'https://cdn-ru.bitrix24.ru/b6258443/crm/form/loader_48.js');
+        `;
+    
+        // Вставляем скрипт перед кнопкой
+        if (buttonRef.current && buttonRef.current.parentNode) {
+          buttonRef.current.parentNode.insertBefore(script, buttonRef.current);
+        }
+    
+        return () => {
+          // Удаляем скрипт при размонтировании компонента
+          if (script.parentNode) {
+            script.parentNode.removeChild(script);
+          }
+        };
+      }, []);
+
   return (
     <div className="warehouse-wrapper" ref={ref}> {/* Используем ref здесь */}
        <h2 className="warehouse-title">Warehouse address in Hamburg</h2>
@@ -87,7 +117,7 @@ const WarehouseInfo = forwardRef((props, ref) => {
               </a>
             </div>
             <div className="whats-app-button">
-              <button className="request-call-button">Order a Call</button>
+              <button ref={buttonRef} className="request-call-button">Order a Call</button>
             </div>
           </div>
 

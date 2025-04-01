@@ -41,7 +41,20 @@ function App() {
       <WarehouseInfo ref={warehouseRef} />
       <FaqSection ref={FaqRef} />
       </div>
-      <Footer />
+      <Footer scrollToWarehouse={() => {
+        warehouseRef.current.scrollIntoView({ behavior: 'smooth' });
+      }} scrollToServices={() => {
+        serviceRef.current.scrollIntoView({ behavior: 'smooth' });
+      }}
+      scrollToMarketplace={() => {
+        MarketplaceRef.current.scrollIntoView({ behavior: 'smooth' });
+      }}
+      scrollToFullfilment={() => {
+        FullfilmentRef.current.scrollIntoView({ behavior: 'smooth' });
+      }}
+      scrollToFaq={() => {
+        FaqRef.current.scrollIntoView({ behavior: 'smooth' });
+      }}/>
     </>
   )
 }

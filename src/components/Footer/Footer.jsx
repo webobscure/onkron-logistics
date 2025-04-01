@@ -1,23 +1,38 @@
+import PropTypes from "prop-types";
 import { ad, doc } from "../../assets";
 import "./Footer.css";
+import { useState } from "react";
 
-const Footer = () => {
+const Footer =  ({
+  scrollToWarehouse,
+  scrollToServices,
+  scrollToMarketplace,
+  scrollToFullfilment,
+  scrollToFaq,
+}) => {
+    const [menuOpen, setMenuOpen] = useState(false);
+  
   return (
     <>
     <div className="border">
-      <div className="header-bottom footer-container">
+    <div className={`footer-container header-bottom ${menuOpen ? "hide-right" : ""}`}>
           <div className="nav-section">
             <nav className="nav-links">
-              <button>Services</button>
-              <button>Prices</button>
-              <button>Offers</button>
-              <button>More</button>
+              <button onClick={scrollToServices}>Services</button>
+              <button onClick={scrollToMarketplace}>Marketplace</button>
+              <button onClick={scrollToFullfilment}>Fullfilment</button>
+              <button onClick={scrollToFaq}>FAQ</button>
             </nav>
 
-            
+            <div className="extra-buttons">
+              {/* <button className="outline-btn">Why choose us</button> */}
+              <button className="outline-btn" onClick={scrollToWarehouse}>
+                Warehouse address
+              </button>
+            </div>
           </div>
 
-         
+          
         </div>
     </div>
 
@@ -42,7 +57,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-right">
-          <section className="files">
+          {/* <section className="files">
             <a href="#" className="file-link">
             Requisites<span className="bold-type">.docx</span>
               <img src={doc} alt="Скачать" className="files-icon" />
@@ -51,7 +66,7 @@ const Footer = () => {
             Contract<span className="bold-type">.pdf</span>
               <img src={doc} alt="Скачать" className="files-icon" />
             </a>
-          </section>
+          </section> */}
 
           <div className="contact">
             <a href="tel:+494029996807" className="phone">
@@ -67,6 +82,15 @@ const Footer = () => {
     </div>
     </>
   );
+};
+
+Footer.propTypes = {
+  scrollToWarehouse: PropTypes.func.isRequired,
+  scrollToFaq: PropTypes.func.isRequired,
+  scrollToServices: PropTypes.func.isRequired,
+  scrollToMarketplace: PropTypes.func.isRequired,
+  scrollToFullfilment: PropTypes.func.isRequired,
+
 };
 
 export default Footer;
