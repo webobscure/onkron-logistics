@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./Header.css";
-import logo from "./assets/logo.png";
-import { Link } from "react-router";
-import PropTypes from "prop-types";
+import React, { useEffect, useRef, useState } from 'react'
+import './Header.css'
+import logo from './assets/logo.png'
+import { Link } from 'react-router'
+import PropTypes from 'prop-types'
+import { useLanguage } from './context/LanguageContext.jsx'
+import LanguageSwitcher from './components/LanguageSwitcher.jsx'
 
 const Header = ({
   scrollToWarehouse,
@@ -11,13 +13,14 @@ const Header = ({
   scrollToFullfilment,
   scrollToFaq,
 }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const buttonRef = useRef(null);
+  const { translations } = useLanguage()
+  const [menuOpen, setMenuOpen] = useState(false)
+  const buttonRef = useRef(null)
+
   useEffect(() => {
-    // Создаем скрипт Bitrix
-    const script = document.createElement('script');
-    script.dataset.b24Form = 'click/48/clb435';
-    script.dataset.skipMoving = 'true';
+    const script = document.createElement('script')
+    script.dataset.b24Form = 'click/48/clb435'
+    script.dataset.skipMoving = 'true'
     script.innerHTML = `
       (function(w,d,u){
         var s=d.createElement('script');
@@ -26,25 +29,22 @@ const Header = ({
         var h=d.getElementsByTagName('script')[0];
         h.parentNode.insertBefore(s,h);
       })(window,document,'https://cdn-ru.bitrix24.ru/b6258443/crm/form/loader_48.js');
-    `;
-
-    // Вставляем скрипт перед кнопкой
+    `
     if (buttonRef.current && buttonRef.current.parentNode) {
-      buttonRef.current.parentNode.insertBefore(script, buttonRef.current);
+      buttonRef.current.parentNode.insertBefore(script, buttonRef.current)
     }
 
     return () => {
-      // Удаляем скрипт при размонтировании компонента
       if (script.parentNode) {
-        script.parentNode.removeChild(script);
+        script.parentNode.removeChild(script)
       }
-    };
-  }, []);
+    }
+  }, [])
 
   return (
     <header>
       <div className="announcement-bar">
-        <h6>Get Started Today! Schedule a Consulation.</h6>
+        <h6>{translations.header_announcement_text}</h6>
       </div>
       <div className="border-block">
         <div className="container">
@@ -53,18 +53,17 @@ const Header = ({
 
             <div className="contact-block">
               <div className="contact-info">
-                <a href="mailto:order@onkron.de" className="email">
-                  order@onkron.de
+                <a href="mailto:order@bmggcorp.com" className="email">
+                  order@bmggcorp.com
                 </a>
                 <a href="tel:+494029996807" className="phone">
                   (+49) 402-999-6807
                 </a>
               </div>
-              {/* <button className="calculator-btn">Calculator</button> */}
             </div>
 
             <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-              <div className={`burger ${menuOpen ? "open" : ""}`}>
+              <div className={`burger ${menuOpen ? 'open' : ''}`}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -73,20 +72,26 @@ const Header = ({
           </div>
         </div>
       </div>
+
       <div className="header-container">
-        <div className={`header-bottom ${menuOpen ? "hide-right" : ""}`}>
+        <div className={`header-bottom ${menuOpen ? 'hide-right' : ''}`}>
           <div className="nav-section">
             <nav className="nav-links">
-              <button onClick={scrollToServices}>Services</button>
-              <button onClick={scrollToMarketplace}>Marketplace</button>
-              <button onClick={scrollToFullfilment}>Fullfilment</button>
-              <button onClick={scrollToFaq}>FAQ</button>
+              <button onClick={scrollToServices}>
+                {translations.header_services}
+              </button>
+              <button onClick={scrollToMarketplace}>
+                {translations.header_marketplace}
+              </button>
+              <button onClick={scrollToFullfilment}>
+                {translations.header_fulfillment}
+              </button>
+              <button onClick={scrollToFaq}>{translations.header_faq}</button>
             </nav>
 
             <div className="extra-buttons">
-              {/* <button className="outline-btn">Why choose us</button> */}
               <button className="outline-btn" onClick={scrollToWarehouse}>
-                Warehouse address
+                {translations.header_warehouse_btn}
               </button>
             </div>
           </div>
@@ -98,13 +103,18 @@ const Header = ({
                 viewBox="0 0 12 16"
                 width="12"
                 className="css-svg"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M5.7946 0C2.59944 0 0 2.59944 0 5.79457C0 9.75982 5.1856 15.581 5.40638 15.8269C5.61376 16.0579 5.97582 16.0575 6.18282 15.8269C6.4036 15.581 11.5892 9.75982 11.5892 5.79457C11.5891 2.59944 8.98973 0 5.7946 0ZM5.7946 8.70998C4.18704 8.70998 2.87922 7.40213 2.87922 5.79457C2.87922 4.187 4.18707 2.87919 5.7946 2.87919C7.40213 2.87919 8.70995 4.18704 8.70995 5.7946C8.70995 7.40217 7.40213 8.70998 5.7946 8.70998Z"></path>
-              </svg>{" "}
+              </svg>{' '}
               Hamburg
             </div>
-          
-            <button ref={buttonRef} className="outline-btn">Request a Quote</button>
+
+            <LanguageSwitcher />
+
+            <button ref={buttonRef} className="outline-btn">
+              {translations.header_request_quote_btn}
+            </button>
             <a href="tel:+494029996807" className="icon-btn">
               <svg
                 fill="none"
@@ -125,12 +135,12 @@ const Header = ({
               className="icon-btn"
             >
               <svg
-                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1u9viqm-MuiSvgIcon-root"
-                focusable="false"
                 viewBox="0 0 21 21"
-                aria-hidden="true"
                 height="16"
                 width="16"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium"
               >
                 <path
                   d="M17.9403 3.05182C15.9662 1.08486 13.3409 0.00115356 10.5439 0C4.78056 0 0.0900243 4.66796 0.0877061 10.4053C0.0869333 12.2393 0.568351 14.0296 1.4834 15.6077L0 21L5.543 19.5529C7.07032 20.3821 8.7898 20.819 10.5397 20.8195H10.544C16.3068 20.8195 20.9978 16.1512 21 10.4136C21.0012 7.63301 19.9146 5.01865 17.9403 3.05182ZM10.5439 19.0621H10.5403C8.98092 19.0615 7.45154 18.6444 6.11701 17.8565L5.79981 17.669L2.51051 18.5278L3.38847 15.3361L3.18176 15.0089C2.31178 13.6318 1.85239 12.0401 1.85316 10.4059C1.85496 5.63721 5.7537 1.75752 10.5474 1.75752C12.8687 1.75829 15.0508 2.65909 16.6916 4.29395C18.3324 5.92881 19.2354 8.10187 19.2347 10.413C19.2326 15.1821 15.3341 19.0621 10.5439 19.0621ZM15.311 12.5844C15.0498 12.4541 13.7652 11.8253 13.5257 11.7384C13.2864 11.6516 13.112 11.6084 12.938 11.8686C12.7637 12.1288 12.2631 12.7146 12.1106 12.888C11.9582 13.0616 11.8059 13.0833 11.5446 12.9531C11.2833 12.823 10.4415 12.5483 9.44353 11.6625C8.66693 10.9731 8.14263 10.1216 7.99014 9.86144C7.83791 9.60099 7.98885 9.47384 8.10476 9.3308C8.38759 8.98127 8.67079 8.61482 8.75786 8.4414C8.84505 8.26785 8.80139 8.11597 8.73596 7.98587C8.67079 7.85577 8.14829 6.57596 7.93064 6.05519C7.71839 5.54839 7.50318 5.61683 7.34271 5.60889C7.19048 5.60132 7.01623 5.59979 6.84197 5.59979C6.66785 5.59979 6.38477 5.66477 6.14522 5.92522C5.9058 6.18554 5.23094 6.81449 5.23094 8.09431C5.23094 9.37412 6.16711 10.6105 6.29771 10.784C6.4283 10.9576 8.14005 13.5839 10.7608 14.71C11.3841 14.9781 11.8707 15.138 12.2503 15.2578C12.8762 15.4557 13.4456 15.4278 13.8958 15.3609C14.3978 15.2861 15.4414 14.7318 15.6593 14.1245C15.877 13.5171 15.877 12.9966 15.8116 12.888C15.7464 12.7796 15.5721 12.7146 15.311 12.5844Z"
@@ -141,18 +151,18 @@ const Header = ({
           </div>
         </div>
 
-        <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-          <button>Services</button>
-          <button>Prices</button>
-          <button>Offers</button>
-          <button>Mehr</button>
-          <button>Franchise</button>
-          <button>Warehouse address</button>
+        <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+          <button>{translations.header_services}</button>
+          <button>{translations.header_prices}</button>
+          <button>{translations.header_offers}</button>
+          <button>{translations.header_more}</button>
+          <button>{translations.header_franchise}</button>
+          <button>{translations.header_warehouse_btn}</button>
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
 Header.propTypes = {
   scrollToWarehouse: PropTypes.func.isRequired,
@@ -160,7 +170,6 @@ Header.propTypes = {
   scrollToServices: PropTypes.func.isRequired,
   scrollToMarketplace: PropTypes.func.isRequired,
   scrollToFullfilment: PropTypes.func.isRequired,
+}
 
-};
-
-export default Header;
+export default Header

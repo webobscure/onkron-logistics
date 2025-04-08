@@ -1,0 +1,125 @@
+{
+  "header_announcement_text": "Get Started Today! Schedule a Consultation.",
+  "header_services": "Services",
+  "header_marketplace": "Marketplace",
+  "header_fulfillment": "Fulfilment",
+  "header_faq": "FAQ",
+  "header_warehouse_btn": "Warehouse address",
+  "header_request_quote_btn": "Request a Quote",
+  "header_prices": "Prices",
+  "header_offers": "Offers",
+  "header_more": "More",
+  "header_franchise": "Franchise",
+
+  "hero_title": "Welcome to Hamburg Logistics Solutions",
+  "hero_description": "Your trusted partner for seamless fulfillment, storage, and logistics in the heart of Hamburg. We streamline your operations so you can focus on growing your business.",
+  "hero_cta": "Request a Quote",
+
+  "services_title": "Our Comprehensive Services",
+  "services_storage_title": "Storage Solutions",
+  "services_storage_text": "State-of-the-art facilities with flexible storage options for businesses of all sizes, equipped with advanced inventory management systems.",
+  "services_fulfillment_title": "Fulfillment Services",
+  "services_fulfillment_text": "Complete order management from goods receipt to shipping, with real-time tracking and optimized delivery routes across Europe.",
+  "services_digital_title": "Digital Solutions",
+  "services_digital_text": "Development of websites, content creation, and integration into marketplaces to enhance your online presence and increase sales.",
+
+  "storageinfo_title": "Marketplace Expertise",
+
+  "storageinfo_amazon_title": "Amazon FBA Preparation",
+  "storageinfo_amazon_text": "We prepare your products according to Amazon's strict requirements, ensuring compliance and avoiding costly penalties or delays.",
+
+  "storageinfo_multichannel_title": "Multi-Channel Integration",
+  "storageinfo_multichannel_text": "Seamlessly connect your shop across Amazon, eBay, Shopify, and other platforms with our integrated inventory and order management systems.",
+
+  "storageinfo_account_title": "Account Management",
+  "storageinfo_account_text": "Our experts optimize your marketplace presence with strategic account management, performance analysis, and growth recommendations.",
+
+  "storageinfo_listing_title": "Listing Optimization",
+  "storageinfo_listing_text": "Enhance product visibility with professional content creation, keyword optimization, and competitive pricing strategies that drive conversions.",
+
+  "fulfillment_title": "Fulfillment Excellence",
+
+  "fulfillment_receiving_title": "Receiving & Storage",
+  "fulfillment_receiving_text": "We carefully receive, inspect, and organize your inventory using our advanced warehouse management system for optimal efficiency.",
+
+  "fulfillment_order_title": "Order Processing",
+  "fulfillment_order_text": "As soon as orders arrive, our team quickly assembles them, carefully packs them, and prepares them for shipment with the highest precision to minimize errors and delays.",
+
+  "fulfillment_shipping_title": "Shipping & Delivery",
+  "fulfillment_shipping_text": "We work with premium transport service providers to ensure fast and reliable deliveries within Germany and beyond – with complete shipment tracking.",
+
+  "fulfillment_returns_title": "Returns Management",
+  "fulfillment_returns_text": "Our optimized returns process enables efficient handling of customer returns – including inspection, restocking, and fast refunds.",
+
+  "warehouse_title": "Warehouse address in Hamburg",
+  "warehouse_label_address": "ADDRESS:",
+  "warehouse_address": "Billbrookdeich 36, 22113 Hamburg",
+  "warehouse_label_types": "TYPES:",
+  "warehouse_types": "Warm, Cold",
+  "warehouse_label_volume": "BOX VOLUME:",
+  "warehouse_volume": "From 2.5 m³ to 75 m³",
+  "warehouse_label_phone": "PHONE:",
+  "warehouse_phone": "(+49) 402-999-6807",
+  "warehouse_label_hours": "OPENING HOURS:",
+  "warehouse_hours": "Mon-Sun: 9:00 - 21:00",
+  "warehouse_label_payment": "PAYMENT METHODS:",
+  "warehouse_payment": "Cash / Cashless Payment",
+  "warehouse_whatsapp": "WhatsApp Contact",
+  "warehouse_order_call": "Order a Call",
+
+  "faq_title": "Frequently asked questions (FAQ)",
+  "faq_questions": [
+    {
+      "question": "What services does your fulfillment center provide?",
+      "answer": "We offer a full range of order processing services:\n• Receiving and warehousing goods (pallet, bin storage)\n• Labeling and sticker application (including FBA, UPI, barcodes)\n• Order picking and packing\n• Returns processing and quality control\n• Sorting, repackaging, creating bundles\n• Preparing goods for marketplaces (Amazon, eBay, Otto, etc.)\n• Delivery to marketplaces and customers\n• International shipments"
+    },
+    {
+      "question": "What additional services are available?",
+      "answer": "In addition to standard fulfillment services, we offer:\n• Product listing creation and optimization (copywriting, SEO)\n• Product photography and image editing\n• Content creation for marketplaces and social media\n• Sales and competitor analysis, inventory turnover reporting\n• API and ERP order integration and automation\n• Technical support for marketplace integration\n• Turnkey e-commerce store development (Shopify, etc.)"
+    },
+    {
+      "question": "How do I start working with you?",
+      "answer": "1. Contact us to discuss your needs and receive a quote.\n2. Sign a service agreement.\n3. Send us your goods for receiving.\n4. Set up integration (if necessary) and start selling!"
+    },
+    {
+      "question": "What types of goods can be stored in your warehouse?",
+      "answer": "We handle most product categories, except:\n• Perishable goods\n• Hazardous materials (ADR)\n• Goods prohibited for sale under EU law\n\nAnimals, Plants, Money, Expensive jewelry, Perishable food, Strong smelling, Explosive and flammable substances/items, Radioactive or toxic substances or gases, Lubricants, Flammable substances, Volatile liquids, Industrial and household paints in leaky packaging or previously opened packaging, Weapons, ammunition, explosive objects. Any items and property stolen or prohibited for circulation on the territory of Germany"
+    },
+    {
+      "question": "What is the minimum volume for starting cooperation?",
+      "answer": "We work with both small sellers and large companies. The minimum volume is determined individually based on the type of goods and storage volume."
+    },
+    {
+      "question": "What languages do you provide support in?",
+      "answer": "We provide support in Russian, English, and German."
+    },
+    {
+      "question": "Can I scale my storage volume?",
+      "answer": "Yes, you can start with a small volume (e.g., 1-2 pallets) and scale up to container shipments."
+    },
+    {
+      "question": "Where is your warehouse located?",
+      "answer": "Our warehouse is located in Hamburg, Germany. We provide convenient logistics across Europe."
+    },
+    {
+      "question": "What are your rates?",
+      "answer": "Rates depend on the type and volume of goods. Please submit a request, and we will find the best option for you."
+    },
+    {
+      "question": "Why should I choose you?",
+      "answer": "• 10+ years of experience in e-commerce and working with Amazon\n• Flexible cooperation terms\n• Full range of services—from storage to promotion\n• Dedicated IT and content team to support your business\n• Scalability options\n• Multilingual support (Russian, English, German)\nIf you have any further questions, please contact us—we will be happy to assist you!"
+    }
+  ],
+
+  "footer_nav_services": "Services",
+  "footer_nav_marketplace": "Marketplace",
+  "footer_nav_fullfilment": "Fullfilment",
+  "footer_nav_faq": "FAQ",
+  "footer_nav_warehouse": "Warehouse address",
+  "footer_contract_title": "Online contract",
+  "footer_contract_text": "The onkron-logistics.com website collects metadata about each user (cookies, IP address and location data) for the full functioning of the website. Functioning of the website. If you object to the processing of this data please leave the site.",
+  "footer_policy_link": "Policy on the processing of personal data",
+  "footer_phone": "(+49) 402-999-6807",
+  "footer_copyright": "© Bmgg Europe GMBH 2025",
+  "footer_note": "The information on the website does not constitute a public offer."
+}

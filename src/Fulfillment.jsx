@@ -1,83 +1,55 @@
-import React, {forwardRef} from 'react'
+import React, { forwardRef } from 'react'
 import './Fulfillment.css'
 import receiving from './assets/Receiving.webp'
 import order from './assets/Order.webp'
 import shipping from './assets/Shipping.webp'
 import returns from './assets/Returns.webp'
+import { useLanguage } from './context/LanguageContext.jsx'
 
-const Services = forwardRef((props, ref) => {
+const Fulfillment = forwardRef((props, ref) => {
+  const { translations } = useLanguage()
+
   return (
     <section className="services" ref={ref}>
-      <h2>Fulfillment Excellence</h2>
+      <h2>{translations.fulfillment_title}</h2>
       <div className="services-container">
         <div className="service">
           <div className="service-header">
-            <img
-              src={receiving}
-              alt="Wareneingang & Lagerung"
-              className="service-icon"
-            />
-            <h3>Receiving & Storage</h3>
+            <img src={receiving} alt="Receiving" className="service-icon" />
+            <h3>{translations.fulfillment_receiving_title}</h3>
           </div>
           <div className="service-content">
-            <p>
-              We carefully receive, inspect, and organize your inventory using
-              our advanced warehouse management system for optimal efficiency.
-            </p>
+            <p>{translations.fulfillment_receiving_text}</p>
           </div>
         </div>
 
         <div className="service">
           <div className="service-header">
-            <img
-              src={order}
-              alt="Bestellbearbeitung"
-              className="service-icon"
-            />
-            <h3>Order Processing</h3>
+            <img src={order} alt="Order" className="service-icon" />
+            <h3>{translations.fulfillment_order_title}</h3>
           </div>
           <div className="service-content">
-            <p>
-              As soon as orders arrive, our team quickly assembles them,
-              carefully packs them, and prepares them for shipment with the
-              highest precision to minimize errors and delays.
-            </p>
+            <p>{translations.fulfillment_order_text}</p>
           </div>
         </div>
 
         <div className="service">
           <div className="service-header">
-            <img
-              src={shipping}
-              alt="Versand & Lieferung"
-              className="service-icon"
-            />
-            <h3>Shipping & Delivery</h3>
+            <img src={shipping} alt="Shipping" className="service-icon" />
+            <h3>{translations.fulfillment_shipping_title}</h3>
           </div>
           <div className="service-content">
-            <p>
-              We work with premium transport service providers to ensure fast
-              and reliable deliveries within Germany and beyond – with complete
-              shipment tracking.
-            </p>
+            <p>{translations.fulfillment_shipping_text}</p>
           </div>
         </div>
 
         <div className="service">
           <div className="service-header">
-            <img
-              src={returns}
-              alt="Retourenmanagement"
-              className="service-icon"
-            />
-            <h3>Returns Management</h3>
+            <img src={returns} alt="Returns" className="service-icon" />
+            <h3>{translations.fulfillment_returns_title}</h3>
           </div>
           <div className="service-content">
-            <p>
-              Our optimized returns process enables efficient handling of
-              customer returns – including inspection, restocking, and fast
-              refunds.
-            </p>
+            <p>{translations.fulfillment_returns_text}</p>
           </div>
         </div>
       </div>
@@ -85,6 +57,5 @@ const Services = forwardRef((props, ref) => {
   )
 })
 
-Services.displayName = 'Fullfilment';
-
-export default Services
+Fulfillment.displayName = 'Fulfillment'
+export default Fulfillment
