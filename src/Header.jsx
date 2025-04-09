@@ -115,7 +115,7 @@ const Header = ({
             <button ref={buttonRef} className="outline-btn">
               {translations.header_request_quote_btn}
             </button>
-            <a href="tel:+494029996807" className="icon-btn">
+            <a href="tel:+494029996807" target="_blank" className="icon-btn">
               <svg
                 fill="none"
                 height="16"
@@ -132,6 +132,7 @@ const Header = ({
             </a>
             <a
               href="https://api.whatsapp.com/send?phone=494029996807"
+              target="_blank"
               className="icon-btn"
             >
               <svg
