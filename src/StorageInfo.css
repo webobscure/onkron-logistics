@@ -11,12 +11,11 @@
 }
 .third-company__img:nth-child(1) {
   position: relative;
-  bottom: 0.5rem;
+  bottom: -0.5rem;
 }
 .third-company__img:nth-child(2) {
   position: relative;
-  top: 0.6rem;
-  max-height: 16px;
+  top: 0.1rem;
 }
 .storage-info .container {
   display: flex;

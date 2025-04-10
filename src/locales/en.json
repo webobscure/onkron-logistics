@@ -26,10 +26,10 @@
   "storageinfo_title": "Marketplace Expertise",
 
   "storageinfo_amazon_title": "Amazon FBA Preparation",
-  "storageinfo_amazon_text": "We prepare your products according to Amazon's strict requirements, ensuring compliance and avoiding costly penalties or delays.",
+  "storageinfo_amazon_text": "We prepare your products according to [amazon]'s strict requirements, ensuring compliance and avoiding costly penalties or delays.",
 
   "storageinfo_multichannel_title": "Multi-Channel Integration",
-  "storageinfo_multichannel_text": "Seamlessly connect your shop across Amazon, eBay, Shopify, and other platforms with our integrated inventory and order management systems.",
+  "storageinfo_multichannel_text": "Seamlessly connect your shop across [amazon], [ebay], [shopify], and other platforms with our integrated inventory and order management systems.",
 
   "storageinfo_account_title": "Account Management",
   "storageinfo_account_text": "Our experts optimize your marketplace presence with strategic account management, performance analysis, and growth recommendations.",
@@ -116,10 +116,9 @@
   "footer_nav_fullfilment": "Fullfilment",
   "footer_nav_faq": "FAQ",
   "footer_nav_warehouse": "Warehouse address",
-  "footer_contract_title": "Online contract",
-  "footer_contract_text": "The onkron-logistics.com website collects metadata about each user (cookies, IP address and location data) for the full functioning of the website. Functioning of the website. If you object to the processing of this data please leave the site.",
   "footer_policy_link": "Policy on the processing of personal data",
   "footer_phone": "(+49) 402-999-6807",
   "footer_copyright": "© Bmgg Europe GMBH 2025",
-  "footer_note": "The information on the website does not constitute a public offer."
+  "footer_note": "The information on the website does not constitute a public offer.",
+  "footer_policy_popup": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac eros eget nisl convallis accumsan. Integer at quam nec urna porta sagittis. Suspendisse potenti. Donec in sagittis ex. Proin convallis felis nec mauris tincidunt, in fermentum justo convallis."
 }

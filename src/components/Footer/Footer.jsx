@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types'
-import { ad, doc } from '../../assets'
-import './Footer.css'
 import { useState } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
+import './Footer.css'
 
 const Footer = ({
   scrollToWarehouse,
@@ -12,6 +11,7 @@ const Footer = ({
   scrollToFaq,
 }) => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [showPopup, setShowPopup] = useState(false)
   const { translations } = useLanguage()
 
   return (
@@ -51,11 +51,9 @@ const Footer = ({
         <main className="content">
           <div className="footer-left">
             <section className="contract">
-              <h2>{translations.footer_contract_title}</h2>
-              <p>{translations.footer_contract_text}</p>
-              <a href="#" className="policy">
+              <button className="policy" onClick={() => setShowPopup(true)}>
                 <p>{translations.footer_policy_link}</p>
-              </a>
+              </button>
             </section>
           </div>
 
@@ -73,6 +71,17 @@ const Footer = ({
           <p>{translations.footer_note}</p>
         </footer>
       </div>
+
+      {/* Политика попап */}
+      {showPopup && (
+        <div className="popup-overlay" onClick={() => setShowPopup(false)}>
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+            <h2>{translations.footer_policy_link}</h2>
+            <p>{translations.footer_policy_popup}</p>
+            <button onClick={() => setShowPopup(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </>
   )
 }
