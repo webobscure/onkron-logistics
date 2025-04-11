@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
+import docIcon from '../../assets/doc.svg'
 import './Footer.css'
 
 const Footer = ({
@@ -11,7 +12,6 @@ const Footer = ({
   scrollToFaq,
 }) => {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [showPopup, setShowPopup] = useState(false)
   const { translations } = useLanguage()
 
   return (
@@ -51,9 +51,18 @@ const Footer = ({
         <main className="content">
           <div className="footer-left">
             <section className="contract">
-              <button className="policy" onClick={() => setShowPopup(true)}>
-                <p>{translations.footer_policy_link}</p>
-              </button>
+              <a href="/Impressum_BMGG.docx" download className="file-download">
+                <img src={docIcon} alt="doc" className="file-icon" />
+                Impressum
+              </a>
+              <a
+                href="/Datenschutz_AGB_BMGG.docx"
+                download
+                className="file-download"
+              >
+                <img src={docIcon} alt="doc" className="file-icon" />
+                Datenschutz & AGB
+              </a>
             </section>
           </div>
 
@@ -71,17 +80,6 @@ const Footer = ({
           <p>{translations.footer_note}</p>
         </footer>
       </div>
-
-      {/* Политика попап */}
-      {showPopup && (
-        <div className="popup-overlay" onClick={() => setShowPopup(false)}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <h2>{translations.footer_policy_link}</h2>
-            <p>{translations.footer_policy_popup}</p>
-            <button onClick={() => setShowPopup(false)}>Close</button>
-          </div>
-        </div>
-      )}
     </>
   )
 }
