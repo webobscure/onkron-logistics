@@ -38,10 +38,12 @@
   padding: 20px;
   cursor: pointer;
   transition: background 0.3s ease;
+  border-radius: 32px;
 }
 
 .faq-question:hover {
   background: #f8fafc;
+  border-radius: 32px;
 }
 
 .faq-question span {
