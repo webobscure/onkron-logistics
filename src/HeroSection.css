@@ -5,7 +5,7 @@
   max-width: 1200px;
   margin: auto;
   padding: 0 20px 0 20px;
-  margin-top: 275px;
+  margin-top: 80px;
   line-height: 1.167;
   position: relative;
 }
@@ -66,7 +66,7 @@
   .hero-container {
     flex-direction: column-reverse;
     text-align: center;
-    margin-top: 170px;
+    margin-top: 80px;
   }
 
   .hero-content,
