@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
+import deIcon from '../assets/DE.svg'
 import enIcon from '../assets/EN.png'
 import ruIcon from '../assets/RU.png'
 import './LanguageSwitcher.css'
@@ -27,19 +28,32 @@ const LanguageSwitcher = () => {
     setIsOpen(false)
   }
 
+  const getFlagIcon = (lang) => {
+    switch (lang) {
+      case 'de':
+        return deIcon
+      case 'en':
+        return enIcon
+      case 'ru':
+        return ruIcon
+      default:
+        return deIcon
+    }
+  }
+
   return (
     <div className="language-dropdown" ref={dropdownRef}>
       <button className="dropdown-toggle" onClick={() => setIsOpen(!isOpen)}>
-        <img
-          src={language === 'en' ? enIcon : ruIcon}
-          alt={language}
-          className="flag-icon"
-        />
+        <img src={getFlagIcon(language)} alt={language} className="flag-icon" />
         <span>{language.toUpperCase()}</span>
         <span className="arrow">&#9662;</span>
       </button>
       {isOpen && (
         <ul className="dropdown-menu">
+          <li onClick={() => handleLanguageChange('de')}>
+            <img src={deIcon} alt="DE" className="flag-icon" />
+            <span>DE</span>
+          </li>
           <li onClick={() => handleLanguageChange('en')}>
             <img src={enIcon} alt="EN" className="flag-icon" />
             <span>EN</span>

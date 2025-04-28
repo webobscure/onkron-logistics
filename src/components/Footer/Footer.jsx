@@ -63,6 +63,14 @@ const Footer = ({
                 <img src={docIcon} alt="doc" className="file-icon" />
                 Datenschutz & AGB
               </a>
+              <a
+                href="/Preise_für_Fulfillment-Dienstleistungen.pdf"
+                download
+                className="file-download"
+              >
+                <img src={docIcon} alt="doc" className="file-icon" />
+                Preise für Fulfillment-Dienstleistungen
+              </a>
             </section>
           </div>
 

@@ -1,0 +1,126 @@
+{
+  "header_announcement_text": "Jetzt starten – persönliche Beratung sichern!",
+  "header_services": "Dienstleistungen",
+  "header_marketplace": "Marktplatzlösungen",
+  "header_fulfillment": "Fulfillment",
+  "header_faq": "FAQ",
+  "header_warehouse_btn": "Lagerstandort",
+  "header_request_quote_btn": "Angebot anfordern",
+  "header_prices": "Preise",
+  "header_offers": "Angebote",
+  "header_more": "Mehr",
+  "header_franchise": "Franchise",
+  "hero_title": "Willkommen bei Ihr Fulfillment-Partner in Hamburg",
+  "hero_description": "Ihr zuverlässiger Partner für professionellen Fulfillment, Lagerung und Logistik im Herzen Hamburgs. Wir optimieren Ihre Prozesse – damit Sie sich voll auf das Wachstum Ihres Geschäfts konzentrieren können.",
+  "hero_cta": "Angebot anfordern",
+
+  "services_title": "Unser Komplettangebot – alles für Ihr Wachstum im E-Commerce",
+  "services_storage_title": "Lagerlösungen",
+  "services_storage_text": "Moderne Lagerflächen mit flexiblen Möglichkeiten für Unternehmen jeder Größe – ausgestattet mit einem fortschrittlichen Warenwirtschaftssystem.",
+  "services_fulfillment_title": "Fulfillment-Services",
+  "services_fulfillment_text": "Vollständige Auftragsabwicklung – von der Wareneingangskontrolle bis zum Versand. Mit Sendungsverfolgung in Echtzeit und optimierter Lieferung in ganz Europa.",
+  "services_digital_title": "Digitale Lösungen",
+  "services_digital_text": "Entwicklung von Webshops, Erstellung von Produktinhalten und nahtlose Integration in Marktplätze – für mehr Sichtbarkeit und höhere Verkaufszahlen.",
+
+  "storageinfo_title": "Vertriebsstärke auf allen Plattformen – wir machen Ihren Marktplatzauftritt erfolgreich.",
+
+  "storageinfo_amazon_title": "Amazon FBA Vorbereitung",
+  "storageinfo_amazon_text": "Wir bereiten Ihre Produkte gemäß den strengen [amazon]-Vorgaben auf – konform, fehlerfrei und termingerecht. So vermeiden Sie Verzögerungen und Zusatzkosten.",
+
+  "storageinfo_multichannel_title": "Multichannel-Integration",
+  "storageinfo_multichannel_text": "Nahtlose Anbindung an [amazon], [ebay], [shopify] & Co. – inklusive zentralem Bestands- und Auftragsmanagement.",
+
+  "storageinfo_account_title": "Account-Management",
+  "storageinfo_account_text": "Unsere Experten analysieren Ihre Kennzahlen, optimieren Ihre Marktposition und begleiten Sie mit skalierbaren Strategien zum Wachstum.",
+
+  "storageinfo_listing_title": "Listing-Optimierung",
+  "storageinfo_listing_text": "Mehr Sichtbarkeit durch professionellen Content, Keyword-Optimierung und clevere Preisstrategien – für maximale Conversion.",
+
+  "fulfillment_title": "Ablauf in Perfektion – Fulfillment, auf das Sie sich verlassen können",
+
+  "fulfillment_receiving_title": "Warenannahme & Lagerung",
+  "fulfillment_receiving_text": "Wir nehmen Ihre Ware sorgfältig entgegen, prüfen den Zustand und lagern sie strukturiert ein – gesteuert durch ein modernes Lagerverwaltungssystem (WMS) für maximale Effizienz.",
+
+  "fulfillment_order_title": "Auftragsabwicklung",
+  "fulfillment_order_text": "Eingehende Bestellungen werden sofort bearbeitet: Wir kommissionieren präzise, verpacken sicher und machen alles versandbereit – fehlerfrei und schnell.",
+
+  "fulfillment_shipping_title": "Versand & Lieferung",
+  "fulfillment_shipping_text": "Wir kooperieren mit führenden Versanddienstleistern und garantieren schnelle, verlässliche Zustellungen in Deutschland und ganz Europa – mit Sendungsverfolgung in Echtzeit.",
+
+  "fulfillment_returns_title": "Retourenmanagement",
+  "fulfillment_returns_text": "Unser optimierter Retourenprozess umfasst Prüfung, Wiedereinlagerung und zügige Rückerstattung – effizient und kundenfreundlich.",
+
+  "warehouse_title": "Unser Lagerstandort in Hamburg",
+  "warehouse_label_address": "ADRESSE:",
+  "warehouse_address": "Billbrookdeich 36, 22113 Hamburg",
+  "warehouse_label_types": "LAGERTYPEN:",
+  "warehouse_types": "Temperiert, untemperiert",
+  "warehouse_label_volume": "BOXVOLUMEN:",
+  "warehouse_volume": "Von 2,5 m³ bis 75 m³",
+  "warehouse_label_phone": "TELEFON:",
+  "warehouse_phone": "(+49) 172-799-1658",
+  "warehouse_label_hours": "ÖFFNUNGSZEITEN:",
+  "warehouse_hours": "Mo-So: 9:00 - 21:00",
+  "warehouse_label_payment": "ZAHLUNGSMETHODEN:",
+  "warehouse_payment": "Bar / Überweisung",
+  "warehouse_whatsapp": "Kontakt über WhatsApp",
+  "warehouse_order_call": "Rückruf anfordern",
+
+  "faq_title": "FAQ – Häufige Fragen",
+  "faq_questions": [
+    {
+      "question": "Was genau bedeutet Fulfillment?",
+      "answer": "Fulfillment umfasst alle Dienstleistungen rund um die Lagerung, Kommissionierung, Verpackung und den Versand von Waren. Wir übernehmen diese Prozesse für Sie – effizient und zuverlässig."
+    },
+    {
+      "question": "Wie schnell wird meine Bestellung bearbeitet?",
+      "answer": "Eingehende Bestellungen werden in der Regel noch am selben Tag bearbeitet. Unser Ziel ist eine schnelle und fehlerfreie Abwicklung, damit Ihre Kunden zufrieden sind."
+    },
+    {
+      "question": "Welche Versanddienstleister nutzen Sie?",
+      "answer": "Wir arbeiten mit renommierten Versandpartnern wie DHL, DPD und GLS zusammen. So stellen wir sicher, dass Ihre Ware sicher und pünktlich beim Kunden ankommt."
+    },
+    {
+      "question": "Wie funktioniert die Lagerung meiner Produkte?",
+      "answer": "Ihre Produkte werden sorgfältig eingelagert – auf Wunsch temperaturgeführt – und durch unser modernes WMS-System verwaltet, das jederzeit Transparenz über Lagerbestände bietet."
+    },
+    {
+      "question": "Wie läuft das Retourenmanagement ab?",
+      "answer": "Retouren werden bei uns schnell geprüft, dokumentiert und je nach Zustand entweder wieder eingelagert oder separat gelagert. Eine schnelle Rückerstattung wird ebenfalls gewährleistet."
+    },
+    {
+      "question": "Wie kann ich Ihre Dienstleistungen buchen?",
+      "answer": "Kontaktieren Sie uns einfach über das Anfrageformular oder telefonisch. Wir beraten Sie individuell und erstellen ein maßgeschneidertes Angebot."
+    }
+  ],
+
+  "footer_nav_fulfillment": "Fulfillment-Services",
+  "footer_nav_marketplace": "Marktplatzlösungen",
+  "footer_nav_services": "Dienstleistungen",
+  "footer_nav_warehouse": "Lagerstandort",
+  "footer_nav_prices": "Preise",
+  "footer_nav_request_quote": "Angebot anfordern",
+  "footer_nav_privacy": "Datenschutz",
+  "footer_nav_terms": "AGB",
+  "footer_nav_imprint": "Impressum",
+  "footer_rights_reserved": "Alle Rechte vorbehalten.",
+
+  "form_title": "Jetzt individuelles Angebot anfordern",
+  "form_subtitle": "Füllen Sie das Formular aus – wir melden uns schnellstmöglich bei Ihnen mit einem maßgeschneiderten Angebot.",
+  "form_full_name": "Vollständiger Name",
+  "form_phone_number": "Telefonnummer",
+  "form_company": "Firma (optional)",
+  "form_warehouse_volume": "Gewünschtes Lagerbox-Volumen",
+  "form_pickup_need": "Benötigen Sie eine Abholung?",
+  "form_comment": "Kommentar (optional)",
+  "form_submit": "Anfrage senden",
+  "form_success_title": "Vielen Dank!",
+  "form_success_subtitle": "Wir haben Ihre Anfrage erhalten und melden uns in Kürze.",
+
+  "form_validation_required": "Dieses Feld ist erforderlich.",
+  "form_validation_phone": "Bitte geben Sie eine gültige Telefonnummer ein.",
+  "form_validation_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+
+  "meta_title": "Fulfillment in Hamburg – Lagerung, Versand & Marktplatzlösungen | Ihr Partner",
+  "meta_description": "Professionelle Fulfillment- und Logistikdienstleistungen in Hamburg. Lagerung, Versand und Multichannel-Management – alles aus einer Hand. Jetzt beraten lassen!"
+}
