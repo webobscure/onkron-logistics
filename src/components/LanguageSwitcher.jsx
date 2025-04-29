@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
-import deIcon from '../assets/DE.svg'
+import deIcon from '../assets/DE.png'
 import enIcon from '../assets/EN.png'
 import ruIcon from '../assets/RU.png'
 import './LanguageSwitcher.css'

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Header.css'
 import logo from './assets/logo.png'
-import { Link } from 'react-router'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { useLanguage } from './context/LanguageContext.jsx'
 import LanguageSwitcher from './components/LanguageSwitcher.jsx'
@@ -16,6 +16,8 @@ const Header = ({
   const { translations } = useLanguage()
   const [menuOpen, setMenuOpen] = useState(false)
   const buttonRef = useRef(null)
+  const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const script = document.createElement('script')
@@ -41,6 +43,18 @@ const Header = ({
     }
   }, [])
 
+  const handleScrollAction = (section, scrollFunc) => {
+    if (location.pathname === '/') {
+      // На главной - просто скроллим
+      scrollFunc()
+    } else {
+      // На других страницах - переходим на главную с хэшем
+      navigate(`/#${section}`)
+      window.location.reload() // Для гарантированного скролла
+    }
+    setMenuOpen(false) // Закрываем мобильное меню
+  }
+
   return (
     <header>
       <div className="announcement-bar">
@@ -49,7 +63,9 @@ const Header = ({
       <div className="border-block">
         <div className="container">
           <div className="header-top">
-            <img src={logo} alt="Logo" className="logo" />
+            <a href="https://www.bmggcorp.com/">
+              <img src={logo} alt="Logo" className="logo" />
+            </a>
 
             <div className="contact-block">
               <div className="contact-info">
@@ -77,20 +93,42 @@ const Header = ({
         <div className={`header-bottom ${menuOpen ? 'hide-right' : ''}`}>
           <div className="nav-section">
             <nav className="nav-links">
-              <button onClick={scrollToServices}>
+              <button
+                onClick={() => handleScrollAction('services', scrollToServices)}
+              >
                 {translations.header_services}
               </button>
-              <button onClick={scrollToMarketplace}>
+              <button
+                onClick={() =>
+                  handleScrollAction('marketplace', scrollToMarketplace)
+                }
+              >
                 {translations.header_marketplace}
               </button>
-              <button onClick={scrollToFullfilment}>
+              <button
+                onClick={() =>
+                  handleScrollAction('fulfillment', scrollToFullfilment)
+                }
+              >
                 {translations.header_fulfillment}
               </button>
-              <button onClick={scrollToFaq}>{translations.header_faq}</button>
+              <button>
+                <Link to="/contacts" className="nav-button">
+                  {translations.header_contacts || 'Contacts'}
+                </Link>
+              </button>
+              <button onClick={() => handleScrollAction('faq', scrollToFaq)}>
+                {translations.header_faq}
+              </button>
             </nav>
 
             <div className="extra-buttons">
-              <button className="outline-btn" onClick={scrollToWarehouse}>
+              <button
+                className="outline-btn"
+                onClick={() =>
+                  handleScrollAction('warehouse', scrollToWarehouse)
+                }
+              >
                 {translations.header_warehouse_btn}
               </button>
             </div>
@@ -153,12 +191,42 @@ const Header = ({
         </div>
 
         <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
-          <button>{translations.header_services}</button>
-          <button>{translations.header_prices}</button>
-          <button>{translations.header_offers}</button>
-          <button>{translations.header_more}</button>
-          <button>{translations.header_franchise}</button>
-          <button>{translations.header_warehouse_btn}</button>
+          <button
+            onClick={() => handleScrollAction('services', scrollToServices)}
+          >
+            {translations.header_services}
+          </button>
+          <button
+            onClick={() =>
+              handleScrollAction('marketplace', scrollToMarketplace)
+            }
+          >
+            {translations.header_marketplace}
+          </button>
+          <button
+            onClick={() =>
+              handleScrollAction('fulfillment', scrollToFullfilment)
+            }
+          >
+            {translations.header_fulfillment}
+          </button>
+          <button onClick={() => handleScrollAction('faq', scrollToFaq)}>
+            {translations.header_faq}
+          </button>
+          <button>
+            <Link
+              to="/contacts"
+              className="mobile-menu-link"
+              onClick={() => setMenuOpen(false)}
+            >
+              {translations.header_contacts || 'Contacts'}
+            </Link>
+          </button>
+          <button
+            onClick={() => handleScrollAction('warehouse', scrollToWarehouse)}
+          >
+            {translations.header_warehouse_btn}
+          </button>
         </div>
       </div>
     </header>
