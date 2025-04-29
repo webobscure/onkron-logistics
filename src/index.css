@@ -43,8 +43,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
-  background: #FFF !important;
-
+  background: #fff !important;
 }
 
 .b24-form-state-container .b24-form-success {
@@ -52,15 +51,14 @@ body {
 }
 body {
   min-width: 375px;
-  background: #FFF !important;
+  background: #fff !important;
 }
 .contaienr {
   max-width: 1200px;
   margin: 0 auto;
 }
 .warehouse-container {
-  display: flex
-;
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
@@ -172,4 +170,8 @@ body {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+
+.b24-form-sign {
+  display: none !important;
 }
