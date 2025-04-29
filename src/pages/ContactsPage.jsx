@@ -28,14 +28,16 @@ const ContactsPage = () => {
         scrollToFaq={() => handleScrollAction('faq')}
       />
       <div className="contacts_container">
-        <h1>{translations.contacts_heading}</h1>
-        <p className="adress">
+        <h1 className="contact-info-heading">
+          {translations.contacts_heading}
+        </h1>
+        <p className="contact-info">
           BMGG EUROPE GmbH, Billbrookdeich 36, 22113 Hamburg, Germany
         </p>
-        <a href="mailto:order@bmggcorp.com" class="email">
+        <a href="mailto:order@bmggcorp.com" class="contact-info">
           order@bmggcorp.com
         </a>{' '}
-        <a href="tel:+491727991658" class="phone">
+        <a href="tel:+491727991658" class="contact-info">
           (+49) 172-799-1658
         </a>
         <div className="contacts_warehouse-map">
@@ -50,6 +52,10 @@ const ContactsPage = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+        <p className="contact-info-heading">
+          {translations.warehouse_label_hours}
+        </p>
+        <p className="contact-info">{translations.warehouse_hours}</p>
       </div>
       <Footer
         scrollToWarehouse={() => handleScrollAction('warehouse')}
