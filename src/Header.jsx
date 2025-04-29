@@ -63,9 +63,9 @@ const Header = ({
       <div className="border-block">
         <div className="container">
           <div className="header-top">
-            <a href="https://www.bmggcorp.com/">
+            <Link to="/">
               <img src={logo} alt="Logo" className="logo" />
-            </a>
+            </Link>
 
             <div className="contact-block">
               <div className="contact-info">

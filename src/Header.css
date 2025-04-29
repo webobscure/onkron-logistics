@@ -131,7 +131,9 @@ header {
   align-items: center;
   gap: 10px;
 }
-
+.nav-button {
+  color: #242d39;
+}
 .nav-links {
   display: flex;
   gap: 15px;
