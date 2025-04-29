@@ -6,6 +6,7 @@ import { useLanguage } from '../context/LanguageContext.jsx'
 import './ContactsPage.css'
 
 const ContactsPage = () => {
+  const { translations } = useLanguage()
   const navigate = useNavigate()
 
   // Функция для обработки навигации/скролла
@@ -27,16 +28,16 @@ const ContactsPage = () => {
         scrollToFaq={() => handleScrollAction('faq')}
       />
       <div className="contacts_container">
-        <h1>Contacts</h1>
+        <h1>{translations.contacts_heading}</h1>
+        <p className="adress">
+          BMGG EUROPE GmbH, Billbrookdeich 36, 22113 Hamburg, Germany
+        </p>
         <a href="mailto:order@bmggcorp.com" class="email">
           order@bmggcorp.com
         </a>{' '}
         <a href="tel:+491727991658" class="phone">
           (+49) 172-799-1658
         </a>
-        <p className="adress">
-          BMGG EUROPE GmbH, Billbrookdeich 36, 22113 Hamburg, Germany
-        </p>
         <div className="contacts_warehouse-map">
           <iframe
             title="Google Maps"
