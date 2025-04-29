@@ -112,13 +112,16 @@ const Header = ({
               >
                 {translations.header_fulfillment}
               </button>
+              <button
+                className="faq_section"
+                onClick={() => handleScrollAction('faq', scrollToFaq)}
+              >
+                {translations.header_faq}
+              </button>
               <button>
                 <Link to="/contacts" className="nav-button">
                   {translations.header_contacts || 'Contacts'}
                 </Link>
-              </button>
-              <button onClick={() => handleScrollAction('faq', scrollToFaq)}>
-                {translations.header_faq}
               </button>
             </nav>
 

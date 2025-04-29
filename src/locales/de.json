@@ -9,6 +9,7 @@
   "header_prices": "Preise",
   "header_offers": "Angebote",
   "header_more": "Mehr",
+  "header_contacts": "Kontaktseite",
   "header_franchise": "Franchise",
   "hero_title": "Willkommen bei Ihr Fulfillment-Partner in Hamburg",
   "hero_description": "Ihr zuverlässiger Partner für professionellen Fulfillment, Lagerung und Logistik im Herzen Hamburgs. Wir optimieren Ihre Prozesse – damit Sie sich voll auf das Wachstum Ihres Geschäfts konzentrieren können.",
@@ -102,7 +103,9 @@
   "footer_nav_request_quote": "Angebot anfordern",
   "footer_nav_privacy": "Datenschutz",
   "footer_nav_terms": "AGB",
+  "footer_note": "Bei den Informationen auf der Site handelt es sich nicht um ein öffentliches Angebot.",
   "footer_nav_imprint": "Impressum",
+  "footer_copyright": "© Bmgg Europe GMBH 2025",
   "footer_rights_reserved": "Alle Rechte vorbehalten.",
 
   "form_title": "Jetzt individuelles Angebot anfordern",
