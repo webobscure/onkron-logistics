@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import ContactsPage from './pages/ContactsPage'
 import { LanguageProvider } from './context/LanguageContext'
+import Calculator from './pages/Calculator/Calculator.jsx'
 
 
 
@@ -15,6 +16,8 @@ createRoot(document.getElementById('root')).render(
       <Routes >
         <Route path="/" element={<App />} />
         <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/calculator" element={<Calculator />} />
+
       </Routes>
       </HashRouter>
     </LanguageProvider>

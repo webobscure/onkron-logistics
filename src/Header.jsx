@@ -128,11 +128,11 @@ const Header = ({
             <div className="extra-buttons">
               <button
                 className="outline-btn"
-                onClick={() =>
-                  handleScrollAction('warehouse', scrollToWarehouse)
-                }
+               
               >
-                {translations.header_warehouse_btn}
+               <Link to="/calculator">
+               {translations.calculator || 'Calculator'}
+               </Link>
               </button>
             </div>
           </div>
