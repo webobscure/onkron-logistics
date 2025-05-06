@@ -135,6 +135,7 @@ select:focus, .calc-input:focus {
     border-color: #ed1847;
     font-size: 14px;
 }
+
 .calc-info {
     margin-bottom: 20px;
 }
@@ -150,3 +151,19 @@ select:focus, .calc-input:focus {
 .text_column p {
     font-weight: 400;
 }
+
+.input-error {
+    border: 1px solid red;
+    background-color: #ffe5e5;
+  }
+  
+  .error-text {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .calculate-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
