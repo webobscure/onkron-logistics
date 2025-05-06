@@ -131,7 +131,7 @@ body {
     transform: translateY(-3px);
 }
 
-select:focus {
+select:focus, .calc-input:focus {
     border-color: #ed1847;
     font-size: 14px;
 }

@@ -13,14 +13,14 @@ export default function Calculator() {
   ];
 
   const [selected, setSelected] = useState("");
-  const [shipQuantity, setShipQuantity] = useState(0);
-  const [itemsQuantity, setItemsQuantity] = useState(0);
-  const [storageQuantity, setStorageQuantity] = useState(0);
+  const [shipQuantity, setShipQuantity] = useState("");
+  const [itemsQuantity, setItemsQuantity] = useState("");
+  const [storageQuantity, setStorageQuantity] = useState("");
 
-  const [orderCost, setOrderCost] = useState(0);
-  const [totalPickingCost, setTotalPickingCost] = useState(0);
-  const [storageCost, setStorageCost] = useState(0);
-  const [totalCost, setTotalCost] = useState(0);
+  const [orderCost, setOrderCost] = useState("");
+  const [totalPickingCost, setTotalPickingCost] = useState("");
+  const [storageCost, setStorageCost] = useState("");
+  const [totalCost, setTotalCost] = useState("");
 
   const BASE_ITEM_PICK_COST = 0.72;
   const PALLET_COST = 21.0;
@@ -74,7 +74,9 @@ export default function Calculator() {
               </select>
             </div>
             <div className="calculator-block-left__item">
-              <label>2. How many orders do you ship on average per month?</label>
+              <label>
+                2. How many orders do you ship on average per month?
+              </label>
               <input
                 type="number"
                 min="0"
@@ -113,20 +115,20 @@ export default function Calculator() {
             <div className="result-block">
               <div className="calculator-block-right__item">
                 <p>Cost of order picking and packing (per order):</p>
-                <p>{orderCost} £</p>
+                <p>{orderCost && `${orderCost} £`}</p>
               </div>
               <div className="calculator-block-right__item">
                 <p>Total picking and packing cost:</p>
-                <p>{totalPickingCost} £</p>
+                <p>{totalPickingCost && `${totalPickingCost} £`}</p>
               </div>
               <div className="calculator-block-right__item">
                 <p>Cost of storing all pallets:</p>
-                <p>{storageCost} £</p>
+                <p>{storageCost && `${storageCost} £`}</p>
               </div>
             </div>
             <div className="calculator-block-right__item result-line">
               <p>Total monthly service cost:</p>
-              <p>{totalCost} £</p>
+              <p>{totalCost && `${totalCost} £`}</p>
             </div>
             <button className="request-qoute">Request a quote</button>
           </div>
