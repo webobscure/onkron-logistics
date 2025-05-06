@@ -47,7 +47,7 @@ body {
     gap: 10px;
 }
 .calculator-block-right__item p:nth-child(1) {
-    width: 46%;
+    width: 63%;
     font-weight: 600;
 }
 .calculator-block-right__item p {
@@ -131,7 +131,8 @@ body {
     transform: translateY(-3px);
 }
 
-select:focus, .calc-input:focus {
+select:focus,
+.calc-input:focus {
     border-color: #ed1847;
     font-size: 14px;
 }
@@ -155,110 +156,113 @@ select:focus, .calc-input:focus {
 .input-error {
     border: 1px solid red;
     background-color: #ffe5e5;
-  }
-  
-  .error-text {
+}
+
+.error-text {
     color: red;
     margin-top: 10px;
     font-size: 14px;
-  }
+}
 
-  .calculate-button:disabled {
+.calculate-button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
-  }
+}
 
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     .calculator-block {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .calculator-block-left {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .calculator-block-right {
-      width: 100%;
-      margin-top: 30px;
+        width: 100%;
+        margin-top: 30px;
     }
-  
+
     .calculator-block-left__item {
-      width: 48%;
+        width: 48%;
     }
-  }
-  
-  @media (max-width: 768px) {
+    .container {
+        max-width: 980px;
+    }
+}
+
+@media (max-width: 768px) {
     .container {
         max-width: 680px;
     }
     .calculator-block-left__item {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .text_column h2 {
-      font-size: 24px;
-      line-height: 32px;
+        font-size: 24px;
+        line-height: 32px;
     }
-  
+
     .text_column p {
-      font-size: 15px;
-      line-height: 26px;
+        font-size: 15px;
+        line-height: 26px;
     }
-  
+
     .calc-input,
     .calculate-button,
     .request-qoute {
-      font-size: 15px;
+        font-size: 15px;
     }
-  
+
     .request-qoute {
-      width: 100%;
-      padding: 14px;
+        width: 95%;
+        padding: 14px;
     }
-  
+
     #final-order,
     #final-pallet,
     #final-total-order,
     #final-service-month {
-      font-size: 22px;
+        font-size: 22px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .container {
         max-width: 380px;
     }
     .text_column h2 {
-      font-size: 20px;
-      line-height: 28px;
+        font-size: 20px;
+        line-height: 28px;
     }
-  
+
     .text_column p {
-      font-size: 14px;
+        font-size: 14px;
     }
-  
+
     .calc-input,
     .calculate-button,
     .request-qoute {
-      font-size: 14px;
-      padding: 12px;
+        font-size: 14px;
+        padding: 12px;
     }
-  
+
     .calculator-block-right__item {
-      flex-direction: row;
-      align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
     }
-  
+
     #final-service-month {
-      text-align: left;
-      width: auto;
+        text-align: left;
+        width: auto;
     }
-  
+
     .result-line {
-      margin: 20px;
-      padding-top: 16px;
+        margin: 20px;
+        padding-top: 16px;
     }
     .request-qoute {
         width: 90%;
     }
-  }
+}
