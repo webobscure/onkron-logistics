@@ -297,6 +297,9 @@ header {
   .logo {
     height: 40px;
   }
+  .contact-info {
+    margin-bottom: 0;
+  }
   .contact-info a {
     font-size: 0.9rem;
   }
@@ -306,6 +309,7 @@ header {
   }
   .contact-block {
     gap: 9px;
+
   }
 }
 

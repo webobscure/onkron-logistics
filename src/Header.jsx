@@ -226,10 +226,12 @@ const Header = ({
             </Link>
           </button>
           <button
-            onClick={() => handleScrollAction('warehouse', scrollToWarehouse)}
-          >
-            {translations.header_warehouse_btn}
-          </button>
+                className="outline-btn"
+              >
+               <Link to="/calculator">
+               {translations.calculator || 'Calculator'}
+               </Link>
+              </button>
         </div>
       </div>
     </header>
