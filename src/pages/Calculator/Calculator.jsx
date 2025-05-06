@@ -1,19 +1,23 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "../../Header";
 import Footer from "../../components/Footer/Footer";
 import "./Calculator.css";
 import { useLanguage } from "../../context/LanguageContext";
 
 export default function Calculator() {
+
+
+
+
   const options = [
-    { value: "2", label: "2 kg" },
-    { value: "4", label: "4 kg" },
-    { value: "6", label: "6 kg" },
-    { value: "8", label: "8 kg" },
-    { value: "10", label: "10 kg" },
+    { value: "0.3", label: "0.3 kg", cost: 1.6 },
+    { value: "3", label: "3 kg", cost: 1.85 },
+    { value: "10", label: "10 kg", cost: 2.92 },
+    { value: "20", label: "20 kg", cost: 4.02 },
+    { value: "30.5", label: "30.5 kg", cost: 5.1 },
   ];
-    const { translations } = useLanguage()
-  
+  const { translations } = useLanguage();
+  const buttonRef = useRef(null)
   const [isCalculated, setIsCalculated] = useState(false);
   const [selected, setSelected] = useState("");
   const [shipQuantity, setShipQuantity] = useState("");
@@ -33,7 +37,6 @@ export default function Calculator() {
     !errors.shipQuantity &&
     !errors.itemsQuantity &&
     !errors.storageQuantity;
-  const BASE_ITEM_PICK_COST = 0.72;
   const PALLET_COST = 21.0;
 
   const handleCalculate = () => {
@@ -55,7 +58,9 @@ export default function Calculator() {
     const parsedItemsQuantity = parseInt(itemsQuantity);
     const parsedStorageQuantity = parseInt(storageQuantity);
 
-    const orderCost = BASE_ITEM_PICK_COST * parsedItemsQuantity;
+    const selectedOption = options.find((opt) => opt.value === selected);
+    const itemPickCost = selectedOption ? selectedOption.cost : 0;
+    const orderCost = itemPickCost * parsedItemsQuantity;
     const totalPicking = orderCost * parsedShipQuantity;
     const storage = PALLET_COST * parsedStorageQuantity;
     const total = totalPicking + storage;
@@ -67,25 +72,46 @@ export default function Calculator() {
     setIsCalculated(true);
   };
 
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.dataset.b24Form = 'click/48/clb435'
+    script.dataset.skipMoving = 'true'
+    script.innerHTML = `
+      (function(w,d,u){
+        var s=d.createElement('script');
+        s.async=true;
+        s.src=u+'?'+(Date.now()/180000|0);
+        var h=d.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s,h);
+      })(window,document,'https://cdn-ru.bitrix24.ru/b6258443/crm/form/loader_48.js');
+    `
+    if (buttonRef.current && buttonRef.current.parentNode) {
+      buttonRef.current.parentNode.insertBefore(script, buttonRef.current)
+    }
+
+    return () => {
+      if (script.parentNode) {
+        script.parentNode.removeChild(script)
+      }
+    }
+  }, [])
+
   return (
     <>
       <Header />
       <div className="container ">
         <div className="calc-info">
           <div className="text_column">
-            <h2>               {translations.full_service_title }
-            </h2>
+            <h2> {translations.full_service_title}</h2>
           </div>
           <div className="text_column">
-            <p>
-            {translations.full_service_descr }
-            </p>
+            <p>{translations.full_service_descr}</p>
           </div>
         </div>
         <div className="calculator-block">
           <div className="calculator-block-left">
             <div className="calculator-block-left__item">
-              <label>1. {translations.avr_parcels }</label>
+              <label>1. {translations.avr_parcels}</label>
               <select
                 value={selected}
                 onChange={(e) => {
@@ -105,9 +131,7 @@ export default function Calculator() {
               </select>
             </div>
             <div className="calculator-block-left__item">
-              <label>
-                2. {translations.avr_ships }
-              </label>
+              <label>2. {translations.avr_ships}</label>
               <input
                 type="number"
                 min="0"
@@ -124,7 +148,7 @@ export default function Calculator() {
               />
             </div>
             <div className="calculator-block-left__item">
-              <label>3. {translations.avr_items }</label>
+              <label>3. {translations.avr_items}</label>
               <input
                 type="number"
                 min="0"
@@ -141,7 +165,7 @@ export default function Calculator() {
               />
             </div>
             <div className="calculator-block-left__item">
-              <label>4. {translations.qty_pallets }</label>
+              <label>4. {translations.qty_pallets}</label>
               <input
                 type="number"
                 min="0"
@@ -163,31 +187,32 @@ export default function Calculator() {
                 onClick={handleCalculate}
                 disabled={!isFormComplete}
               >
-               {translations.calculate || 'Calculate'}
+                {translations.calculate || "Calculate"}
               </button>
             </div>
-           
           </div>
           <div className="calculator-block-right">
             <div className="result-block">
               <div className="calculator-block-right__item">
-                <p>{translations.cost_pick }</p>
+                <p>{translations.cost_pick}</p>
                 <p>{orderCost && `${orderCost} £`}</p>
               </div>
               <div className="calculator-block-right__item">
-                <p>{translations.total_pick }</p>
+                <p>{translations.total_pick}</p>
                 <p>{totalPickingCost && `${totalPickingCost} £`}</p>
               </div>
               <div className="calculator-block-right__item">
-                <p>{translations.cost_stor }</p>
+                <p>{translations.cost_stor}</p>
                 <p>{storageCost && `${storageCost} £`}</p>
               </div>
             </div>
             <div className="calculator-block-right__item result-line">
-              <p>{translations.total_cost }</p>
+              <p>{translations.total_cost}</p>
               <p>{totalCost && `${totalCost} £`}</p>
             </div>
-            <button className="request-qoute">{translations.request_quote }</button>
+            <button className="request-qoute" ref={buttonRef}>
+              {translations.request_quote}
+            </button>
           </div>
         </div>
       </div>
