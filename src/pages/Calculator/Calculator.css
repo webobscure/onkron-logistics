@@ -62,12 +62,12 @@ body {
     font-weight: 600;
 }
 #final-service-month {
-    color: #ed1847;
+    color: #1fcfca;
     width: 150px;
     text-align: end;
 }
 .result-line {
-    border-top: 2px #ed1847 solid;
+    border-top: 2px #1fcfca solid;
     padding-top: 20px;
     margin: 30px;
 }
@@ -81,8 +81,8 @@ body {
     text-align: center;
     display: block;
     color: #000;
-    border: 2px #ed1847 solid;
-    background: rgba(237, 24, 71, 0.1);
+    border: 2px #1fcfca solid;
+    background: white;
     margin: 0 30px;
     margin-top: 58px;
     margin-bottom: 20px;
@@ -118,7 +118,7 @@ body {
     height: 66px;
     width: 100%;
     color: #fff;
-    background: #ed1847;
+    background: #1fcfca;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -133,7 +133,7 @@ body {
 
 select:focus,
 .calc-input:focus {
-    border-color: #ed1847;
+    border-color: #1fcfca;
     font-size: 14px;
 }
 

@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 .faq-section .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .faq-title {
@@ -57,7 +57,7 @@
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #e31e24;
+  color: #1fcfca;
   cursor: pointer;
   padding: 0 10px;
   transition: transform 0.3s ease;

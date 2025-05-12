@@ -2,7 +2,7 @@
 .hero-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   padding: 0 20px 0 20px;
   margin-top: 80px;
@@ -21,7 +21,7 @@
   color: #242d39;
 }
 .indicator {
-  background: #e31e24;
+  background: #1fcfca;
   width: 60px;
   height: 6px;
   border-radius: 6px;
@@ -38,7 +38,7 @@
 }
 
 .hero-button {
-  background-color: #e31e24;
+  background-color: #1fcfca;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -50,7 +50,7 @@
 }
 
 .hero-button:hover {
-  background-color: #c51b20;
+  background-color: #156f6d;
 }
 
 .hero-image {

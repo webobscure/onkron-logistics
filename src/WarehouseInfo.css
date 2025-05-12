@@ -1,7 +1,7 @@
 /* Контейнер секции */
 .warehouse-wrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 80px auto 0 auto;
   padding: 0 20px;
 }
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   gap: 40px;
 }
@@ -32,7 +32,7 @@
   display: flex;
   gap: 0px;
   padding: 32px;
-  border: 2px solid rgb(227, 30, 36);
+  border: 2px solid #1fcfca;
   border-radius: 12px;
   width: 50%;
   min-height: 600px;
@@ -132,11 +132,11 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: rgba(227, 30, 36, 0.5);
+  border-color: rgba(31,207,202, 0.5);
   border-radius: 18px;
 }
 .grid-link-button:hover {
-  border-color: rgba(227, 30, 36, 1);
+  border-color: rgba(31,207,202, 1);
 }
 .wa-icon {
   display: inherit;
@@ -151,7 +151,7 @@
   flex-shrink: 0;
   fill: currentcolor;
   font-size: 1.5rem;
-  color: rgb(227, 30, 36);
+  color: rgb(31,207,202);
   transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -172,7 +172,7 @@
   line-height: 1.75;
   letter-spacing: 0.02857em;
   width: 100%;
-  background-color: rgb(227, 30, 36);
+  background-color: rgb(31,207,202);
   text-transform: none;
   color: rgb(255, 255, 255);
   min-width: 64px;
@@ -193,7 +193,7 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .request-call-button:hover {
-  background-color: #c51b20;
+  background-color: #156f6d;
 }
 .grid-images {
   box-sizing: border-box;

@@ -36,7 +36,7 @@ header {
 }
 /* Announcement Bar */
 .announcement-bar {
-  background-color: rgb(227, 30, 36);
+  background-color: #1fcfca;
   height: 64px;
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ header {
 
 /* Контейнер хедера */
 .header-container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: auto;
   padding: 0 20px;
 }
@@ -94,7 +94,7 @@ header {
   font-size: 1.1rem;
 }
 .css-svg {
-  fill: rgb(227, 30, 36);
+  fill: #1fcfca;
 }
 .separator {
   color: #ccc;
@@ -102,7 +102,7 @@ header {
 
 /* Кнопка калькулятора */
 .calculator-btn {
-  background-color: rgb(227, 30, 36);
+  background-color: #1fcfca;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -114,7 +114,7 @@ header {
 }
 
 .calculator-btn:hover {
-  background-color: #c51b20;
+  background-color: #1fcfca;
 }
 
 /* НИЖНЯЯ СЕКЦИЯ (Навигация и контакты) */
@@ -160,7 +160,7 @@ header {
 }
 .outline-btn {
   background: none;
-  border: 1px solid rgba(227, 30, 36, 0.5);
+  border: 1px solid #1fcfca;
   padding: 8px 16px;
   border-radius: 14px;
   font-size: 1.15rem;
@@ -172,7 +172,7 @@ header {
 
 .outline-btn:hover,
 .outline-btn a:hover {
-  color: rgba(227, 30, 36, 1);
+  color: #1fcfca;
 }
 /* ПРАВАЯ ЧАСТЬ (Город + Оплата + Иконки) */
 .contact-section {
@@ -188,7 +188,7 @@ header {
 }
 
 .contact-section .outline-btn:hover {
-  border-color: rgb(227, 30, 36);
+  border-color: #1fcfca;
   color: rgb(36, 45, 57);
 }
 .location {
@@ -205,7 +205,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 14px;
-  border: 1px solid rgb(227, 30, 36);
+  border: 1px solid #1fcfca;
   display: flex;
   justify-content: center;
   align-items: center;
