@@ -195,20 +195,20 @@ export default function Calculator() {
             <div className="result-block">
               <div className="calculator-block-right__item">
                 <p>{translations.cost_pick}</p>
-                <p>{orderCost && `${orderCost} £`}</p>
+                <p>{orderCost && `${orderCost} €`}</p>
               </div>
               <div className="calculator-block-right__item">
                 <p>{translations.total_pick}</p>
-                <p>{totalPickingCost && `${totalPickingCost} £`}</p>
+                <p>{totalPickingCost && `${totalPickingCost} €`}</p>
               </div>
               <div className="calculator-block-right__item">
                 <p>{translations.cost_stor}</p>
-                <p>{storageCost && `${storageCost} £`}</p>
+                <p>{storageCost && `${storageCost} €`}</p>
               </div>
             </div>
             <div className="calculator-block-right__item result-line">
               <p>{translations.total_cost}</p>
-              <p>{totalCost && `${totalCost} £`}</p>
+              <p>{totalCost && `${totalCost} €`}</p>
             </div>
             <button className="request-qoute" ref={buttonRef}>
               {translations.request_quote}
