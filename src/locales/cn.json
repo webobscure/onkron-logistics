@@ -1,0 +1,138 @@
+{
+  "header_announcement_text": "今天就开始！安排咨询。",
+  "header_services": "服务",
+  "header_marketplace": "市场",
+  "header_fulfillment": "履约服务",
+  "header_faq": "常见问题",
+  "header_warehouse_btn": "仓库地址",
+  "header_request_quote_btn": "请求报价",
+  "header_prices": "价格",
+  "header_contacts": "联系方式",
+  "calculator": "计算器",
+  "header_offers": "优惠",
+  "header_more": "更多",
+  "header_franchise": "加盟",
+
+  "hero_title": "欢迎来到汉堡物流解决方案",
+  "hero_description": "您在汉堡的可信合作伙伴，提供无缝的履约、仓储和物流服务。我们简化您的操作，让您可以专注于业务增长。",
+  "hero_cta": "请求报价",
+  "full_service_title": "履约服务费用计算器",
+  "full_service_descr": "使用我们的3PL费用计算器，快速估算您的仓储和履约服务成本。选择所需位置并输入相关数据。",
+  "avr_parcels": "您的包裹的平均重量",
+  "avr_ships": "您每月平均发货多少订单？",
+  "avr_items": "每个订单的平均物品数量是多少？",
+  "qty_pallets": "您需要多少托盘用于存储？",
+  "calculate": "计算",
+  "cost_pick": "订单拣货和包装的费用（每单）：",
+  "total_pick": "总拣货和包装费用：",
+  "cost_stor": "所有托盘存储费用：",
+  "total_cost": "每月服务总费用：",
+  "request_quote": "请求报价",
+  "services_title": "我们的全面服务",
+  "services_storage_title": "存储解决方案",
+  "services_storage_text": "现代化设施，提供灵活的存储选项，适用于各种规模的企业，并配备先进的库存管理系统。",
+  "services_fulfillment_title": "履约服务",
+  "services_fulfillment_text": "从商品接收至发货的完整订单管理，提供实时跟踪和优化的欧洲配送路线。",
+  "services_digital_title": "数字解决方案",
+  "services_digital_text": "网站开发、内容创建以及市场平台的集成，帮助增强您的在线存在并增加销售。",
+
+  "storageinfo_title": "市场经验",
+
+  "storageinfo_amazon_title": "Amazon FBA准备",
+  "storageinfo_amazon_text": "我们按照[amazon]的严格要求准备您的商品，确保符合规定，避免昂贵的罚款或延误。",
+  
+  "storageinfo_multichannel_title": "多渠道集成",
+  "storageinfo_multichannel_text": "通过我们的集成库存和订单管理系统，轻松将您的商店与[amazon]、[ebay]、[shopify]等平台连接。",
+  
+  "storageinfo_account_title": "账户管理",
+  "storageinfo_account_text": "我们的专家通过战略性账户管理、绩效分析和增长建议来优化您的市场存在。",
+  
+  "storageinfo_listing_title": "商品列表优化",
+  "storageinfo_listing_text": "通过专业内容创作、关键词优化和有竞争力的定价策略，提升产品的可见性并提高转化率。",
+  
+  "fulfillment_title": "履约卓越",
+
+  "fulfillment_receiving_title": "接收和存储",
+  "fulfillment_receiving_text": "我们仔细接收、检查并组织您的库存，使用先进的仓库管理系统实现最佳效率。",
+  
+  "fulfillment_order_title": "订单处理",
+  "fulfillment_order_text": "一旦订单到达，我们的团队快速组装、仔细包装，并精准准备发货，以减少错误和延误。",
+  
+  "fulfillment_shipping_title": "运输和交付",
+  "fulfillment_shipping_text": "我们与优质的运输服务提供商合作，确保在德国及其他地区快速可靠的交付，并提供完整的货物跟踪。",
+  
+  "fulfillment_returns_title": "退货管理",
+  "fulfillment_returns_text": "我们优化的退货流程可以高效处理客户退货，包括检查、重新入库和快速退款。",
+  
+  "warehouse_title": "汉堡仓库地址",
+  "warehouse_label_address": "地址：",
+  "warehouse_address": "Billbrookdeich 36, 22113 汉堡",
+  "warehouse_label_types": "类型：",
+  "warehouse_types": "暖仓，冷仓",
+  "warehouse_label_volume": "箱体体积：",
+  "warehouse_volume": "从2.5立方米到75立方米",
+  "warehouse_label_phone": "电话：",
+  "warehouse_phone": "(+49) 172-799-1658",
+  "warehouse_label_hours": "营业时间：",
+  "warehouse_hours": "周一至周日：9:00 - 21:00",
+  "warehouse_label_payment": "支付方式：",
+  "warehouse_payment": "现金 / 非现金支付",
+  "warehouse_whatsapp": "WhatsApp 联系",
+  "warehouse_order_call": "订购电话",
+
+  "faq_title": "常见问题 (FAQ)",
+  "faq_questions": [
+    {
+      "question": "您的履约中心提供哪些服务？",
+      "answer": "我们提供完整的订单处理服务：\n• 商品接收和仓储（托盘、箱存储）\n• 标签和贴纸（包括FBA、UPI、条形码）\n• 订单拣货和包装\n• 退货处理和质量控制\n• 分拣、重新包装、创建捆绑\n• 准备商品上传至市场（Amazon、eBay、Otto等）\n• 交付到市场和客户\n• 国际运输"
+    },
+    {
+      "question": "有哪些额外服务可用？",
+      "answer": "除了标准的履约服务，我们还提供：\n• 商品列表创建和优化（文案写作、SEO）\n• 产品摄影和图像编辑\n• 为市场和社交媒体创建内容\n• 销售和竞争分析，库存周转报告\n• 通过API和ERP集成及自动化订单\n• 市场集成的技术支持\n• 完整的电商商店开发（Shopify等）"
+    },
+    {
+      "question": "我如何开始与您合作？",
+      "answer": "1. 联系我们讨论您的需求并获得报价。\n2. 签署服务协议。\n3. 将商品送至我们仓库接收。\n4. 设置集成（如有需要），开始销售！"
+    },
+    {
+      "question": "您可以存储哪些类型的商品？",
+      "answer": "我们处理大多数商品类别，除了：\n• 易腐商品\n• 危险品（ADR）\n• 欧盟法律禁止销售的商品\n\n动物、植物、现金、贵重珠宝、易腐食物、强烈气味物质、爆炸性和易燃物品、放射性或有毒物质、润滑油、易燃物质、挥发性液体、泄漏或已打开包装的工业和家用油漆、武器、弹药、爆炸性物品。任何被盗或禁止在德国流通的物品。"
+    },
+    {
+      "question": "开始合作的最低存储量是多少？",
+      "answer": "我们与小型卖家和大型公司合作。最低存储量根据商品类型和存储体积来单独确定。"
+    },
+    {
+      "question": "您提供哪些语言的支持？",
+      "answer": "我们提供俄语、英语和德语的支持。"
+    },
+    {
+      "question": "我可以扩大存储量吗？",
+      "answer": "可以，您可以从少量（例如1-2个托盘）开始，然后扩展到集装箱运输。"
+    },
+    {
+      "question": "您的仓库在哪里？",
+      "answer": "我们的仓库位于德国汉堡。我们提供欧洲范围内的便捷物流。"
+    },
+    {
+      "question": "您的服务收费是多少？",
+      "answer": "费用取决于商品类型和数量。请提交请求，我们将为您找到最佳选项。"
+    },
+    {
+      "question": "为什么选择您？",
+      "answer": "• 10年以上电商和Amazon经验\n• 灵活的合作条件\n• 提供全方位服务，从存储到推广\n• 专门的IT和内容团队支持您的业务\n• 可扩展性\n• 提供三种语言支持（俄语、英语、德语）\n如果您有任何其他问题，请随时联系我们——我们将很高兴为您提供帮助！"
+    }
+  ],
+
+  "footer_nav_services": "服务",
+  "footer_nav_marketplace": "市场",
+  "footer_nav_fullfilment": "履约服务",
+  "footer_nav_faq": "常见问题",
+  "footer_nav_warehouse": "仓库地址",
+  "footer_policy_link": "个人数据处理政策",
+  "footer_phone": "(+49) 172-799-1658",
+  "footer_copyright": "© Bmgg Europe GMBH 2025",
+  "footer_note": "网站上的信息不构成公开要约。",
+  "footer_policy_popup": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac eros eget nisl convallis accumsan. Integer at quam nec urna porta sagittis. Suspendisse potenti. Donec in sagittis ex. Proin convallis felis nec mauris tincidunt, in fermentum justo convallis.",
+  "contacts_heading": "联系方式"
+}

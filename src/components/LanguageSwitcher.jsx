@@ -3,6 +3,7 @@ import { useLanguage } from '../context/LanguageContext'
 import deIcon from '../assets/DE.png'
 import enIcon from '../assets/EN.png'
 import ruIcon from '../assets/RU.png'
+import cnIcon from '../assets/CN.png'
 import './LanguageSwitcher.css'
 
 const LanguageSwitcher = () => {
@@ -36,6 +37,8 @@ const LanguageSwitcher = () => {
         return enIcon
       case 'ru':
         return ruIcon
+      case 'cn':
+        return cnIcon
       default:
         return deIcon
     }
@@ -61,6 +64,10 @@ const LanguageSwitcher = () => {
           <li onClick={() => handleLanguageChange('ru')}>
             <img src={ruIcon} alt="RU" className="flag-icon" />
             <span>RU</span>
+          </li>
+        <li onClick={() => handleLanguageChange('cn')}>
+            <img src={cnIcon} alt="CN" className="flag-icon" />
+            <span>CN</span>
           </li>
         </ul>
       )}
