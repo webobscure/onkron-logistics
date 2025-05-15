@@ -1,7 +1,7 @@
 .calculation-section {
     padding: 60px 0;
 }
-.calculation-section .container {
+.calculation-section .calculation-container {
     display: flex;
     flex-direction: column;
     max-width: 1440px;

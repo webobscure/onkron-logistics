@@ -186,13 +186,13 @@ select:focus,
   .calculator-block-left__item {
     width: 48%;
   }
-  .container {
+  .calculation-container {
     max-width: 980px;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
+  .calculation-container {
     max-width: 680px;
   }
   .calculator-block-left__item {
@@ -229,8 +229,8 @@ select:focus,
 }
 
 @media (max-width: 480px) {
-  .container {
-    /*max-width: 380px;*/
+  .calculation-container {
+    padding: 0 20px;
   }
   .text_column h2 {
     font-size: 20px;

@@ -41,7 +41,7 @@ const CalculationForm = () => {
 
   return (
     <section className="calculation-section">
-      <div className="container">
+      <div className="calculation-container">
         <div className="calc-block">
         <h2 className="section-title">Рассчитать <br/> стоимость хранения</h2>
         
