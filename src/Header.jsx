@@ -68,7 +68,8 @@ const Header = ({
             </Link>
 
             <div className="contact-block">
-              <div className="contact-info">
+              <div className="header_contact-info">
+                <LanguageSwitcher />
                 <a href="mailto:order@bmggcorp.com" className="email">
                   order@bmggcorp.com
                 </a>
@@ -126,13 +127,10 @@ const Header = ({
             </nav>
 
             <div className="extra-buttons">
-              <button
-                className="outline-btn"
-               
-              >
-               <Link to="/calculator">
-               {translations.calculator || 'Calculator'}
-               </Link>
+              <button className="outline-btn">
+                <Link to="/calculator">
+                  {translations.calculator || 'Calculator'}
+                </Link>
               </button>
             </div>
           </div>
@@ -150,8 +148,6 @@ const Header = ({
               </svg>{' '}
               Hamburg
             </div>
-
-            <LanguageSwitcher />
 
             <button ref={buttonRef} className="outline-btn">
               {translations.header_request_quote_btn}
@@ -225,13 +221,11 @@ const Header = ({
               {translations.header_contacts || 'Contacts'}
             </Link>
           </button>
-          <button
-                className="outline-btn"
-              >
-               <Link to="/calculator">
-               {translations.calculator || 'Calculator'}
-               </Link>
-              </button>
+          <button className="outline-btn">
+            <Link to="/calculator">
+              {translations.calculator || 'Calculator'}
+            </Link>
+          </button>
         </div>
       </div>
     </header>

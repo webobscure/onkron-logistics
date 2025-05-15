@@ -79,15 +79,15 @@ header {
 }
 
 /* Почта и телефон */
-.contact-info {
+.header_contact-info {
   display: flex;
   align-items: center;
   gap: 28px;
 }
-.contact-info .email {
+.header_contact-info .email {
   font-weight: 300;
 }
-.contact-info a {
+.header_contact-info a {
   text-decoration: none;
   color: rgb(36, 45, 57);
   font-weight: 500;
@@ -272,7 +272,7 @@ header {
 
 /* АДАПТИВНОСТЬ */
 @media (max-width: 1130px) {
-  .contact-info .email {
+  .header_contact-info .email {
     display: none;
   }
   .extra-buttons {
@@ -297,10 +297,10 @@ header {
   .logo {
     height: 40px;
   }
-  .contact-info {
+  .header_contact-info {
     margin-bottom: 0;
   }
-  .contact-info a {
+  .header_contact-info a {
     font-size: 0.9rem;
   }
   .calculator-btn {
@@ -309,7 +309,9 @@ header {
   }
   .contact-block {
     gap: 9px;
-
+  }
+  .header_contact-info {
+    gap: 10px;
   }
 }
 
@@ -320,6 +322,9 @@ header {
   .announcement-bar h6 {
     padding: 20px;
     text-align: center;
+  }
+  .header_contact-info {
+    gap: 0;
   }
 }
 
