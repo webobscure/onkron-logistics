@@ -20,7 +20,10 @@
   margin-bottom: 1rem;
   color: #1a1a1a;
 }
-
+.pad-3 {
+  padding: 0 30px;
+  margin-top: 80px;
+}
 /* Список услуг */
 .service-list {
   display: grid;
