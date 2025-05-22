@@ -294,6 +294,9 @@ header {
   }
 }
 @media (max-width: 500px) {
+  .announcement-bar h6 {
+    font-size: 1.05rem;
+  }
   .logo {
     height: 40px;
   }
@@ -301,8 +304,9 @@ header {
     margin-bottom: 0;
   }
   .header_contact-info a {
-    font-size: 0.9rem;
-  }
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
   .calculator-btn {
     padding: 10px 10px;
     font-size: 0.8rem;
@@ -330,4 +334,7 @@ header {
 
 .faq_section {
   min-width: 30px !important;
+}
+.b24-form-btn, .b24-window-close {
+  background-color: #1fcfca !important;
 }

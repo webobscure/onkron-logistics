@@ -126,7 +126,10 @@
 }
 
 /* ---------- Для iPhone SE / очень маленьких экранов ---------- */
-@media (max-width: 420px) {
+@media (max-width: 520px) {
+  .hero-image {
+    margin-top: 20px;
+  }
   .hero-content h1 {
     font-size: 1.75rem;
   }
