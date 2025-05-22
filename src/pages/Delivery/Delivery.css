@@ -64,6 +64,141 @@
     color: #1fcfca;
     font-weight: 600;
   }
-  .delivery-logistics h2 {
+  .delivery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-flex__left {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.delivery-flex__left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.delivery-flex__right {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.delivery-flex__right p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #222;
+}
+
+.delivery-flex__right ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.delivery-flex__right ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.delivery-flex__right ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1fcfca;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+@media (max-width: 1024px) {
+  .delivery-flex {
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .delivery-flex__right p {
+    font-size: 1.2rem;
+  }
+
+  .delivery-flex__right ul li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .delivery-flex {
+    flex-direction: column;
+    padding: 20px 16px;
     text-align: center;
   }
+
+  .delivery-flex__left,
+  .delivery-flex__right {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .delivery-flex__right p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .delivery-flex__right ul {
+    padding-left: 0;
+  }
+
+  .delivery-flex__right ul li {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .delivery-flex__right ul li::before {
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-options {
+    flex-direction: column;
+  }
+  .delivery-logistics h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+  .delivery-flex {
+    padding: 16px 12px;
+    gap: 20px;
+  }
+
+  .delivery-flex__right p {
+    font-size: 1.1rem;
+  }
+
+  .delivery-flex__right ul li {
+    font-size: 0.95rem;
+  }
+
+  .delivery-flex__left img {
+    border-radius: 8px;
+  }
+}

@@ -59,3 +59,91 @@
         align-items: center;
       }
     }
+    @media (max-width: 1024px) {
+  .marketplace-section {
+    padding: 30px 16px;
+    margin: 30px auto;
+  }
+
+  .marketplace-section h2 {
+    font-size: 24px;
+  }
+
+  .marketplace-section p {
+    font-size: 15px;
+  }
+
+  .highlight {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketplace-section {
+    padding: 24px 14px;
+    margin: 24px auto;
+  }
+
+  .marketplace-section h2 {
+    font-size: 22px;
+  }
+
+  .marketplace-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .platform-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .platform-item {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    border-radius: 16px;
+  }
+
+  .services-list li {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .highlight {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marketplace-section {
+    padding: 20px 10px;
+    margin: 20px auto;
+  }
+
+  .marketplace-section h2 {
+    font-size: 20px;
+  }
+
+  .marketplace-section p {
+    font-size: 13.5px;
+  }
+
+  .platform-item {
+    font-size: 12.5px;
+    padding: 10px;
+  }
+
+  .services-list li {
+    font-size: 13.5px;
+    padding: 10px;
+  }
+
+  .highlight {
+    font-size: 15px;
+  }
+}

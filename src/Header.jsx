@@ -100,6 +100,11 @@ const Header = ({
                 </Link>
               </button>
               <button>
+                <Link className="nav-button" to="/fullfilment">
+                  {translations.header_fulfillment}
+                </Link>
+              </button>
+              <button>
                 <Link to="/delivery" className="nav-button">
                   {translations.header_services}
                 </Link>
@@ -109,17 +114,8 @@ const Header = ({
                   {translations.header_marketplace}
                 </Link>
               </button>
-              <button>
-                <Link className="nav-button" to="/fullfilment">
-                  {translations.header_fulfillment}
-                </Link>
-              </button>
-              {/* <button
-                className="faq_section"
-                onClick={() => handleScrollAction("faq", scrollToFaq)}
-              >
-                {translations.header_faq}
-              </button> */}
+              
+             
               <button>
                 <Link to="/contacts" className="nav-button">
                   {translations.header_contacts || "Contacts"}
@@ -191,28 +187,26 @@ const Header = ({
         </div>
 
         <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
-          <button
-            onClick={() => handleScrollAction("services", scrollToServices)}
-          >
-            {translations.header_services}
-          </button>
-          <button
-            onClick={() =>
-              handleScrollAction("marketplace", scrollToMarketplace)
-            }
-          >
-            {translations.header_marketplace}
-          </button>
-          <button
-            onClick={() =>
-              handleScrollAction("fulfillment", scrollToFullfilment)
-            }
-          >
-            {translations.header_fulfillment}
-          </button>
-          <button onClick={() => handleScrollAction("faq", scrollToFaq)}>
-            {translations.header_faq}
-          </button>
+           <button>
+                <Link to="/about" className="nav-button">
+                  {translations.about_us}
+                </Link>
+              </button>
+              <button>
+                <Link className="nav-button" to="/fullfilment">
+                  {translations.header_fulfillment}
+                </Link>
+              </button>
+              <button>
+                <Link to="/delivery" className="nav-button">
+                  {translations.header_services}
+                </Link>
+              </button>
+              <button>
+                <Link to="/marketplaces" className="nav-button">
+                  {translations.header_marketplace}
+                </Link>
+              </button>
           <button>
             <Link
               to="/contacts"

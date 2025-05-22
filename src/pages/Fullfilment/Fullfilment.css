@@ -71,3 +71,87 @@
         flex: 1 1 calc(50% - 20px);
       }
     }
+    @media (max-width: 1024px) {
+  section {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .step {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .steps {
+    gap: 20px;
+  }
+
+  .step {
+    padding: 16px;
+  }
+
+  .step h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .card h3 {
+    font-size: 0.95rem;
+  }
+
+  .card ul {
+    padding-left: 16px;
+  }
+
+  .step {
+    padding: 14px;
+    border-left-width: 4px;
+  }
+
+  .step h4 {
+    font-size: 0.95rem;
+  }
+}

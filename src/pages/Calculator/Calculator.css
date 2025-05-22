@@ -169,100 +169,80 @@ select:focus,
   cursor: not-allowed;
 }
 
+/* MacBook Retina: ничего не меняем — базовая ширина уже подходит */
+
+/* ---------- iPad & Small Laptops (768–1024px) ---------- */
 @media (max-width: 1024px) {
   .calculator-block {
     flex-direction: column;
   }
-
-  .calculator-block-left {
-    width: 100%;
-  }
-
+  .calculator-block-left,
   .calculator-block-right {
     width: 100%;
-    margin-top: 30px;
+    gap: 1rem;
   }
-
   .calculator-block-left__item {
-    width: 48%;
+    flex: 1 1 48%;
+  }
+  .request-qoute {
+    width: 95%;
   }
   .calculation-container {
-    max-width: 980px;
+    padding: 0 30px;
   }
 }
 
-@media (max-width: 768px) {
-  .calculation-container {
-    max-width: 680px;
-  }
+/* ---------- iPhones & Small Tablets (481–767px) ---------- */
+@media (max-width: 767px) {
   .calculator-block-left__item {
-    width: 100%;
+    flex: 1 1 100%;
   }
-
   .text_column h2 {
     font-size: 24px;
-    line-height: 32px;
   }
-
   .text_column p {
     font-size: 15px;
-    line-height: 26px;
   }
-
   .calc-input,
   .calculate-button,
   .request-qoute {
     font-size: 15px;
-  }
-
-  .request-qoute {
-    width: 95%;
     padding: 14px;
   }
-
   #final-order,
   #final-pallet,
   #final-total-order,
   #final-service-month {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
+/* ---------- iPhone SE and extra small devices (max 480px) ---------- */
 @media (max-width: 480px) {
-  .calculation-container {
-    padding: 0 20px;
+  .calculation-container.container {
+    padding: 0 16px;
   }
   .text_column h2 {
     font-size: 20px;
-    line-height: 28px;
   }
-
   .text_column p {
     font-size: 14px;
   }
-
   .calc-input,
   .calculate-button,
   .request-qoute {
     font-size: 14px;
     padding: 12px;
   }
-
+  .request-qoute {
+    width: 100%;
+  }
   .calculator-block-right__item {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
   }
-
   #final-service-month {
     text-align: left;
     width: auto;
-  }
-
-  .result-line {
-    margin: 20px;
-    padding-top: 16px;
-  }
-  .request-qoute {
-    width: 90%;
   }
 }

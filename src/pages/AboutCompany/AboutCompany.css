@@ -107,3 +107,96 @@
 .about-container h2 {
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .about-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .warehouse-features h3,
+  .about-benefits h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-container p,
+  .about-address address {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-company-section {
+    padding: 30px 15px;
+  }
+
+  .about-container h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .about-container p {
+    font-size: 0.95rem;
+  }
+
+  .warehouse-features h3,
+  .about-benefits h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-photo-gallery {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .about-photo-gallery img {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .about-address {
+    padding: 16px;
+  }
+
+  .about-address h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-company-section {
+    padding: 25px 12px;
+  }
+
+  .about-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .warehouse-features h3,
+  .about-benefits h3 {
+    font-size: 1.1rem;
+  }
+
+  .about-container p,
+  .about-address address {
+    font-size: 0.9rem;
+  }
+
+  .warehouse-features li,
+  .about-benefits li {
+    padding-left: 22px;
+    font-size: 0.9rem;
+  }
+
+  .about-address {
+    padding: 14px;
+    border-left-width: 4px;
+  }
+
+  .about-photo-gallery {
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .about-photo-gallery img {
+    border-radius: 8px;
+  }
+}
