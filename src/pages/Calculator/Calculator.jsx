@@ -99,7 +99,7 @@ export default function Calculator() {
   return (
     <>
       <Header />
-      <div className="calculation-container ">
+      <div className="calculation-container container">
         <div className="calc-info">
           <div className="text_column">
             <h2> {translations.full_service_title}</h2>

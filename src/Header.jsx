@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
-import './Header.css'
-import logo from './assets/logo.png'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
-import PropTypes from 'prop-types'
-import { useLanguage } from './context/LanguageContext.jsx'
-import LanguageSwitcher from './components/LanguageSwitcher.jsx'
+import React, { useEffect, useRef, useState } from "react";
+import "./Header.css";
+import logo from "./assets/logo.png";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
+import { useLanguage } from "./context/LanguageContext.jsx";
+import LanguageSwitcher from "./components/LanguageSwitcher.jsx";
 
 const Header = ({
   scrollToWarehouse,
@@ -13,16 +13,16 @@ const Header = ({
   scrollToFullfilment,
   scrollToFaq,
 }) => {
-  const { translations } = useLanguage()
-  const [menuOpen, setMenuOpen] = useState(false)
-  const buttonRef = useRef(null)
-  const location = useLocation()
-  const navigate = useNavigate()
+  const { translations } = useLanguage();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const buttonRef = useRef(null);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const script = document.createElement('script')
-    script.dataset.b24Form = 'click/48/clb435'
-    script.dataset.skipMoving = 'true'
+    const script = document.createElement("script");
+    script.dataset.b24Form = "click/48/clb435";
+    script.dataset.skipMoving = "true";
     script.innerHTML = `
       (function(w,d,u){
         var s=d.createElement('script');
@@ -31,29 +31,29 @@ const Header = ({
         var h=d.getElementsByTagName('script')[0];
         h.parentNode.insertBefore(s,h);
       })(window,document,'https://cdn-ru.bitrix24.ru/b6258443/crm/form/loader_48.js');
-    `
+    `;
     if (buttonRef.current && buttonRef.current.parentNode) {
-      buttonRef.current.parentNode.insertBefore(script, buttonRef.current)
+      buttonRef.current.parentNode.insertBefore(script, buttonRef.current);
     }
 
     return () => {
       if (script.parentNode) {
-        script.parentNode.removeChild(script)
+        script.parentNode.removeChild(script);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   const handleScrollAction = (section, scrollFunc) => {
-    if (location.pathname === '/') {
+    if (location.pathname === "/") {
       // На главной - просто скроллим
-      scrollFunc()
+      scrollFunc();
     } else {
       // На других страницах - переходим на главную с хэшем
-      navigate(`/#${section}`)
-      window.location.reload() // Для гарантированного скролла
+      navigate(`/#${section}`);
+      window.location.reload(); // Для гарантированного скролла
     }
-    setMenuOpen(false) // Закрываем мобильное меню
-  }
+    setMenuOpen(false); // Закрываем мобильное меню
+  };
 
   return (
     <header>
@@ -80,7 +80,7 @@ const Header = ({
             </div>
 
             <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-              <div className={`burger ${menuOpen ? 'open' : ''}`}>
+              <div className={`burger ${menuOpen ? "open" : ""}`}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -91,37 +91,38 @@ const Header = ({
       </div>
 
       <div className="header-container">
-        <div className={`header-bottom ${menuOpen ? 'hide-right' : ''}`}>
+        <div className={`header-bottom ${menuOpen ? "hide-right" : ""}`}>
           <div className="nav-section">
             <nav className="nav-links">
-              <button
-                onClick={() => handleScrollAction('services', scrollToServices)}
-              >
-                {translations.header_services}
-              </button>
-              <button
-                onClick={() =>
-                  handleScrollAction('marketplace', scrollToMarketplace)
-                }
-              >
-                {translations.header_marketplace}
-              </button>
-              <button
-                onClick={() =>
-                  handleScrollAction('fulfillment', scrollToFullfilment)
-                }
-              >
-                {translations.header_fulfillment}
-              </button>
-              <button
-                className="faq_section"
-                onClick={() => handleScrollAction('faq', scrollToFaq)}
-              >
-                {translations.header_faq}
+              <button>
+                <Link to="/about" className="nav-button">
+                  {translations.about_us}
+                </Link>
               </button>
               <button>
+                <Link to="/delivery" className="nav-button">
+                  {translations.header_services}
+                </Link>
+              </button>
+              <button>
+                <Link to="/marketplaces" className="nav-button">
+                  {translations.header_marketplace}
+                </Link>
+              </button>
+              <button>
+                <Link className="nav-button" to="/fullfilment">
+                  {translations.header_fulfillment}
+                </Link>
+              </button>
+              {/* <button
+                className="faq_section"
+                onClick={() => handleScrollAction("faq", scrollToFaq)}
+              >
+                {translations.header_faq}
+              </button> */}
+              <button>
                 <Link to="/contacts" className="nav-button">
-                  {translations.header_contacts || 'Contacts'}
+                  {translations.header_contacts || "Contacts"}
                 </Link>
               </button>
             </nav>
@@ -129,7 +130,7 @@ const Header = ({
             <div className="extra-buttons">
               <button className="outline-btn">
                 <Link to="/calculator">
-                  {translations.calculator || 'Calculator'}
+                  {translations.calculator || "Calculator"}
                 </Link>
               </button>
             </div>
@@ -145,7 +146,7 @@ const Header = ({
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M5.7946 0C2.59944 0 0 2.59944 0 5.79457C0 9.75982 5.1856 15.581 5.40638 15.8269C5.61376 16.0579 5.97582 16.0575 6.18282 15.8269C6.4036 15.581 11.5892 9.75982 11.5892 5.79457C11.5891 2.59944 8.98973 0 5.7946 0ZM5.7946 8.70998C4.18704 8.70998 2.87922 7.40213 2.87922 5.79457C2.87922 4.187 4.18707 2.87919 5.7946 2.87919C7.40213 2.87919 8.70995 4.18704 8.70995 5.7946C8.70995 7.40217 7.40213 8.70998 5.7946 8.70998Z"></path>
-              </svg>{' '}
+              </svg>{" "}
               Hamburg
             </div>
 
@@ -189,27 +190,27 @@ const Header = ({
           </div>
         </div>
 
-        <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+        <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
           <button
-            onClick={() => handleScrollAction('services', scrollToServices)}
+            onClick={() => handleScrollAction("services", scrollToServices)}
           >
             {translations.header_services}
           </button>
           <button
             onClick={() =>
-              handleScrollAction('marketplace', scrollToMarketplace)
+              handleScrollAction("marketplace", scrollToMarketplace)
             }
           >
             {translations.header_marketplace}
           </button>
           <button
             onClick={() =>
-              handleScrollAction('fulfillment', scrollToFullfilment)
+              handleScrollAction("fulfillment", scrollToFullfilment)
             }
           >
             {translations.header_fulfillment}
           </button>
-          <button onClick={() => handleScrollAction('faq', scrollToFaq)}>
+          <button onClick={() => handleScrollAction("faq", scrollToFaq)}>
             {translations.header_faq}
           </button>
           <button>
@@ -218,19 +219,19 @@ const Header = ({
               className="mobile-menu-link"
               onClick={() => setMenuOpen(false)}
             >
-              {translations.header_contacts || 'Contacts'}
+              {translations.header_contacts || "Contacts"}
             </Link>
           </button>
           <button className="outline-btn">
             <Link to="/calculator">
-              {translations.calculator || 'Calculator'}
+              {translations.calculator || "Calculator"}
             </Link>
           </button>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
 Header.propTypes = {
   scrollToWarehouse: PropTypes.func.isRequired,
@@ -238,6 +239,6 @@ Header.propTypes = {
   scrollToServices: PropTypes.func.isRequired,
   scrollToMarketplace: PropTypes.func.isRequired,
   scrollToFullfilment: PropTypes.func.isRequired,
-}
+};
 
-export default Header
+export default Header;

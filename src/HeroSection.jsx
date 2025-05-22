@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './HeroSection.css'
-import forkliftImage from './assets/truck.webp'
+import forkliftImage from './assets/man.jpg'
 import { useLanguage } from './context/LanguageContext.jsx'
 
 const HeroSection = () => {
@@ -43,7 +43,7 @@ const HeroSection = () => {
         <div className="indicator"> </div>
       </div>
       <div className="hero-image">
-        <img src={forkliftImage} alt="Gabelstapler mit Ware" />
+        <img src={forkliftImage} alt="Gabelstapler mit Ware" style={{maxHeight: "493px"}} />
       </div>
     </section>
   )
