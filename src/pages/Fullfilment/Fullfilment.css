@@ -1,157 +1,109 @@
 
 
- 
+/* Общий текст */
+.container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333;
+}
 
-    section {
-      margin-bottom: 50px;
-    }
+.container h2 {
+  font-size: 2rem;
+  margin: 2.5rem 0 1.5rem;
+  color: #222;
+  text-align: center;
+}
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #1fcfca;
-    }
+.container h3,
+.container h4 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
 
-    .service-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
+/* Список услуг */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
 
-    .card {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
+.card {
+  background-color: #f9fafa;
+  border: 1px solid #e5ecf0;
+  border-top:4px solid #1fcfca;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .card h3 {
-      margin-top: 0;
-      color: #333;
-      font-size: 1.2rem;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 8px;
-    }
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
 
-    .card ul {
-      padding-left: 18px;
-    }
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #0b2b46;
+}
 
-    .card ul li {
-      margin-bottom: 8px;
-    }
+.card ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
 
-    .steps {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
+.card ul li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
 
-    .step {
-      background-color: #fff;
-      padding: 20px;
-      border-left: 6px solid #1fcfca;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-    }
+/* Этапы фулфилмента */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
 
-    .step h4 {
-      margin: 0 0 10px 0;
-      color: #1fcfca;
-    }
+.step {
+  background-color: #eef7fa;
+  border-left: 4px solid #1fcfca;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
 
-    @media (min-width: 768px) {
-      .steps {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
+.step:hover {
+  background-color: #dff5f4;
+}
 
-      .step {
-        flex: 1 1 calc(50% - 20px);
-      }
-    }
-    @media (max-width: 1024px) {
-  section {
-    margin-bottom: 40px;
-  }
+.step h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #007b82;
+}
 
-  h2 {
+.step p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container h2 {
     font-size: 1.6rem;
   }
 
-  .card h3 {
-    font-size: 1.1rem;
-  }
-
   .card {
-    padding: 18px;
+    padding: 1.2rem;
   }
 
   .step {
-    padding: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .service-list {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .card {
-    padding: 16px;
-  }
-
-  .card h3 {
-    font-size: 1rem;
-  }
-
-  .steps {
-    gap: 20px;
-  }
-
-  .step {
-    padding: 16px;
-  }
-
-  .step h4 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  section {
-    margin-bottom: 30px;
-  }
-
-  h2 {
-    font-size: 1.3rem;
-  }
-
-  .card {
-    padding: 14px;
-  }
-
-  .card h3 {
-    font-size: 0.95rem;
-  }
-
-  .card ul {
-    padding-left: 16px;
-  }
-
-  .step {
-    padding: 14px;
-    border-left-width: 4px;
-  }
-
-  .step h4 {
-    font-size: 0.95rem;
+    padding: 1.2rem;
   }
 }

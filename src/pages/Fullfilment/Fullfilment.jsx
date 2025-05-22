@@ -12,7 +12,6 @@ export default function Fullfilment() {
       <Header />
       <div className="container">
         <section>
-          <h2 style={{textAlign: "center"}}>{translations.fullf}</h2>
           <p>{translations.we_fullfilment}</p>
         </section>
 

@@ -1,55 +1,66 @@
 .about-company-section {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  font-family: sans-serif;
-}
-
-.about-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.about-container h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #1d1d1f;
-}
-
-.about-container p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #ffffff, #f6f9fb);
+  font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
 
-.warehouse-features,
-.about-benefits {
-  margin-bottom: 30px;
+.about-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.about-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1d1d1f;
+  margin-bottom: 40px;
 }
 
-.warehouse-features h3,
-.about-benefits h3 {
+.about-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.art-gallery-img {
+  height: auto;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.about-card {
+  background: #ffffff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border-left: 5px solid #1fcfca;
+}
+
+.about-card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #00536d;
 }
 
-.warehouse-features ul,
-.about-benefits ul {
+.about-card ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
-.warehouse-features li,
-.about-benefits li {
-  margin-bottom: 10px;
-  padding-left: 25px;
+.about-card li {
   position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
   color: #444;
 }
 
-.warehouse-features li::before,
-.about-benefits li::before {
+.about-card li::before {
   content: '✔';
   position: absolute;
   left: 0;
@@ -57,146 +68,172 @@
   font-weight: bold;
 }
 
-.about-photos {
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   margin-bottom: 40px;
 }
 
+.about-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #00536d;
+}
+
+.about-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-card li {
+  padding-left: 28px;
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.about-card li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #1fcfca;
+  font-weight: bold;
+}
+
+.about-photos h3 {
+  font-size: 1.5rem;
+  color: #00536d;
+  margin-bottom: 20px;
+}
+
 .about-photo-gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
 .about-photo-gallery img {
-  flex: 1 1 calc(33.333% - 20px);
-  max-width: 100%;
-  height: auto;
+  width: 100%;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-photo-gallery img:hover {
+  transform: scale(1.03);
 }
 
 .about-address {
-  background-color: #fff;
-  padding: 20px;
-  border-left: 5px solid #1fcfca;
-  font-style: normal;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-top: 40px;
+  background: #fff;
+  padding: 25px;
+  border-left: 6px solid #1fcfca;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
 }
 
 .about-address h3 {
+  font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #00536d;
 }
 
 .about-address address {
+  line-height: 1.6;
   font-size: 1rem;
-  line-height: 1.5;
   color: #555;
+  font-style: normal;
 }
 
 /* Адаптивность */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .about-photo-gallery {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
-  .about-photo-gallery img {
-    flex: 1 1 100%;
-  }
-}
-.about-container h2 {
-  text-align: center;
-}
-@media (max-width: 1024px) {
-  .about-container h2 {
-    font-size: 1.8rem;
+  .about-card {
+    padding: 20px;
   }
 
-  .warehouse-features h3,
-  .about-benefits h3 {
-    font-size: 1.3rem;
-  }
-
-  .about-container p,
-  .about-address address {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-company-section {
-    padding: 30px 15px;
-  }
-
-  .about-container h2 {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-  .about-container p {
-    font-size: 0.95rem;
-  }
-
-  .warehouse-features h3,
-  .about-benefits h3 {
+  .about-card h3,
+  .about-photos h3,
+  .about-address h3 {
     font-size: 1.2rem;
   }
 
-  .about-photo-gallery {
-    flex-direction: row;
-    gap: 16px;
+  .about-card li {
+    font-size: 0.95rem;
   }
 
-  .about-photo-gallery img {
-    flex: 1 1 100%;
-    max-width: 100%;
+  .section-title {
+    font-size: 1.8rem;
   }
 
-  .about-address {
-    padding: 16px;
-  }
-
-  .about-address h3 {
-    font-size: 1.1rem;
+  .section-description {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
-  .about-company-section {
-    padding: 25px 12px;
+  .section-title {
+    font-size: 1.6rem;
   }
 
-  .about-container h2 {
-    font-size: 1.4rem;
-  }
-
-  .warehouse-features h3,
-  .about-benefits h3 {
-    font-size: 1.1rem;
-  }
-
-  .about-container p,
-  .about-address address {
+  .section-description {
     font-size: 0.9rem;
   }
 
-  .warehouse-features li,
-  .about-benefits li {
-    padding-left: 22px;
+  .about-card li {
+    padding-left: 24px;
     font-size: 0.9rem;
-  }
-
-  .about-address {
-    padding: 14px;
-    border-left-width: 4px;
-  }
-
-  .about-photo-gallery {
-    gap: 12px;
-    flex-wrap: nowrap;
-  }
-
-  .about-photo-gallery img {
-    border-radius: 8px;
   }
 }

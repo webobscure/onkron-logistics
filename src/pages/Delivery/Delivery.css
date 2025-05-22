@@ -1,80 +1,115 @@
 .delivery-logistics {
-    padding: 4rem 1rem;
-    background: #fff;
-    color: #1a1a1a;
-    font-family: sans-serif;
-  }
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  .delivery-logistics h2,
-  .delivery-logistics h3,
-  .delivery-logistics h4 {
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
+.delivery-logistics .section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .delivery-logistics .section {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.delivery-logistics h2,
+.delivery-logistics h3,
+.delivery-logistics h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #222;
+}
 
-  .delivery-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
+.delivery-logistics h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.our-partners {
+  text-align: center;
+}
+.delivery-logistics p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
 
-  .delivery-box {
-    flex: 1 1 calc(33.333% - 1rem);
-    background: #f3f3f3;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
+.delivery-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0 3rem;
+}
 
-  .partner-logos {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
+.delivery-box {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  background-color: #f5f8fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e0e6ed;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid #1fcfca;
+}
 
-  .partner-logos img {
-    height: 40px;
-    object-fit: contain;
-  }
+.delivery-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
 
-  .shipment-schedule {
-    background: #fffbea;
-    border: 1px solid #f9e79f;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-  }
+.delivery-box h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
 
-  .delivery-logistics ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1rem;
-  }
+.delivery-box ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
 
-  .delivery-logistics ul li {
-    margin-bottom: 0.5rem;
-  }
+.delivery-box ul li {
+  margin-bottom: 0.6rem;
+  color: #333;
+}
 
-  .highlight {
-    color: #1fcfca;
-    font-weight: 600;
-  }
-  .delivery-flex {
+.shipment-schedule {
+  background-color: #fffdee;
+  border-left: 4px solid #ffcd39;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.shipment-schedule ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.shipment-schedule ul li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 24px;
+  color: #5a5a5a;
+}
+
+.shipment-schedule ul li::before {
+  content: '⏱';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  color: #ffcd39;
+}
+
+.delivery-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: center;
   justify-content: center;
-  margin: 40px auto;
-  padding: 30px;
+  margin: 3rem 0;
+  padding: 1rem;
   border-radius: 16px;
   background-color: #f9f9f9;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .delivery-flex__left {
@@ -82,41 +117,90 @@
   display: flex;
   justify-content: center;
 }
+/* Обёртка для списка партнёров */
+.delivery-partners {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
 
+/* Каждая подкатегория */
+.delivery-partners > div {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-left: 4px solid #1fcfca;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.delivery-partners > div:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Список */
+.delivery-partners ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.delivery-partners li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.delivery-partners li strong {
+  color: #007b82;
+  font-weight: 600;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .delivery-partners {
+    padding: 1.2rem;
+  }
+
+  .delivery-partners > div {
+    padding: 1rem;
+  }
+}
 .delivery-flex__left img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .delivery-flex__right {
   flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .delivery-flex__right p {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 20px;
-  text-align: left;
+  margin-bottom: 1.25rem;
   color: #222;
 }
 
 .delivery-flex__right ul {
   list-style: none;
   padding-left: 0;
-  margin: 0;
 }
 
 .delivery-flex__right ul li {
   position: relative;
-  padding-left: 24px;
-  margin-bottom: 16px;
-  font-size: 1rem;
+  padding-left: 28px;
+  margin-bottom: 1rem;
   color: #444;
+  font-size: 1rem;
 }
 
 .delivery-flex__right ul li::before {
@@ -125,80 +209,72 @@
   left: 0;
   top: 0;
   color: #1fcfca;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
 }
+
+.highlight {
+  font-weight: 700;
+  color: #1fcfca;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
 @media (max-width: 1024px) {
+  .delivery-box {
+    flex: 1 1 calc(50% - 1rem);
+  }
+
   .delivery-flex {
-    gap: 30px;
-    padding: 20px;
-  }
-
-  .delivery-flex__right p {
-    font-size: 1.2rem;
-  }
-
-  .delivery-flex__right ul li {
-    font-size: 0.95rem;
+    gap: 24px;
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 768px) {
+  .delivery-options {
+    flex-direction: column;
+  }
+
+  .delivery-box {
+    flex: 1 1 100%;
+  }
+
   .delivery-flex {
     flex-direction: column;
-    padding: 20px 16px;
-    text-align: center;
+    padding: 1.5rem 1rem;
   }
 
   .delivery-flex__left,
   .delivery-flex__right {
     flex: 1 1 100%;
-    width: 100%;
   }
 
   .delivery-flex__right p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .delivery-flex__right ul {
-    padding-left: 0;
-  }
-
-  .delivery-flex__right ul li {
-    padding-left: 20px;
     text-align: left;
-    font-size: 1rem;
-  }
-
-  .delivery-flex__right ul li::before {
-    left: 0;
   }
 }
 
 @media (max-width: 480px) {
-  .delivery-options {
-    flex-direction: column;
-  }
   .delivery-logistics h2 {
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
-}
+    font-size: 1.8rem;
+  }
+
   .delivery-flex {
-    padding: 16px 12px;
+    padding: 1rem;
     gap: 20px;
   }
 
   .delivery-flex__right p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .delivery-flex__right ul li {
     font-size: 0.95rem;
-  }
-
-  .delivery-flex__left img {
-    border-radius: 8px;
   }
 }
