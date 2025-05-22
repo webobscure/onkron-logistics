@@ -53,7 +53,7 @@
   content: '✔';
   position: absolute;
   left: 0;
-  color: #007bff;
+  color: #1fcfca;
   font-weight: bold;
 }
 
@@ -78,7 +78,7 @@
 .about-address {
   background-color: #fff;
   padding: 20px;
-  border-left: 5px solid #007bff;
+  border-left: 5px solid #1fcfca;
   font-style: normal;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
