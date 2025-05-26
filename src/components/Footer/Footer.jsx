@@ -1,46 +1,57 @@
-import PropTypes from 'prop-types'
-import { useState } from 'react'
-import { useLanguage } from '../../context/LanguageContext'
-import docIcon from '../../assets/doc.svg'
-import './Footer.css'
+import PropTypes from "prop-types";
+import { useState } from "react";
+import { useLanguage } from "../../context/LanguageContext";
+import docIcon from "../../assets/doc.svg";
+import "./Footer.css";
+import { Link } from "react-router";
 
-const Footer = ({
-  scrollToWarehouse,
-  scrollToServices,
-  scrollToMarketplace,
-  scrollToFullfilment,
-  scrollToFaq,
-}) => {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const { translations } = useLanguage()
+const Footer = ({}) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const { translations } = useLanguage();
 
   return (
     <>
       <div className="border">
         <div
           className={`footer-container header-bottom ${
-            menuOpen ? 'hide-right' : ''
+            menuOpen ? "hide-right" : ""
           }`}
         >
           <div className="nav-section">
             <nav className="nav-links">
-              <button onClick={scrollToServices}>
-                {translations.footer_nav_services}
+              <button>
+                <Link to="/about" className="nav-button">
+                  {translations.about_us}
+                </Link>
               </button>
-              <button onClick={scrollToMarketplace}>
-                {translations.footer_nav_marketplace}
+              <button>
+                <Link className="nav-button" to="/fullfilment">
+                  {translations.header_fulfillment}
+                </Link>
               </button>
-              <button onClick={scrollToFullfilment}>
-                {translations.footer_nav_fullfilment}
+              <button>
+                <Link to="/delivery" className="nav-button">
+                  {translations.header_services}
+                </Link>
               </button>
-              <button onClick={scrollToFaq}>
-                {translations.footer_nav_faq}
+              <button>
+                <Link to="/marketplaces" className="nav-button">
+                  {translations.header_marketplace}
+                </Link>
+              </button>
+
+              <button>
+                <Link to="/contacts" className="nav-button">
+                  {translations.header_contacts || "Contacts"}
+                </Link>
               </button>
             </nav>
 
             <div className="extra-buttons">
-              <button className="outline-btn" onClick={scrollToWarehouse}>
-                {translations.footer_nav_warehouse}
+              <button className="outline-btn" >
+                <Link to="/calculator">
+                  {translations.calculator || "Calculator"}
+                </Link>
               </button>
             </div>
           </div>
@@ -77,7 +88,7 @@ const Footer = ({
           <div className="footer-right">
             <div className="contact">
               <a href="tel:+494029996807" className="phone">
-              (+49) 172-799-1658
+                (+49) 172-799-1658
               </a>
             </div>
           </div>
@@ -89,8 +100,8 @@ const Footer = ({
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
 
 Footer.propTypes = {
   scrollToWarehouse: PropTypes.func.isRequired,
@@ -98,6 +109,6 @@ Footer.propTypes = {
   scrollToServices: PropTypes.func.isRequired,
   scrollToMarketplace: PropTypes.func.isRequired,
   scrollToFullfilment: PropTypes.func.isRequired,
-}
+};
 
-export default Footer
+export default Footer;
