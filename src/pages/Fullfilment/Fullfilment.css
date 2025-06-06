@@ -1,22 +1,21 @@
 
 
-/* Общий текст */
-.container p {
+.ful-container p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 2rem;
   color: #333;
 }
 
-.container h2 {
+.ful-container h2 {
   font-size: 2rem;
   margin: 2.5rem 0 1.5rem;
   color: #222;
   text-align: center;
 }
 
-.container h3,
-.container h4 {
+.ful-container h3,
+.ful-container h4 {
   margin-bottom: 1rem;
   color: #1a1a1a;
 }
@@ -24,7 +23,6 @@
   padding: 0 30px;
   margin-top: 80px;
 }
-/* Список услуг */
 .service-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -63,7 +61,6 @@
   color: #444;
 }
 
-/* Этапы фулфилмента */
 .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -98,7 +95,7 @@
 
 /* Адаптивность */
 @media (max-width: 768px) {
-  .container h2 {
+  .ful-container h2 {
     font-size: 1.6rem;
   }
 

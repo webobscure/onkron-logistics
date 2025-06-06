@@ -10,30 +10,11 @@ import StorageInfo from './StorageInfo.jsx'
 import './App.css'
 
 function App() {
-  const warehouseRef = useRef()
-  const serviceRef = useRef()
-  const MarketplaceRef = useRef()
-  const FullfilmentRef = useRef()
-  const FaqRef = useRef()
 
   return (
     <>
       <Header
-        scrollToWarehouse={() => {
-          warehouseRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToServices={() => {
-          serviceRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToMarketplace={() => {
-          MarketplaceRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToFullfilment={() => {
-          FullfilmentRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToFaq={() => {
-          FaqRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
+      
       />
       <div className="container">
         <HeroSection />
@@ -44,21 +25,7 @@ function App() {
         <FaqSection ref={FaqRef} id="faq" />
       </div>
       <Footer
-        scrollToWarehouse={() => {
-          warehouseRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToServices={() => {
-          serviceRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToMarketplace={() => {
-          MarketplaceRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToFullfilment={() => {
-          FullfilmentRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
-        scrollToFaq={() => {
-          FaqRef.current.scrollIntoView({ behavior: 'smooth' })
-        }}
+        
       />
     </>
   )

@@ -10,7 +10,7 @@ export default function Fullfilment() {
   return (
     <>
       <Header />
-      <div className="container pad-3">
+      <div className="container pad-3 ful-container">
         <section>
           <p>{translations.we_fullfilment}</p>
         </section>
