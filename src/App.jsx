@@ -18,11 +18,11 @@ function App() {
       />
       <div className="container">
         <HeroSection />
-        <Services ref={serviceRef} id="services" />
-        <StorageInfo ref={MarketplaceRef} id="marketplace" />
-        <Fulfillment ref={FullfilmentRef} id="fulfillment" />
-        <WarehouseInfo ref={warehouseRef} id="warehouse" />
-        <FaqSection ref={FaqRef} id="faq" />
+        <Services  id="services" />
+        <StorageInfo  id="marketplace" />
+        <Fulfillment  id="fulfillment" />
+        <WarehouseInfo  id="warehouse" />
+        <FaqSection  id="faq" />
       </div>
       <Footer
         

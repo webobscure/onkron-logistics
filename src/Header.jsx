@@ -7,11 +7,7 @@ import { useLanguage } from "./context/LanguageContext.jsx";
 import LanguageSwitcher from "./components/LanguageSwitcher.jsx";
 
 const Header = ({
-  scrollToWarehouse,
-  scrollToServices,
-  scrollToMarketplace,
-  scrollToFullfilment,
-  scrollToFaq,
+ 
 }) => {
   const { translations } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
