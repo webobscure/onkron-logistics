@@ -28,7 +28,8 @@ a:active {
 nav,
 footer,
 header,
-aside {
+aside,
+article {
   display: block;
 }
 
